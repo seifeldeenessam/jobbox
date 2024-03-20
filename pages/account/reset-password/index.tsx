@@ -1,0 +1,39 @@
+type Props = {};
+
+const ResetPasswordPage = (props: Props) => {
+	return (
+		<section className="pt-100 login-register">
+			<div className="container">
+				<div className="row login-register-cover">
+					<div className="col-lg-4 col-md-6 col-sm-12 mx-auto">
+						<div className="text-center">
+							<h2 className="mt-10 mb-5 text-brand-1">Reset Your Password</h2>
+							<p className="font-sm text-muted mb-30">Enter email address associated with your account and we'll send you a link to reset your password</p>
+						</div>
+						<form className="login-register text-start mt-20">
+							<div className="form-group">
+								<label className="form-label" htmlFor="input-1">
+									Email address *
+								</label>
+								<input className="form-control" id="input-1" type="text" required name="email" placeholder="stevenjob@email.com" />
+							</div>
+							<div className="form-group">
+								<button className="btn btn-brand-1 hover-up w-100" type="submit" name="continue">
+									Continue
+								</button>
+							</div>
+						</form>
+					</div>
+					<div className="img-1 d-none d-lg-block">
+						<img className="shape-1" src="/assets/imgs/page/login-register/img-5.svg" alt="JobBox" />
+					</div>
+					<div className="img-2">
+						<img src="/assets/imgs/page/login-register/img-3.svg" alt="JobBox" />
+					</div>
+				</div>
+			</div>
+		</section>
+	);
+};
+
+export default ResetPasswordPage;
