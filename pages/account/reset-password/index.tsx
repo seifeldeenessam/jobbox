@@ -7,6 +7,7 @@ const ResetPasswordPage = (props: Props) => {
 				<div className="row login-register-cover">
 					<div className="col-lg-4 col-md-6 col-sm-12 mx-auto">
 						<div className="text-center">
+							<p className="font-sm text-brand-2">Forgot Password</p>
 							<h2 className="mt-10 mb-5 text-brand-1">Reset Your Password</h2>
 							<p className="font-sm text-muted mb-30">Enter email address associated with your account and we'll send you a link to reset your password</p>
 						</div>
