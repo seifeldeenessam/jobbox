@@ -1,5 +1,4 @@
-﻿/* eslint-disable @next/next/no-img-element */
-import Head from 'next/head';
+﻿import Head from 'next/head';
 import AnnouncementSection from './partials/AnnouncementSection';
 import CallToActionSection from './partials/CallToActionSection';
 import CategoriesSection from './partials/CategoriesSection';
@@ -11,7 +10,9 @@ import NewsletterSection from './partials/NewsLetterSection';
 import StatsSection from './partials/StatsSection';
 import TopRecruitersSection from './partials/TopRecruitersSection';
 
-export default function Home() {
+type Props = {};
+
+const HomePage = (props: Props) => {
 	return (
 		<>
 			<Head>
@@ -30,4 +31,6 @@ export default function Home() {
 			<NewsletterSection />
 		</>
 	);
-}
+};
+
+export default HomePage;
