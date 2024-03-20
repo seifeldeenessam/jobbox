@@ -1,8 +1,8 @@
 import { ReactNode, useState } from 'react';
-import BackToTop from '../../elements/BackToTop';
-import Footer from '../Footer';
-import Header from '../Header';
-import Sidebar from '../Sidebar';
+import BackToTop from './partials/BackToTop';
+import Footer from './partials/Footer';
+import Header from './partials/Header';
+import Sidebar from './partials/SideBar';
 
 type Props = {
 	children: ReactNode;
