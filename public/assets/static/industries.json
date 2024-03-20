@@ -1,0 +1,8 @@
+[
+	{ "label": "Software", "value": 1 },
+	{ "label": "Finance", "value": 2 },
+	{ "label": "Recruiting", "value": 3 },
+	{ "label": "Management", "value": 4 },
+	{ "label": "Advertising", "value": 5 },
+	{ "label": "Development", "value": 6 }
+]
