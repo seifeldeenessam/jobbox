@@ -1,6 +1,6 @@
 ﻿/* eslint-disable @next/next/no-img-element */
 import Link from 'next/link';
-import Layout from '../components/Layout/Layout';
+import Layout from '../components/common/Layout';
 import CategoryTab from '../components/elements/CategoryTab';
 import BlogSlider from '../components/sliders/Blog';
 import CategorySlider from '../components/sliders/Category';
