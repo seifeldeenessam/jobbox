@@ -33,43 +33,10 @@ const Header = ({ handleOpen, handleRemove, openClass }: Props) => {
 						<div className="header-nav">
 							<nav className="nav-main-menu">
 								<ul className="main-menu">
-									<li className="has-children">
+									<li>
 										<Link legacyBehavior href="/">
 											<a className="active">Home</a>
 										</Link>
-
-										<ul className="sub-menu">
-											<li>
-												<Link legacyBehavior href="/">
-													<a>Home 1</a>
-												</Link>
-											</li>
-											<li>
-												<Link legacyBehavior href="/index-2">
-													<a>Home 2</a>
-												</Link>
-											</li>
-											<li>
-												<Link legacyBehavior href="/index-3">
-													<a>Home 3</a>
-												</Link>
-											</li>
-											<li>
-												<Link legacyBehavior href="/index-4">
-													<a>Home 4</a>
-												</Link>
-											</li>
-											<li>
-												<Link legacyBehavior href="/index-5">
-													<a>Home 5</a>
-												</Link>
-											</li>
-											<li>
-												<Link legacyBehavior href="/index-6">
-													<a>Home 6</a>
-												</Link>
-											</li>
-										</ul>
 									</li>
 									<li className="has-children">
 										<Link legacyBehavior href="/jobs-grid">
@@ -147,37 +114,37 @@ const Header = ({ handleOpen, handleRemove, openClass }: Props) => {
 
 										<ul className="sub-menu">
 											<li>
-												<Link legacyBehavior href="/page-about">
+												<Link legacyBehavior href="/about">
 													<a>About Us</a>
 												</Link>
 											</li>
 											<li>
-												<Link legacyBehavior href="/page-pricing">
+												<Link legacyBehavior href="/pricing">
 													<a>Pricing Plan</a>
 												</Link>
 											</li>
 											<li>
-												<Link legacyBehavior href="/page-contact">
+												<Link legacyBehavior href="/contact">
 													<a>Contact Us</a>
 												</Link>
 											</li>
 											<li>
-												<Link legacyBehavior href="/page-register">
+												<Link legacyBehavior href="/register">
 													<a>Register</a>
 												</Link>
 											</li>
 											<li>
-												<Link legacyBehavior href="/page-signin">
-													<a>Signin</a>
+												<Link legacyBehavior href="/login">
+													<a>Login</a>
 												</Link>
 											</li>
 											<li>
-												<Link legacyBehavior href="/page-reset-password">
+												<Link legacyBehavior href="/reset-password">
 													<a>Reset Password</a>
 												</Link>
 											</li>
 											<li>
-												<Link legacyBehavior href="/page-content-protected">
+												<Link legacyBehavior href="/content-protected">
 													<a>Content Protected</a>
 												</Link>
 											</li>
@@ -207,7 +174,7 @@ const Header = ({ handleOpen, handleRemove, openClass }: Props) => {
 										</ul>
 									</li>
 									<li>
-										<Link legacyBehavior href="/page-contact">
+										<Link legacyBehavior href="/contact">
 											<a>Contact</a>
 										</Link>
 									</li>
@@ -226,12 +193,12 @@ const Header = ({ handleOpen, handleRemove, openClass }: Props) => {
 						</div>
 						<div className="header-right">
 							<div className="block-signin">
-								<Link legacyBehavior href="page-register">
+								<Link legacyBehavior href="/account/register">
 									<a className="text-link-bd-btom hover-up">Register</a>
 								</Link>
 
-								<Link legacyBehavior href="page-signin">
-									<a className="btn btn-default btn-shadow ml-40 hover-up">Sign in</a>
+								<Link legacyBehavior href="/account/login">
+									<a className="btn btn-default btn-shadow ml-40 hover-up">Login</a>
 								</Link>
 							</div>
 						</div>
@@ -252,43 +219,10 @@ const Header = ({ handleOpen, handleRemove, openClass }: Props) => {
 								{/* mobile menu start*/}
 								<nav>
 									<ul className="mobile-menu font-heading">
-										<li className="has-children">
+										<li>
 											<Link legacyBehavior href="/">
 												<a className="active">Home</a>
 											</Link>
-
-											<ul className="sub-menu">
-												<li>
-													<Link legacyBehavior href="/">
-														<a>Home 1</a>
-													</Link>
-												</li>
-												<li>
-													<Link legacyBehavior href="/index-2">
-														<a>Home 2</a>
-													</Link>
-												</li>
-												<li>
-													<Link legacyBehavior href="/index-3">
-														<a>Home 3</a>
-													</Link>
-												</li>
-												<li>
-													<Link legacyBehavior href="/index-4">
-														<a>Home 4</a>
-													</Link>
-												</li>
-												<li>
-													<Link legacyBehavior href="/index-5">
-														<a>Home 5</a>
-													</Link>
-												</li>
-												<li>
-													<Link legacyBehavior href="/index-6">
-														<a>Home 6</a>
-													</Link>
-												</li>
-											</ul>
 										</li>
 										<li className="has-children">
 											<Link legacyBehavior href="/jobs-grid">
@@ -361,37 +295,37 @@ const Header = ({ handleOpen, handleRemove, openClass }: Props) => {
 
 											<ul className="sub-menu">
 												<li>
-													<Link legacyBehavior href="/page-about">
+													<Link legacyBehavior href="/about">
 														<a>About Us</a>
 													</Link>
 												</li>
 												<li>
-													<Link legacyBehavior href="/page-pricing">
+													<Link legacyBehavior href="/pricing">
 														<a>Pricing Plan</a>
 													</Link>
 												</li>
 												<li>
-													<Link legacyBehavior href="/page-contact">
+													<Link legacyBehavior href="/contact">
 														<a>Contact Us</a>
 													</Link>
 												</li>
 												<li>
-													<Link legacyBehavior href="/page-register">
+													<Link legacyBehavior href="/account/register">
 														<a>Register</a>
 													</Link>
 												</li>
 												<li>
-													<Link legacyBehavior href="/page-signin">
-														<a>Signin</a>
+													<Link legacyBehavior href="/account/login">
+														<a>Login</a>
 													</Link>
 												</li>
 												<li>
-													<Link legacyBehavior href="/page-reset-password">
+													<Link legacyBehavior href="/account/reset-password">
 														<a>Reset Password</a>
 													</Link>
 												</li>
 												<li>
-													<Link legacyBehavior href="/page-content-protected">
+													<Link legacyBehavior href="/content-protected">
 														<a>Content Protected</a>
 													</Link>
 												</li>
@@ -421,7 +355,7 @@ const Header = ({ handleOpen, handleRemove, openClass }: Props) => {
 											</ul>
 										</li>
 										<li>
-											<Link legacyBehavior href="/page-contact">
+											<Link legacyBehavior href="/contact">
 												<a>Contact</a>
 											</Link>
 										</li>
@@ -452,7 +386,7 @@ const Header = ({ handleOpen, handleRemove, openClass }: Props) => {
 										</Link>
 									</li>
 									<li>
-										<Link legacyBehavior href="/page-signin">
+										<Link legacyBehavior href="#">
 											<a>Sign Out</a>
 										</Link>
 									</li>
@@ -480,43 +414,10 @@ const Header = ({ handleOpen, handleRemove, openClass }: Props) => {
 								{/* mobile menu start*/}
 								<nav>
 									<ul className="mobile-menu font-heading">
-										<li className="has-children">
+										<li>
 											<Link legacyBehavior href="/">
 												<a className="active">Home</a>
 											</Link>
-
-											<ul className="sub-menu">
-												<li>
-													<Link legacyBehavior href="/">
-														<a>Home 1</a>
-													</Link>
-												</li>
-												<li>
-													<Link legacyBehavior href="/index-2">
-														<a>Home 2</a>
-													</Link>
-												</li>
-												<li>
-													<Link legacyBehavior href="/index-3">
-														<a>Home 3</a>
-													</Link>
-												</li>
-												<li>
-													<Link legacyBehavior href="/index-4">
-														<a>Home 4</a>
-													</Link>
-												</li>
-												<li>
-													<Link legacyBehavior href="/index-5">
-														<a>Home 5</a>
-													</Link>
-												</li>
-												<li>
-													<Link legacyBehavior href="/index-6">
-														<a>Home 6</a>
-													</Link>
-												</li>
-											</ul>
 										</li>
 										<li className="has-children">
 											<Link legacyBehavior href="/jobs-grid">
@@ -589,37 +490,37 @@ const Header = ({ handleOpen, handleRemove, openClass }: Props) => {
 
 											<ul className="sub-menu">
 												<li>
-													<Link legacyBehavior href="/page-about">
+													<Link legacyBehavior href="/about">
 														<a>About Us</a>
 													</Link>
 												</li>
 												<li>
-													<Link legacyBehavior href="/page-pricing">
+													<Link legacyBehavior href="/pricing">
 														<a>Pricing Plan</a>
 													</Link>
 												</li>
 												<li>
-													<Link legacyBehavior href="/page-contact">
+													<Link legacyBehavior href="/contact">
 														<a>Contact Us</a>
 													</Link>
 												</li>
 												<li>
-													<Link legacyBehavior href="/page-register">
+													<Link legacyBehavior href="/account/register">
 														<a>Register</a>
 													</Link>
 												</li>
 												<li>
-													<Link legacyBehavior href="/page-signin">
-														<a>Signin</a>
+													<Link legacyBehavior href="/account/login">
+														<a>Login</a>
 													</Link>
 												</li>
 												<li>
-													<Link legacyBehavior href="/page-reset-password">
+													<Link legacyBehavior href="/account/reset-password">
 														<a>Reset Password</a>
 													</Link>
 												</li>
 												<li>
-													<Link legacyBehavior href="/page-content-protected">
+													<Link legacyBehavior href="/content-protected">
 														<a>Content Protected</a>
 													</Link>
 												</li>
@@ -649,7 +550,7 @@ const Header = ({ handleOpen, handleRemove, openClass }: Props) => {
 											</ul>
 										</li>
 										<li>
-											<Link legacyBehavior href="/page-contact">
+											<Link legacyBehavior href="/contact">
 												<a>Contact</a>
 											</Link>
 										</li>
@@ -680,7 +581,7 @@ const Header = ({ handleOpen, handleRemove, openClass }: Props) => {
 										</Link>
 									</li>
 									<li>
-										<Link legacyBehavior href="/page-signin">
+										<Link legacyBehavior href="#">
 											<a>Sign Out</a>
 										</Link>
 									</li>
