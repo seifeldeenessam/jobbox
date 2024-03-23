@@ -1,8 +1,41 @@
+import { UseMutationResult } from '@tanstack/react-query';
 import Link from 'next/link';
+import FormField from '../../../components/common/FormField';
+import { handleRegister } from '../../../services/accounts/handlers';
 
 type Props = {};
 
 const RegisterPage = (props: Props) => {
+	const { mutation, form, inputs, handleSubmit } = handleRegister();
+
+	const getFormStatus = (status: UseMutationResult['status']) => {
+		if (status === 'idle') {
+			return (
+				<button className="btn btn-brand-1 hover-up w-100" type="submit">
+					Submit & Register
+				</button>
+			);
+		} else if (status === 'pending') {
+			return (
+				<button className="btn btn-brand-1 hover-up w-100" type="submit" disabled>
+					Loading...
+				</button>
+			);
+		} else if (status === 'error') {
+			return (
+				<button className="btn btn-brand-error hover-up w-100" type="submit">
+					{form.formState.errors.root?.message}
+				</button>
+			);
+		} else {
+			return (
+				<button className="btn btn-brand-success hover-up w-100" type="submit">
+					Account Created
+				</button>
+			);
+		}
+	};
+
 	return (
 		<section className="pt-100 login-register">
 			<div className="container">
@@ -12,45 +45,18 @@ const RegisterPage = (props: Props) => {
 							<p className="font-sm text-brand-2">Register </p>
 							<h2 className="mt-10 mb-5 text-brand-1">Start for free Today</h2>
 							<p className="font-sm text-muted mb-30">Access to all features. No credit card required.</p>
-							<button className="btn social-login hover-up mb-20">
-								<img src="/assets/imgs/template/icons/icon-google.svg" alt="jobbox" />
+							<button className="btn social-login hover-up mb-20" disabled>
+								<img src="/assets/imgs/template/icons/icon-google.svg" alt="Google logo" />
 								<strong>Sign up with Google</strong>
 							</button>
 							<div className="divider-text-center">
 								<span>Or continue with</span>
 							</div>
 						</div>
-						<form className="login-register text-start mt-20" action="#">
-							<div className="form-group">
-								<label className="form-label" htmlFor="input-1">
-									Full Name *
-								</label>
-								<input className="form-control" id="input-1" type="text" required name="full_name" placeholder="Steven Job" />
-							</div>
-							<div className="form-group">
-								<label className="form-label" htmlFor="input-2">
-									Email *
-								</label>
-								<input className="form-control" id="input-2" type="email" required name="email" placeholder="stevenjob@email.com" />
-							</div>
-							<div className="form-group">
-								<label className="form-label" htmlFor="input-3">
-									Username *
-								</label>
-								<input className="form-control" id="input-3" type="text" required name="username" placeholder="stevenjob" />
-							</div>
-							<div className="form-group">
-								<label className="form-label" htmlFor="input-4">
-									Password *
-								</label>
-								<input className="form-control" id="input-4" type="password" required name="password" placeholder="************" />
-							</div>
-							<div className="form-group">
-								<label className="form-label" htmlFor="input-5">
-									Re-Password *
-								</label>
-								<input className="form-control" id="input-5" type="password" required name="re_password" placeholder="************" />
-							</div>
+						<form className="login-register needs-validation text-start mt-20" onSubmit={handleSubmit}>
+							{inputs.map((input) => (
+								<FormField control={form.control} formState={form.formState} {...input} key={input.identifier} />
+							))}
 							<div className="login_footer form-group d-flex justify-content-between">
 								<label className="cb-container">
 									<input type="checkbox" />
@@ -61,11 +67,7 @@ const RegisterPage = (props: Props) => {
 									<a className="text-muted">Lean more</a>
 								</Link>
 							</div>
-							<div className="form-group">
-								<button className="btn btn-brand-1 hover-up w-100" type="submit" name="login">
-									Submit & Register
-								</button>
-							</div>
+							<div className="form-group">{getFormStatus(mutation.status)}</div>
 							<div className="text-muted text-center">
 								Already have an account? &nbsp;
 								<Link legacyBehavior href="/account/login">
