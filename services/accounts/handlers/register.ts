@@ -2,6 +2,7 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import { setCookie } from 'cookies-next';
 import { SubmitHandler, useForm } from 'react-hook-form';
 import { Cookies } from '../../../enums/cookies';
+import { Session } from '../../../types/session';
 import { useRegister } from '../mutations';
 import { REGISTER_FORM_FIELDS, REGISTER_FORM_VALIDATION } from '../static';
 import { RegisterFrom, RegisterPayload } from '../types';
@@ -26,7 +27,9 @@ export const handleRegister = () => {
 
 		try {
 			const response = await mutation.mutateAsync({ payload });
-			setCookie(Cookies.SESSION, response.access);
+			const newSession: Session = { access: response.access, refresh: response.refresh };
+
+			setCookie(Cookies.SESSION, JSON.stringify(newSession));
 
 			// TODO: Handle session state
 		} catch (error: any) {
