@@ -1,0 +1,2 @@
+export { LOGIN_FORM_FIELDS, LOGIN_FORM_VALIDATION } from './login';
+export { REGISTER_FORM_FIELDS, REGISTER_FORM_VALIDATION } from './register';
