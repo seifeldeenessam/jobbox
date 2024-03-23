@@ -10,12 +10,19 @@
     "sass": "sass --watch public/assets/scss/style.scss:public/assets/css/style.css"
   },
   "dependencies": {
+    "@hookform/resolvers": "^3.3.4",
+    "@tanstack/react-query": "^5.28.6",
+    "axios": "^1.6.8",
+    "cookies-next": "^4.1.1",
+    "formik": "^2.4.5",
     "next": "^13.0.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-hook-form": "^7.51.1",
     "react-perfect-scrollbar": "^1.5.8",
     "sass": "^1.56.1",
-    "swiper": "^8.4.4"
+    "swiper": "^8.4.4",
+    "yup": "^1.4.0"
   },
   "devDependencies": {
     "@types/node": "^20.11.30",
