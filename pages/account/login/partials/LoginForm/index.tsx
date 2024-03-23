@@ -1,6 +1,7 @@
 import { UseMutationResult } from '@tanstack/react-query';
 import Link from 'next/link';
 import FormField from '../../../../../components/common/FormField';
+import { Routes } from '../../../../../enums/routes';
 import { handleLogin } from '../../../../../services/accounts/handlers/login';
 
 type Props = {};
@@ -41,16 +42,6 @@ const LoginForm = (props: Props) => {
 			{inputs.map((input) => (
 				<FormField control={form.control} formState={form.formState} {...input} key={input.identifier} />
 			))}
-			<div className="login_footer form-group d-flex justify-content-between">
-				<label className="cb-container">
-					<input type="checkbox" />
-					<span className="text-small">Remember me</span>
-					<span className="checkmark" />
-				</label>
-				<Link legacyBehavior href="/account/reset-password">
-					<a className="text-muted">Forgot Password</a>
-				</Link>
-			</div>
 			<LoginFormActions />
 			<div className="form-group">{getFormStatus(mutation.status)}</div>
 			<LoginFormExtraActions />
@@ -66,7 +57,7 @@ const LoginFormActions = () => {
 				<span className="text-small">Remember me</span>
 				<span className="checkmark" />
 			</label>
-			<Link legacyBehavior href="/account/reset-password">
+			<Link legacyBehavior href={Routes.ACCOUNT_RESET_PASSWORD}>
 				<a className="text-muted">Forgot Password</a>
 			</Link>
 		</div>
@@ -77,7 +68,7 @@ const LoginFormExtraActions = () => {
 	return (
 		<div className="text-muted text-center">
 			Don't have an Account? &nbsp;
-			<Link legacyBehavior href="/account/register">
+			<Link legacyBehavior href={Routes.ACCOUNT_REGISTER}>
 				<a>Create a new one</a>
 			</Link>
 		</div>

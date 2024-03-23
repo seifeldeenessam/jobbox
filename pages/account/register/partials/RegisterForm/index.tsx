@@ -1,6 +1,7 @@
 import { UseMutationResult } from '@tanstack/react-query';
 import Link from 'next/link';
 import FormField from '../../../../../components/common/FormField';
+import { Routes } from '../../../../../enums/routes';
 import { handleRegister } from '../../../../../services/accounts/handlers';
 
 type Props = {};
@@ -67,7 +68,7 @@ const RegisterFormExtraActions = () => {
 	return (
 		<div className="text-muted text-center">
 			Already have an account? &nbsp;
-			<Link legacyBehavior href="/account/login">
+			<Link legacyBehavior href={Routes.ACCOUNT_LOGIN}>
 				<a>Login in</a>
 			</Link>
 		</div>

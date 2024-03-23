@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
+import { Routes } from '../../../../../enums/routes';
 
 type Props = {
 	handleOpen: () => void;
@@ -23,7 +24,7 @@ const Header = ({ handleOpen, handleRemove, openClass }: Props) => {
 					<div className="main-header">
 						<div className="header-left">
 							<div className="header-logo">
-								<Link legacyBehavior href="/">
+								<Link legacyBehavior href={Routes.ROOT}>
 									<a className="d-flex">
 										<img alt="jobBox" src="/assets/imgs/template/jobhub-logo.svg" />
 									</a>
@@ -34,7 +35,7 @@ const Header = ({ handleOpen, handleRemove, openClass }: Props) => {
 							<nav className="nav-main-menu">
 								<ul className="main-menu">
 									<li>
-										<Link legacyBehavior href="/">
+										<Link legacyBehavior href={Routes.ROOT}>
 											<a className="active">Home</a>
 										</Link>
 									</li>
@@ -193,11 +194,11 @@ const Header = ({ handleOpen, handleRemove, openClass }: Props) => {
 						</div>
 						<div className="header-right">
 							<div className="block-signin">
-								<Link legacyBehavior href="/account/register">
+								<Link legacyBehavior href={Routes.ACCOUNT_REGISTER}>
 									<a className="text-link-bd-btom hover-up">Register</a>
 								</Link>
 
-								<Link legacyBehavior href="/account/login">
+								<Link legacyBehavior href={Routes.ACCOUNT_LOGIN}>
 									<a className="btn btn-default btn-shadow ml-40 hover-up">Login</a>
 								</Link>
 							</div>
@@ -220,7 +221,7 @@ const Header = ({ handleOpen, handleRemove, openClass }: Props) => {
 								<nav>
 									<ul className="mobile-menu font-heading">
 										<li>
-											<Link legacyBehavior href="/">
+											<Link legacyBehavior href={Routes.ROOT}>
 												<a className="active">Home</a>
 											</Link>
 										</li>
@@ -310,12 +311,12 @@ const Header = ({ handleOpen, handleRemove, openClass }: Props) => {
 													</Link>
 												</li>
 												<li>
-													<Link legacyBehavior href="/account/register">
+													<Link legacyBehavior href={Routes.ACCOUNT_REGISTER}>
 														<a>Register</a>
 													</Link>
 												</li>
 												<li>
-													<Link legacyBehavior href="/account/login">
+													<Link legacyBehavior href={Routes.ACCOUNT_LOGIN}>
 														<a>Login</a>
 													</Link>
 												</li>
@@ -415,7 +416,7 @@ const Header = ({ handleOpen, handleRemove, openClass }: Props) => {
 								<nav>
 									<ul className="mobile-menu font-heading">
 										<li>
-											<Link legacyBehavior href="/">
+											<Link legacyBehavior href={Routes.ROOT}>
 												<a className="active">Home</a>
 											</Link>
 										</li>
@@ -505,12 +506,12 @@ const Header = ({ handleOpen, handleRemove, openClass }: Props) => {
 													</Link>
 												</li>
 												<li>
-													<Link legacyBehavior href="/account/register">
+													<Link legacyBehavior href={Routes.ACCOUNT_REGISTER}>
 														<a>Register</a>
 													</Link>
 												</li>
 												<li>
-													<Link legacyBehavior href="/account/login">
+													<Link legacyBehavior href={Routes.ACCOUNT_LOGIN}>
 														<a>Login</a>
 													</Link>
 												</li>
