@@ -1,8 +1,41 @@
+import { UseMutationResult } from '@tanstack/react-query';
 import Link from 'next/link';
+import FormField from '../../../components/common/FormField';
+import { handleLogin } from '../../../services/accounts/handlers/login';
 
 type Props = {};
 
 const LoginPage = (props: Props) => {
+	const { mutation, form, inputs, handleSubmit } = handleLogin();
+
+	const getFormStatus = (status: UseMutationResult['status']) => {
+		if (status === 'idle') {
+			return (
+				<button className="btn btn-brand-1 hover-up w-100" type="submit">
+					Login
+				</button>
+			);
+		} else if (status === 'pending') {
+			return (
+				<button className="btn btn-brand-1 hover-up w-100" type="submit" disabled>
+					Loading...
+				</button>
+			);
+		} else if (status === 'error') {
+			return (
+				<button className="btn btn-brand-danger hover-up w-100" type="submit">
+					{form.formState.errors.root?.message}
+				</button>
+			);
+		} else {
+			return (
+				<button className="btn btn-brand-success hover-up w-100" type="submit">
+					Login Success
+				</button>
+			);
+		}
+	};
+
 	return (
 		<section className="pt-100 login-register">
 			<div className="container">
@@ -20,19 +53,10 @@ const LoginPage = (props: Props) => {
 								<span>Or continue with</span>
 							</div>
 						</div>
-						<form className="login-register text-start mt-20" action="#">
-							<div className="form-group">
-								<label className="form-label" htmlFor="input-1">
-									Username or Email address *
-								</label>
-								<input className="form-control" id="input-1" type="text" required name="fullname" placeholder="Steven Job" />
-							</div>
-							<div className="form-group">
-								<label className="form-label" htmlFor="input-4">
-									Password *
-								</label>
-								<input className="form-control" id="input-4" type="password" required name="password" placeholder="************" />
-							</div>
+						<form className="login-register text-start mt-20" onSubmit={handleSubmit}>
+							{inputs.map((input) => (
+								<FormField control={form.control} formState={form.formState} {...input} key={input.identifier} />
+							))}
 							<div className="login_footer form-group d-flex justify-content-between">
 								<label className="cb-container">
 									<input type="checkbox" />
@@ -43,11 +67,7 @@ const LoginPage = (props: Props) => {
 									<a className="text-muted">Forgot Password</a>
 								</Link>
 							</div>
-							<div className="form-group">
-								<button className="btn btn-brand-1 hover-up w-100" type="submit" name="login">
-									Login
-								</button>
-							</div>
+							<div className="form-group">{getFormStatus(mutation.status)}</div>
 							<div className="text-muted text-center">
 								Don't have an Account? &nbsp;
 								<Link legacyBehavior href="/account/register">
