@@ -1,5 +1,8 @@
 import Link from 'next/link';
 import { useState } from 'react';
+import { Routes } from '../../../../../enums/routes';
+import { handleLogout } from '../../../../../services/accounts/handlers/logout';
+import { useAuthStore } from '../../../../../services/accounts/stores';
 
 type Props = {
 	openClass: string;
@@ -8,10 +11,9 @@ type Props = {
 type IsActiveState = { status: boolean; key: number | undefined };
 
 const SideBar = ({ openClass }: Props) => {
-	const [isActive, setIsActive] = useState<IsActiveState>({
-		status: false,
-		key: undefined
-	});
+	const [isActive, setIsActive] = useState<IsActiveState>({ status: false, key: undefined });
+
+	const { session } = useAuthStore();
 
 	const handleToggle = (key: number) => {
 		if (isActive.key === key) {
@@ -37,47 +39,10 @@ const SideBar = ({ openClass }: Props) => {
 								{/* mobile menu start*/}
 								<nav>
 									<ul className="mobile-menu font-heading">
-										<li className={isActive.key == 1 ? 'has-children active' : 'has-children'}>
-											<span onClick={() => handleToggle(1)} className="menu-expand">
-												<i className="fi-rr-angle-small-down"></i>
-											</span>
-
+										<li className={isActive.key == 1 ? 'active' : undefined}>
 											<Link legacyBehavior href="/">
 												<a className="active">Home</a>
 											</Link>
-
-											<ul className={isActive.key == 1 ? 'sub-menu d-block' : 'sub-menu d-none'}>
-												<li>
-													<Link legacyBehavior href="/">
-														<a>Home 1</a>
-													</Link>
-												</li>
-												<li>
-													<Link legacyBehavior href="/index-2">
-														<a>Home 2</a>
-													</Link>
-												</li>
-												<li>
-													<Link legacyBehavior href="/index-3">
-														<a>Home 3</a>
-													</Link>
-												</li>
-												<li>
-													<Link legacyBehavior href="/index-4">
-														<a>Home 4</a>
-													</Link>
-												</li>
-												<li>
-													<Link legacyBehavior href="/index-5">
-														<a>Home 5</a>
-													</Link>
-												</li>
-												<li>
-													<Link legacyBehavior href="/index-6">
-														<a>Home 6</a>
-													</Link>
-												</li>
-											</ul>
 										</li>
 										<li className={isActive.key == 2 ? 'has-children active' : 'has-children'}>
 											<span onClick={() => handleToggle(2)} className="menu-expand">
@@ -239,33 +204,46 @@ const SideBar = ({ openClass }: Props) => {
 							</div>
 							<div className="mobile-account">
 								<h6 className="mb-10">Your Account</h6>
-								<ul className="mobile-menu font-heading">
-									<li>
-										<Link legacyBehavior href="#">
-											<a>Profile</a>
-										</Link>
-									</li>
-									<li>
-										<Link legacyBehavior href="#">
-											<a>Work Preferences</a>
-										</Link>
-									</li>
-									<li>
-										<Link legacyBehavior href="#">
-											<a>Account Settings</a>
-										</Link>
-									</li>
-									<li>
-										<Link legacyBehavior href="#">
-											<a>Go Pro</a>
-										</Link>
-									</li>
-									<li>
-										<Link legacyBehavior href="/page-signin">
-											<a>Sign Out</a>
-										</Link>
-									</li>
-								</ul>
+								{session ? (
+									<ul className="mobile-menu font-heading">
+										<li>
+											<Link legacyBehavior href={Routes.ACCOUNT_PROFILE}>
+												<a>Profile</a>
+											</Link>
+										</li>
+										<li>
+											<Link legacyBehavior href="#">
+												<a>Work Preferences</a>
+											</Link>
+										</li>
+										<li>
+											<Link legacyBehavior href="#">
+												<a>Account Settings</a>
+											</Link>
+										</li>
+										<li>
+											<Link legacyBehavior href="#">
+												<a>Go Pro</a>
+											</Link>
+										</li>
+										<li>
+											<button onClick={handleLogout}>Logout</button>
+										</li>
+									</ul>
+								) : (
+									<ul className="mobile-menu font-heading">
+										<li>
+											<Link legacyBehavior href={Routes.ACCOUNT_REGISTER}>
+												<a>Register</a>
+											</Link>
+										</li>
+										<li>
+											<Link legacyBehavior href={Routes.ACCOUNT_LOGIN}>
+												<a>Login</a>
+											</Link>
+										</li>
+									</ul>
+								)}
 							</div>
 							<div className="site-copyright">
 								Copyright 2022 © JobBox. <br />

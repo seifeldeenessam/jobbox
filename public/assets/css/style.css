@@ -3850,7 +3850,8 @@ ul li:last-child .card-list-4 {
 .mobile-account ul li {
   padding: 13px 0;
 }
-.mobile-account ul li a {
+.mobile-account ul li a,
+.mobile-account ul li button {
   font-size: 15px;
   line-height: 1;
   text-transform: capitalize;
@@ -3859,6 +3860,13 @@ ul li:last-child .card-list-4 {
   display: inline-block;
   color: #253d4e;
   transition-duration: 0.2s;
+}
+.mobile-account ul li button {
+  background: none;
+  border: none;
+  outline: none;
+  padding: 0;
+  color: #e45959;
 }
 .mobile-account ul li:hover a {
   padding-left: 3px;
