@@ -1,5 +1,5 @@
 import { CookieValueTypes } from 'cookies-next';
-import { GetServerSideProps } from 'next';
+import { GetServerSideProps, NextPage } from 'next';
 import Head from 'next/head';
 import Layout from '../../../components/common/Layout';
 import { Cookies } from '../../../enums/cookies';
@@ -7,8 +7,6 @@ import { Routes } from '../../../enums/routes';
 import { Session } from '../../../types/session';
 import LoginForm from './partials/LoginForm';
 import OAuthButtons from './partials/OAuthButtons';
-
-type Props = {};
 
 export const getServerSideProps: GetServerSideProps = async ({ req, res, locale }) => {
 	const { getCookie } = await import('cookies-next');
@@ -21,33 +19,35 @@ export const getServerSideProps: GetServerSideProps = async ({ req, res, locale 
 	// TODO: Handle data prefetching
 
 	return {
-		props: { session }
+		props: {}
 	};
 };
 
-const LoginPage = (props: Props) => {
+const LoginPage: NextPage = () => {
 	return (
-		<Layout>
+		<>
 			<Head>
 				<title>JobBox | Login</title>
 			</Head>
-			<section className="pt-100 login-register">
-				<div className="container">
-					<div className="row login-register-cover">
-						<div className="col-lg-4 col-md-6 col-sm-12 mx-auto">
-							<OAuthButtons />
-							<LoginForm />
-						</div>
-						<div className="img-1 d-none d-lg-block">
-							<img className="shape-1" src="/assets/imgs/page/login-register/img-4.svg" alt="JobBox" />
-						</div>
-						<div className="img-2">
-							<img src="/assets/imgs/page/login-register/img-3.svg" alt="JobBox" />
+			<Layout>
+				<section className="pt-100 login-register">
+					<div className="container">
+						<div className="row login-register-cover">
+							<div className="col-lg-4 col-md-6 col-sm-12 mx-auto">
+								<OAuthButtons />
+								<LoginForm />
+							</div>
+							<div className="img-1 d-none d-lg-block">
+								<img className="shape-1" src="/assets/imgs/page/login-register/img-4.svg" alt="JobBox" />
+							</div>
+							<div className="img-2">
+								<img src="/assets/imgs/page/login-register/img-3.svg" alt="JobBox" />
+							</div>
 						</div>
 					</div>
-				</div>
-			</section>
-		</Layout>
+				</section>
+			</Layout>
+		</>
 	);
 };
 

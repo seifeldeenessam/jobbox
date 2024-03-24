@@ -18,8 +18,6 @@ import NewsletterSection from './partials/NewsLetterSection';
 import StatsSection from './partials/StatsSection';
 import TopRecruitersSection from './partials/TopRecruitersSection';
 
-type Props = {};
-
 export const getServerSideProps: GetServerSideProps = async ({ req, res, locale }) => {
 	const { getCookie } = await import('cookies-next');
 
@@ -41,22 +39,24 @@ const HomePage: NextPage<PublicPageProps> = ({ session }) => {
 	}, [session]); // eslint-disable-line react-hooks/exhaustive-deps
 
 	return (
-		<Layout>
+		<>
 			<Head>
 				<title>JobBox | Home</title>
 			</Head>
-			<div className="bg-homepage1" />
-			<HeroSection />
-			<CategoriesSection />
-			<AnnouncementSection />
-			<JobsOfTheDaySection />
-			<CallToActionSection />
-			<StatsSection />
-			<TopRecruitersSection />
-			<JobByLocationSection />
-			<NewAndBlogSection />
-			<NewsletterSection />
-		</Layout>
+			<Layout>
+				<div className="bg-homepage1" />
+				<HeroSection />
+				<CategoriesSection />
+				<AnnouncementSection />
+				<JobsOfTheDaySection />
+				<CallToActionSection />
+				<StatsSection />
+				<TopRecruitersSection />
+				<JobByLocationSection />
+				<NewAndBlogSection />
+				<NewsletterSection />
+			</Layout>
+		</>
 	);
 };
 

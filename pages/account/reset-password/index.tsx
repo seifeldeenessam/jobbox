@@ -1,12 +1,10 @@
 import { CookieValueTypes } from 'cookies-next';
-import { GetServerSideProps } from 'next';
+import { GetServerSideProps, NextPage } from 'next';
 import Head from 'next/head';
 import Layout from '../../../components/common/Layout';
 import { Cookies } from '../../../enums/cookies';
 import { Routes } from '../../../enums/routes';
 import { Session } from '../../../types/session';
-
-type Props = {};
 
 export const getServerSideProps: GetServerSideProps = async ({ req, res, locale }) => {
 	const { getCookie } = await import('cookies-next');
@@ -19,49 +17,51 @@ export const getServerSideProps: GetServerSideProps = async ({ req, res, locale 
 	// TODO: Handle data prefetching
 
 	return {
-		props: { session }
+		props: {}
 	};
 };
 
-const ResetPasswordPage = (props: Props) => {
+const ResetPasswordPage: NextPage = () => {
 	return (
-		<Layout>
+		<>
 			<Head>
 				<title>JobBox | Reset Password</title>
 			</Head>
-			<section className="pt-100 login-register">
-				<div className="container">
-					<div className="row login-register-cover">
-						<div className="col-lg-4 col-md-6 col-sm-12 mx-auto">
-							<div className="text-center">
-								<p className="font-sm text-brand-2">Forgot Password</p>
-								<h2 className="mt-10 mb-5 text-brand-1">Reset Your Password</h2>
-								<p className="font-sm text-muted mb-30">Enter email address associated with your account and we'll send you a link to reset your password</p>
+			<Layout>
+				<section className="pt-100 login-register">
+					<div className="container">
+						<div className="row login-register-cover">
+							<div className="col-lg-4 col-md-6 col-sm-12 mx-auto">
+								<div className="text-center">
+									<p className="font-sm text-brand-2">Forgot Password</p>
+									<h2 className="mt-10 mb-5 text-brand-1">Reset Your Password</h2>
+									<p className="font-sm text-muted mb-30">Enter email address associated with your account and we'll send you a link to reset your password</p>
+								</div>
+								<form className="login-register text-start mt-20">
+									<div className="form-group">
+										<label className="form-label" htmlFor="input-1">
+											Email address *
+										</label>
+										<input className="form-control" id="input-1" type="text" required name="email" placeholder="stevenjob@email.com" />
+									</div>
+									<div className="form-group">
+										<button className="btn btn-brand-1 hover-up w-100" type="submit" name="continue">
+											Continue
+										</button>
+									</div>
+								</form>
 							</div>
-							<form className="login-register text-start mt-20">
-								<div className="form-group">
-									<label className="form-label" htmlFor="input-1">
-										Email address *
-									</label>
-									<input className="form-control" id="input-1" type="text" required name="email" placeholder="stevenjob@email.com" />
-								</div>
-								<div className="form-group">
-									<button className="btn btn-brand-1 hover-up w-100" type="submit" name="continue">
-										Continue
-									</button>
-								</div>
-							</form>
-						</div>
-						<div className="img-1 d-none d-lg-block">
-							<img className="shape-1" src="/assets/imgs/page/login-register/img-5.svg" alt="JobBox" />
-						</div>
-						<div className="img-2">
-							<img src="/assets/imgs/page/login-register/img-3.svg" alt="JobBox" />
+							<div className="img-1 d-none d-lg-block">
+								<img className="shape-1" src="/assets/imgs/page/login-register/img-5.svg" alt="JobBox" />
+							</div>
+							<div className="img-2">
+								<img src="/assets/imgs/page/login-register/img-3.svg" alt="JobBox" />
+							</div>
 						</div>
 					</div>
-				</div>
-			</section>
-		</Layout>
+				</section>
+			</Layout>
+		</>
 	);
 };
 
