@@ -1,2 +1,3 @@
+export { CHANGE_PASSWORD_FORM_FIELDS, CHANGE_PASSWORD_FORM_VALIDATION } from './change-password';
 export { LOGIN_FORM_FIELDS, LOGIN_FORM_VALIDATION } from './login';
 export { REGISTER_FORM_FIELDS, REGISTER_FORM_VALIDATION } from './register';

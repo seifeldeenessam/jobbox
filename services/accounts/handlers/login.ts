@@ -35,7 +35,7 @@ export const handleLogin = () => {
 
 			window.location.href = window.location.origin;
 		} catch (error: any) {
-			form.setError('root', { message: 'Login Failed' });
+			form.setError('root', { message: error.message });
 		}
 	};
 

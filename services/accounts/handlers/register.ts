@@ -36,7 +36,7 @@ export const handleRegister = () => {
 
 			window.location.href = window.location.origin;
 		} catch (error: any) {
-			form.setError('root', { message: 'Registration Failed' });
+			form.setError('root', { message: error.message });
 		}
 	};
 
