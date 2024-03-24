@@ -1,4 +1,12 @@
-﻿import Head from 'next/head';
+﻿import { CookieValueTypes } from 'cookies-next';
+import { GetServerSideProps, NextPage } from 'next';
+import Head from 'next/head';
+import { useEffect } from 'react';
+import Layout from '../components/common/Layout';
+import { Cookies } from '../enums/cookies';
+import { useAuthStore } from '../services/accounts/stores';
+import { PublicPageProps } from '../types/app';
+import { Session } from '../types/session';
 import AnnouncementSection from './partials/AnnouncementSection';
 import CallToActionSection from './partials/CallToActionSection';
 import CategoriesSection from './partials/CategoriesSection';
@@ -12,9 +20,28 @@ import TopRecruitersSection from './partials/TopRecruitersSection';
 
 type Props = {};
 
-const HomePage = (props: Props) => {
+export const getServerSideProps: GetServerSideProps = async ({ req, res, locale }) => {
+	const { getCookie } = await import('cookies-next');
+
+	const sessionCookie: CookieValueTypes = getCookie(Cookies.SESSION, { req, res });
+	const session: Session | null = sessionCookie ? JSON.parse(sessionCookie as string) : null;
+
+	// TODO: Handle data prefetching
+
+	return {
+		props: { session }
+	};
+};
+
+const HomePage: NextPage<PublicPageProps> = ({ session }) => {
+	const { setSession } = useAuthStore.getState();
+
+	useEffect(() => {
+		setSession(session);
+	}, [session]); // eslint-disable-line react-hooks/exhaustive-deps
+
 	return (
-		<>
+		<Layout>
 			<Head>
 				<title>JobBox | Home</title>
 			</Head>
@@ -29,7 +56,7 @@ const HomePage = (props: Props) => {
 			<JobByLocationSection />
 			<NewAndBlogSection />
 			<NewsletterSection />
-		</>
+		</Layout>
 	);
 };
 

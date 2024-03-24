@@ -1,10 +1,31 @@
+import { CookieValueTypes } from 'cookies-next';
+import { GetServerSideProps } from 'next';
 import Head from 'next/head';
+import Layout from '../../../components/common/Layout';
+import { Cookies } from '../../../enums/cookies';
+import { Routes } from '../../../enums/routes';
+import { Session } from '../../../types/session';
 
 type Props = {};
 
+export const getServerSideProps: GetServerSideProps = async ({ req, res, locale }) => {
+	const { getCookie } = await import('cookies-next');
+
+	const sessionCookie: CookieValueTypes = getCookie(Cookies.SESSION, { req, res });
+	const session: Session | null = sessionCookie ? JSON.parse(sessionCookie as string) : null;
+
+	if (session) return { redirect: { destination: Routes.ACCOUNT_PROFILE, permanent: true } };
+
+	// TODO: Handle data prefetching
+
+	return {
+		props: { session }
+	};
+};
+
 const ResetPasswordPage = (props: Props) => {
 	return (
-		<>
+		<Layout>
 			<Head>
 				<title>JobBox | Reset Password</title>
 			</Head>
@@ -40,7 +61,7 @@ const ResetPasswordPage = (props: Props) => {
 					</div>
 				</div>
 			</section>
-		</>
+		</Layout>
 	);
 };
 

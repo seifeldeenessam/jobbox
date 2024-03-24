@@ -1,12 +1,33 @@
+import { CookieValueTypes } from 'cookies-next';
+import { GetServerSideProps } from 'next';
 import Head from 'next/head';
+import Layout from '../../../components/common/Layout';
+import { Cookies } from '../../../enums/cookies';
+import { Routes } from '../../../enums/routes';
+import { Session } from '../../../types/session';
 import LoginForm from './partials/LoginForm';
 import OAuthButtons from './partials/OAuthButtons';
 
 type Props = {};
 
+export const getServerSideProps: GetServerSideProps = async ({ req, res, locale }) => {
+	const { getCookie } = await import('cookies-next');
+
+	const sessionCookie: CookieValueTypes = getCookie(Cookies.SESSION, { req, res });
+	const session: Session | null = sessionCookie ? JSON.parse(sessionCookie as string) : null;
+
+	if (session) return { redirect: { destination: Routes.ACCOUNT_PROFILE, permanent: true } };
+
+	// TODO: Handle data prefetching
+
+	return {
+		props: { session }
+	};
+};
+
 const LoginPage = (props: Props) => {
 	return (
-		<>
+		<Layout>
 			<Head>
 				<title>JobBox | Login</title>
 			</Head>
@@ -26,7 +47,7 @@ const LoginPage = (props: Props) => {
 					</div>
 				</div>
 			</section>
-		</>
+		</Layout>
 	);
 };
 

@@ -24,7 +24,7 @@ const LoginForm = (props: Props) => {
 			);
 		} else if (status === 'error') {
 			return (
-				<button className="btn btn-brand-danger hover-up w-100" type="submit">
+				<button className="btn btn-brand-error hover-up w-100" type="submit">
 					{form.formState.errors.root?.message}
 				</button>
 			);
