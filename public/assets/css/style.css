@@ -6243,13 +6243,14 @@ ul li:last-child .card-list-4 {
   min-height: 150px;
 }
 
-.nav-tavs-profile {
+.nav-tabs-profile {
   padding-right: 30px;
 }
-.nav-tavs-profile ul li {
+.nav-tabs-profile .nav li {
   width: 100%;
 }
-.nav-tavs-profile ul li a {
+.nav-tabs-profile .nav li * {
+  width: 100%;
   display: block;
   text-align: left;
   font-size: 12px;
@@ -6258,6 +6259,14 @@ ul li:last-child .card-list-4 {
   background-position: 17px center;
   padding-left: 42px;
   box-shadow: 0px 2px 4px -5px rgb(10, 42, 105);
+}
+.nav-tabs-profile .nav li .btn-logout {
+  padding-left: 17px;
+  color: #e45959;
+  border-color: #e45959;
+}
+.nav-tabs-profile .nav li .btn-logout:hover {
+  background-color: rgba(228, 89, 89, 0.1882352941);
 }
 
 .image-profile {
@@ -6320,13 +6329,6 @@ ul li:last-child .card-list-4 {
   background-image: url(../imgs/page/candidates/info.svg);
   background-position: left center;
   background-repeat: no-repeat;
-}
-
-.link-red {
-  color: #e45959;
-  font-size: 12px;
-  line-height: 12px;
-  font-weight: 500;
 }
 
 .lbl-checkbox {
@@ -7233,7 +7235,7 @@ ul li:last-child .card-list-4 {
   border-radius: 16px;
 }
 
-.aboutus-icon {
+.about-us-icon {
   background-image: url(../imgs/page/company/icon-about.svg);
   background-position: 17px 14px;
   background-repeat: no-repeat;
@@ -7241,7 +7243,7 @@ ul li:last-child .card-list-4 {
   padding-left: 45px;
   border-color: #eff2fb;
 }
-.aboutus-icon:hover, .aboutus-icon.active {
+.about-us-icon:hover, .about-us-icon.active {
   color: #05264e;
   background-image: url(../imgs/page/company/icon-about-hover.svg);
   background-color: #ffffff;
