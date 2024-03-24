@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import PasswordChangeForm from './partials/PasswordChangeForm';
 
 type Props = {};
 
@@ -73,21 +74,7 @@ const ProfileTab = (props: Props) => {
 						</div>
 					</div>
 					<div className="border-bottom pt-10 pb-10 mb-30" />
-					<h6 className="color-orange mb-20">Change your password</h6>
-					<div className="row">
-						<div className="col-lg-6">
-							<div className="form-group">
-								<label className="font-sm color-text-mutted mb-10">Password</label>
-								<input className="form-control" type="password" defaultValue={123456789} />
-							</div>
-						</div>
-						<div className="col-lg-6">
-							<div className="form-group">
-								<label className="font-sm color-text-mutted mb-10">Re-Password *</label>
-								<input className="form-control" type="password" defaultValue={123456789} />
-							</div>
-						</div>
-					</div>
+					<PasswordChangeForm />
 					<div className="border-bottom pt-10 pb-10" />
 					<div className="box-agree mt-30">
 						<label className="lbl-agree font-xs color-text-paragraph-2">

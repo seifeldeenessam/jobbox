@@ -7,7 +7,7 @@ import { useEffect, useState } from 'react';
 import Layout from '../../../components/common/Layout';
 import { Cookies } from '../../../enums/cookies';
 import { Routes } from '../../../enums/routes';
-import { handleLogout } from '../../../services/accounts/handlers/logout';
+import { handleLogout } from '../../../services/accounts/handlers';
 import { useAuthStore } from '../../../services/accounts/stores';
 import { PrivatePageProps } from '../../../types/app';
 import { Session } from '../../../types/session';
