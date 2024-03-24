@@ -1,5 +1,6 @@
 import { UseMutationResult } from '@tanstack/react-query';
 import Link from 'next/link';
+import { useEffect } from 'react';
 import FormField from '../../../../../components/common/FormField';
 import { Routes } from '../../../../../enums/routes';
 import { handleRegister } from '../../../../../services/accounts/handlers';
@@ -8,6 +9,15 @@ type Props = {};
 
 const RegisterForm = (props: Props) => {
 	const { mutation, form, inputs, handleSubmit } = handleRegister();
+
+	useEffect(() => {
+		const timeout = setTimeout(() => {
+			mutation.reset();
+			if (mutation.status === 'success') form.reset();
+		}, 3000);
+
+		return () => clearInterval(timeout);
+	}, [mutation.status]);
 
 	const getFormStatus = (status: UseMutationResult['status']) => {
 		if (status === 'idle') {

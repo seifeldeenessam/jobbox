@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import { Routes } from '../../../../../enums/routes';
-import { handleLogout } from '../../../../../services/accounts/handlers/logout';
+import { handleLogout } from '../../../../../services/accounts/handlers';
 import { useAuthStore } from '../../../../../services/accounts/stores';
 
 type Props = {

@@ -1,13 +1,23 @@
 import { UseMutationResult } from '@tanstack/react-query';
 import Link from 'next/link';
+import { useEffect } from 'react';
 import FormField from '../../../../../components/common/FormField';
 import { Routes } from '../../../../../enums/routes';
-import { handleLogin } from '../../../../../services/accounts/handlers/login';
+import { handleLogin } from '../../../../../services/accounts/handlers';
 
 type Props = {};
 
 const LoginForm = (props: Props) => {
 	const { mutation, form, inputs, handleSubmit } = handleLogin();
+
+	useEffect(() => {
+		const timeout = setTimeout(() => {
+			mutation.reset();
+			if (mutation.status === 'success') form.reset();
+		}, 3000);
+
+		return () => clearInterval(timeout);
+	}, [mutation.status]);
 
 	const getFormStatus = (status: UseMutationResult['status']) => {
 		if (status === 'idle') {
