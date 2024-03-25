@@ -9,8 +9,8 @@ import { PublicPageProps } from '../types/app';
 import { Session } from '../types/session';
 import AnnouncementSection from './partials/AnnouncementSection';
 import CallToActionSection from './partials/CallToActionSection';
-import CategoriesSection from './partials/CategoriesSection';
 import HeroSection from './partials/HeroSection';
+import IndustriesSection from './partials/IndustriesSection';
 import JobByLocationSection from './partials/JobsByLocationSection';
 import JobsOfTheDaySection from './partials/JobsOfTheDaySection';
 import NewAndBlogSection from './partials/NewsAndBlogSection';
@@ -46,7 +46,7 @@ const HomePage: NextPage<PublicPageProps> = ({ session }) => {
 			<Layout>
 				<div className="bg-homepage1" />
 				<HeroSection />
-				<CategoriesSection />
+				<IndustriesSection />
 				<AnnouncementSection />
 				<JobsOfTheDaySection />
 				<CallToActionSection />

@@ -1,8 +1,8 @@
-import CategoriesSlider from './partials/CategoriesSlider';
+import IndustriesSlider from './partials/IndustriesSlider';
 
 type Props = {};
 
-const CategoriesSection = (props: Props) => {
+const IndustriesSection = (props: Props) => {
 	return (
 		<section className="section-box mt-180">
 			<div className="section-box wow animate__animated animate__fadeIn">
@@ -12,7 +12,7 @@ const CategoriesSection = (props: Props) => {
 						<p className="font-lg color-text-paragraph-2 wow animate__animated animate__fadeInUp">Find the job that’s perfect for you. about 800+ new jobs everyday</p>
 					</div>
 					<div className="box-swiper mt-50">
-						<CategoriesSlider />
+						<IndustriesSlider />
 					</div>
 				</div>
 			</div>
@@ -20,4 +20,4 @@ const CategoriesSection = (props: Props) => {
 	);
 };
 
-export default CategoriesSection;
+export default IndustriesSection;
