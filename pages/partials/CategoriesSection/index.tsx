@@ -1,4 +1,4 @@
-import CategorySlider from '../../../components/sliders/Category';
+import CategoriesSlider from './partials/CategoriesSlider';
 
 type Props = {};
 
@@ -12,7 +12,7 @@ const CategoriesSection = (props: Props) => {
 						<p className="font-lg color-text-paragraph-2 wow animate__animated animate__fadeInUp">Find the job that’s perfect for you. about 800+ new jobs everyday</p>
 					</div>
 					<div className="box-swiper mt-50">
-						<CategorySlider />
+						<CategoriesSlider />
 					</div>
 				</div>
 			</div>
