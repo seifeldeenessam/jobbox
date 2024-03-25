@@ -3001,11 +3001,24 @@ ul li:last-child .card-list-4 {
   width: 100%;
   max-width: 180px;
 }
-.banner-hero .block-banner .form-find .box-industry .select2::before {
+.banner-hero .block-banner .form-find .box-industry .select::before {
   content: "";
   background: url(../imgs/template/icons/industry.svg) no-repeat;
-  width: 18px;
-  height: 18px;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 11px;
+  top: 15px;
+}
+.banner-hero .block-banner .form-find .box-location {
+  width: 100%;
+  max-width: 180px;
+}
+.banner-hero .block-banner .form-find .box-location .select::before {
+  content: "";
+  background: url(../imgs/template/icons/location.svg) no-repeat;
+  width: 16px;
+  height: 16px;
   position: absolute;
   left: 11px;
   top: 15px;
@@ -3044,7 +3057,7 @@ ul li:last-child .card-list-4 {
 }
 .banner-hero .color-brand-2::after {
   content: "";
-  background-color: #3C65F5;
+  background-color: #3c65f5;
   height: 25px;
   position: absolute;
   width: 100%;
@@ -3067,7 +3080,7 @@ ul li:last-child .card-list-4 {
 }
 .banner-hero.banner-company {
   padding: 40px 20px 60px 20px;
-  background: #F2F6FD;
+  background: #f2f6fd;
   border-radius: 16px;
   position: relative;
 }
@@ -3076,7 +3089,7 @@ ul li:last-child .card-list-4 {
 }
 .banner-hero.banner-single {
   padding: 40px 20px 60px 20px;
-  background: #F2F6FD;
+  background: #f2f6fd;
   border-radius: 16px;
   position: relative;
 }
