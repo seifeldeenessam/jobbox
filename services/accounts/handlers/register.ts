@@ -5,12 +5,10 @@ import { Cookies } from '../../../enums/cookies';
 import { Session } from '../../../types/session';
 import { useRegister } from '../mutations';
 import { REGISTER_FORM_FIELDS, REGISTER_FORM_VALIDATION } from '../static';
-import { useAuthStore } from '../stores';
 import { RegisterFrom, RegisterPayload } from '../types';
 
 export const handleRegister = () => {
 	const mutation = useRegister();
-	const { setSession } = useAuthStore.getState();
 
 	const form = useForm<RegisterFrom>({
 		mode: 'onChange',
@@ -32,9 +30,10 @@ export const handleRegister = () => {
 			const newSession: Session = { access: response.access, refresh: response.refresh };
 
 			setCookie(Cookies.SESSION, JSON.stringify(newSession));
-			setSession(newSession);
 
-			window.location.href = window.location.origin;
+			setTimeout(() => {
+				window.location.href = window.location.origin;
+			}, 3000);
 		} catch (error: any) {
 			form.setError('root', { message: error.message });
 		}

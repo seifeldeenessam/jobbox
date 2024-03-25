@@ -5,12 +5,10 @@ import { Cookies } from '../../../enums/cookies';
 import { Session } from '../../../types/session';
 import { useLogin } from '../mutations';
 import { LOGIN_FORM_FIELDS, LOGIN_FORM_VALIDATION } from '../static';
-import { useAuthStore } from '../stores';
 import { LoginFrom, LoginPayload } from '../types';
 
 export const handleLogin = () => {
 	const mutation = useLogin();
-	const { setSession } = useAuthStore.getState();
 
 	const form = useForm<LoginFrom>({
 		mode: 'onChange',
@@ -31,9 +29,10 @@ export const handleLogin = () => {
 			const newSession: Session = { access: response.access, refresh: response.refresh };
 
 			setCookie(Cookies.SESSION, JSON.stringify(newSession));
-			setSession(newSession);
 
-			window.location.href = window.location.origin;
+			setTimeout(() => {
+				window.location.href = window.location.origin;
+			}, 3000);
 		} catch (error: any) {
 			form.setError('root', { message: error.message });
 		}
