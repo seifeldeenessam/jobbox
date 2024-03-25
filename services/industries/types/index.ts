@@ -1,4 +1,4 @@
-export type Category = {
+export type Industry = {
 	id: number;
 	name: string;
 	category_image: string;

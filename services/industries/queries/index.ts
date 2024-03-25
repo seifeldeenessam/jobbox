@@ -1,0 +1,1 @@
+export { useIndustriesListing } from './listing';

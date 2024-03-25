@@ -4,8 +4,8 @@ export enum Endpoints {
 	ACCOUNT_LOGIN = '/accounts/login/',
 	ACCOUNT_CHANGE_PASSWORD = '/accounts/change-password/',
 
-	// Categories
-	CATEGORIES = '/categories/',
+	// Industries
+	INDUSTRIES = '/categories/',
 
 	// Jobs
 	JOBS = '/jobs/',
