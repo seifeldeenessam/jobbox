@@ -16,7 +16,7 @@ export const REGISTER_FORM_FIELDS: FormField[] = [
 		type: FormInputTypes.TEXT,
 		label: 'Email Address',
 		placeholder: 'stevenjob@email.com',
-		required: false
+		required: true
 	},
 	{
 		identifier: 'password',
@@ -31,7 +31,7 @@ export const REGISTER_FORM_VALIDATION: FormValidation<RegisterFrom> = {
 	defaultValues: {},
 	resolver: yup.object().shape({
 		username: yup.string().required('This field is required'),
-		email: yup.string().email('Invalid email address'),
+		email: yup.string().required('This field is required').email('Invalid email address'),
 		password: yup
 			.string()
 			.required('This field is required')
