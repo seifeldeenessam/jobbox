@@ -14,7 +14,7 @@ const LocationSelector = (props: Props) => {
 
 	return (
 		<div className="box-location">
-			<select className="form-input mr-10 select-active input-industry select2">
+			<select className="form-input mr-10 select-active input-location select">
 				<option value={''}>Location</option>
 				{locations.map((location) => (
 					<option value={location.slug} key={location.id}>

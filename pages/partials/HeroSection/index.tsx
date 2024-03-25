@@ -25,9 +25,11 @@ const HeroSection = (props: Props) => {
 								<div className="form-find mt-40 wow animate__animated animate__fadeIn" data-wow-delay=".2s">
 									<form>
 										<IndustrySelector />
+										<hr />
 										<LocationSelector />
-										<input className="form-input input-keysearch mr-10" type="text" placeholder="Your keyword..." />
-										<button className="btn btn-default btn-find font-sm">Search</button>
+										<hr />
+										<input className="form-input keyword-input mr-10" type="text" placeholder="Your keyword..." />
+										<button className="btn btn-default font-sm search-button">Search</button>
 									</form>
 								</div>
 								<PopularSearches />
