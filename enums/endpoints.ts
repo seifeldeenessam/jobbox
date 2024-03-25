@@ -8,5 +8,8 @@ export enum Endpoints {
 	CATEGORIES = '/categories/',
 
 	// Jobs
-	JOBS = '/jobs/'
+	JOBS = '/jobs/',
+
+	// Locations
+	LOCATIONS = '/locations/'
 }
