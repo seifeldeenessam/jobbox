@@ -1,9 +1,9 @@
-import { UseMutationResult } from '@tanstack/react-query';
 import Link from 'next/link';
 import { useEffect } from 'react';
 import FormField from '../../../../../components/common/FormField';
 import { Routes } from '../../../../../enums/routes';
 import { handleRegister } from '../../../../../services/accounts/handlers';
+import { getFormStatus } from '../../../../../utilities/forms';
 
 type Props = {};
 
@@ -19,33 +19,7 @@ const RegisterForm = (props: Props) => {
 		return () => clearInterval(timeout);
 	}, [mutation.status]);
 
-	const getFormStatus = (status: UseMutationResult['status']) => {
-		if (status === 'idle') {
-			return (
-				<button className="btn btn-brand-1 hover-up w-100" type="submit">
-					Submit & Register
-				</button>
-			);
-		} else if (status === 'pending') {
-			return (
-				<button className="btn btn-brand-1 hover-up w-100" type="submit" disabled>
-					Loading...
-				</button>
-			);
-		} else if (status === 'error') {
-			return (
-				<button className="btn btn-brand-error hover-up w-100" type="submit">
-					{form.formState.errors.root?.message}
-				</button>
-			);
-		} else {
-			return (
-				<button className="btn btn-brand-success hover-up w-100" type="submit">
-					Account Created
-				</button>
-			);
-		}
-	};
+	const status = getFormStatus(mutation.status, 'Submit & Register', form.formState.errors.root?.message!, 'Account Created, Redirecting...');
 
 	return (
 		<form className="login-register needs-validation text-start mt-20" onSubmit={handleSubmit}>
@@ -53,7 +27,11 @@ const RegisterForm = (props: Props) => {
 				<FormField control={form.control} formState={form.formState} {...input} key={input.identifier} />
 			))}
 			<RegisterFormActions />
-			<div className="form-group">{getFormStatus(mutation.status)}</div>
+			<div className="form-group">
+				<button className={`btn ${status.className} hover-up w-100`} type="submit" disabled={status.disabled}>
+					{status.label}
+				</button>
+			</div>
 			<RegisterFormExtraActions />
 		</form>
 	);

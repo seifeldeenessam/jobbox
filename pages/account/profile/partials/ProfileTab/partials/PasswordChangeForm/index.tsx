@@ -1,7 +1,7 @@
-import { UseMutationResult } from '@tanstack/react-query';
 import { useEffect } from 'react';
 import FormField from '../../../../../../../components/common/FormField';
 import { handleChangePassword } from '../../../../../../../services/accounts/handlers';
+import { getFormStatus } from '../../../../../../../utilities/forms';
 
 type Props = {};
 
@@ -19,33 +19,7 @@ const PasswordChangeForm = (props: Props) => {
 		return () => clearInterval(timeout);
 	}, [mutation.status]);
 
-	const getFormStatus = (status: UseMutationResult['status']) => {
-		if (status === 'idle') {
-			return (
-				<button className="btn btn-brand-1 hover-up w-100" type="submit" disabled={!canSubmit}>
-					Change
-				</button>
-			);
-		} else if (status === 'pending') {
-			return (
-				<button className="btn btn-brand-1 hover-up w-100" type="submit" disabled>
-					Loading...
-				</button>
-			);
-		} else if (status === 'error') {
-			return (
-				<button className="btn btn-brand-error hover-up w-100" type="submit" disabled={!canSubmit}>
-					{form.formState.errors.root?.message}
-				</button>
-			);
-		} else {
-			return (
-				<button className="btn btn-brand-success hover-up w-100" type="submit" disabled={!canSubmit}>
-					Password Changed
-				</button>
-			);
-		}
-	};
+	const status = getFormStatus(mutation.status, 'Change', form.formState.errors.root?.message!, 'Password Changed');
 
 	return (
 		<form onSubmit={handleSubmit}>
@@ -55,7 +29,9 @@ const PasswordChangeForm = (props: Props) => {
 					<FormField control={form.control} formState={form.formState} {...input} key={input.identifier} />
 				))}
 			</div>
-			{getFormStatus(mutation.status)}
+			<button className={`btn ${status.className} hover-up w-100`} type="submit" disabled={status.disabled}>
+				{status.label}
+			</button>
 		</form>
 	);
 };
