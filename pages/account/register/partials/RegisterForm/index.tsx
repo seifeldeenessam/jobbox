@@ -79,7 +79,7 @@ const RegisterFormExtraActions = () => {
 		<div className="text-muted text-center">
 			Already have an account? &nbsp;
 			<Link legacyBehavior href={Routes.ACCOUNT_LOGIN}>
-				<a>Login in</a>
+				<a>Login</a>
 			</Link>
 		</div>
 	);

@@ -1524,6 +1524,7 @@ textarea:focus {
 
 .form-group {
   margin-bottom: 1rem;
+  width: 100%;
 }
 .form-group input {
   background: #fff;
@@ -1550,7 +1551,8 @@ label {
   margin-top: 6px !important;
 }
 
-.modal-lg, .modal-xl {
+.modal-lg,
+.modal-xl {
   max-width: 600px;
 }
 
