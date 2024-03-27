@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 import { Routes } from '../../../../../enums/routes';
 import { useAuthStore } from '../../../../../services/accounts/stores';
@@ -12,12 +13,17 @@ type Props = {
 const Header = ({ handleOpen, handleRemove, openClass }: Props) => {
 	const [shouldScroll, setShouldScroll] = useState(false);
 	const { session } = useAuthStore();
+	const router = useRouter();
 
 	useEffect(() => {
 		document.addEventListener('scroll', () => {
 			setShouldScroll(window.scrollY > 100);
 		});
 	}, []);
+
+	const getActiveLink = (link: string) => {
+		return router.pathname === link ? 'active' : undefined;
+	};
 
 	const handleMenuToggler = () => {
 		handleOpen();
@@ -42,147 +48,32 @@ const Header = ({ handleOpen, handleRemove, openClass }: Props) => {
 							<ul className="main-menu">
 								<li>
 									<Link legacyBehavior href={Routes.ROOT}>
-										<a className="active">Home</a>
+										<a className={getActiveLink(Routes.ROOT)}>Home</a>
 									</Link>
-								</li>
-								<li className="has-children">
-									<Link legacyBehavior href="/jobs-grid">
-										<a>Find a Job</a>
-									</Link>
-
-									<ul className="sub-menu">
-										<li>
-											<Link legacyBehavior href="/jobs-grid">
-												<a>Jobs Grid</a>
-											</Link>
-										</li>
-										<li>
-											<Link legacyBehavior href="/jobs-list">
-												<a>Jobs List</a>
-											</Link>
-										</li>
-										<li>
-											<Link legacyBehavior href="/job-details">
-												<a>Jobs Details</a>
-											</Link>
-										</li>
-										<li>
-											<Link legacyBehavior href="/job-details-2">
-												<a>Jobs Details 2 </a>
-											</Link>
-										</li>
-									</ul>
-								</li>
-								<li className="has-children">
-									<Link legacyBehavior href="/companies-grid">
-										<a>Recruiters</a>
-									</Link>
-
-									<ul className="sub-menu">
-										<li>
-											<Link legacyBehavior href="/companies-grid">
-												<a>Recruiters</a>
-											</Link>
-										</li>
-										<li>
-											<Link legacyBehavior href="/company-details">
-												<a>Company Details</a>
-											</Link>
-										</li>
-									</ul>
-								</li>
-								<li className="has-children">
-									<Link legacyBehavior href="/candidates-grid">
-										<a>Candidates</a>
-									</Link>
-
-									<ul className="sub-menu">
-										<li>
-											<Link legacyBehavior href="/candidates-grid">
-												<a>Candidates Grid</a>
-											</Link>
-										</li>
-										<li>
-											<Link legacyBehavior href="/candidate-details">
-												<a>Candidate Details</a>
-											</Link>
-										</li>
-										<li>
-											<Link legacyBehavior href="/candidate-profile">
-												<a>Candidate Profile</a>
-											</Link>
-										</li>
-									</ul>
-								</li>
-								<li className="has-children">
-									<Link legacyBehavior href="/blog-grid">
-										<a>Pages</a>
-									</Link>
-
-									<ul className="sub-menu">
-										<li>
-											<Link legacyBehavior href="/about">
-												<a>About Us</a>
-											</Link>
-										</li>
-										<li>
-											<Link legacyBehavior href="/pricing">
-												<a>Pricing Plan</a>
-											</Link>
-										</li>
-										<li>
-											<Link legacyBehavior href="/contact">
-												<a>Contact Us</a>
-											</Link>
-										</li>
-										<li>
-											<Link legacyBehavior href="/register">
-												<a>Register</a>
-											</Link>
-										</li>
-										<li>
-											<Link legacyBehavior href="/login">
-												<a>Login</a>
-											</Link>
-										</li>
-										<li>
-											<Link legacyBehavior href="/reset-password">
-												<a>Reset Password</a>
-											</Link>
-										</li>
-										<li>
-											<Link legacyBehavior href="/content-protected">
-												<a>Content Protected</a>
-											</Link>
-										</li>
-									</ul>
-								</li>
-								<li className="has-children">
-									<Link legacyBehavior href="/blog-grid">
-										<a>Blog</a>
-									</Link>
-
-									<ul className="sub-menu">
-										<li>
-											<Link legacyBehavior href="/blog-grid">
-												<a>Blog Grid</a>
-											</Link>
-										</li>
-										<li>
-											<Link legacyBehavior href="/blog-grid-2">
-												<a>Blog Grid 2</a>
-											</Link>
-										</li>
-										<li>
-											<Link legacyBehavior href="/blog-details">
-												<a>Blog Single</a>
-											</Link>
-										</li>
-									</ul>
 								</li>
 								<li>
-									<Link legacyBehavior href="/contact">
-										<a>Contact</a>
+									<Link legacyBehavior href={Routes.JOBS}>
+										<a className={getActiveLink(Routes.JOBS)}>Find a Job</a>
+									</Link>
+								</li>
+								<li>
+									<Link legacyBehavior href={Routes.RECRUITERS}>
+										<a className={getActiveLink(Routes.RECRUITERS)}>Recruiters</a>
+									</Link>
+								</li>
+								<li>
+									<Link legacyBehavior href={Routes.CANDIDATES}>
+										<a className={getActiveLink(Routes.CANDIDATES)}>Candidates</a>
+									</Link>
+								</li>
+								<li>
+									<Link legacyBehavior href={Routes.BLOG}>
+										<a className={getActiveLink(Routes.BLOG)}>Blog</a>
+									</Link>
+								</li>
+								<li>
+									<Link legacyBehavior href={Routes.CONTACT}>
+										<a className={getActiveLink(Routes.CONTACT)}>Contact</a>
 									</Link>
 								</li>
 							</ul>

@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { Routes } from '../../../../../enums/routes';
 
 type Props = {};
 
@@ -26,7 +27,7 @@ const Footer = (props: Props) => {
 						<h6 className="mb-20">Resources</h6>
 						<ul className="menu-footer">
 							<li>
-								<a href="#">About us</a>
+								<a href={Routes.ABOUT}>About us</a>
 							</li>
 							<li>
 								<a href="#">Our Team</a>
@@ -35,7 +36,7 @@ const Footer = (props: Props) => {
 								<a href="#">Products</a>
 							</li>
 							<li>
-								<a href="#">Contact</a>
+								<a href={Routes.CONTACT}>Contact</a>
 							</li>
 						</ul>
 					</div>
@@ -46,7 +47,7 @@ const Footer = (props: Props) => {
 								<a href="#">Feature</a>
 							</li>
 							<li>
-								<a href="#">Pricing</a>
+								<a href={Routes.PRICING}>Pricing</a>
 							</li>
 							<li>
 								<a href="#">Credit</a>
