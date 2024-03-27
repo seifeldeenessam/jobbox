@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Routes } from '../../../enums/routes';
+import { Routes } from '../../../../enums/routes';
 
 type Props = {};
 

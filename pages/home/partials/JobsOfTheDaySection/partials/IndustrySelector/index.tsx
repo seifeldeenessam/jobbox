@@ -1,4 +1,4 @@
-import { Job } from '../../../../../services/jobs/types';
+import { Job } from '../../../../../../services/jobs/types';
 
 type Props = {
 	data: Job['industry'][];

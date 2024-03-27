@@ -2,11 +2,11 @@
 import { GetServerSideProps, NextPage } from 'next';
 import Head from 'next/head';
 import { useEffect } from 'react';
-import Layout from '../components/common/Layout';
-import { Cookies } from '../enums/cookies';
-import { useAuthStore } from '../services/accounts/stores';
-import { PublicPageProps } from '../types/app';
-import { Session } from '../types/session';
+import Layout from '../../components/common/Layout';
+import { Cookies } from '../../enums/cookies';
+import { useAuthStore } from '../../services/accounts/stores';
+import { PublicPageProps } from '../../types/app';
+import { Session } from '../../types/session';
 import AnnouncementSection from './partials/AnnouncementSection';
 import CallToActionSection from './partials/CallToActionSection';
 import HeroSection from './partials/HeroSection';

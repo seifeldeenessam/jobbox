@@ -87,7 +87,7 @@ const Header = ({ handleOpen, handleRemove, openClass }: Props) => {
 					<div className="header-right">
 						{session ? (
 							<Link legacyBehavior href={Routes.ACCOUNT_LOGIN}>
-								<a className="btn btn-default btn-shadow ml-40 hover-up">My Profile</a>
+								<a className="btn btn-default btn-shadow ml-40 hover-up">Profile</a>
 							</Link>
 						) : (
 							<div className="block-signin">

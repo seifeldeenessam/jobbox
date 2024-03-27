@@ -1,5 +1,5 @@
 import { useMemo } from 'react';
-import { Job } from '../../../../../services/jobs/types';
+import { Job } from '../../../../../../services/jobs/types';
 import JobCard from './partials/JobCard';
 
 type Props = {

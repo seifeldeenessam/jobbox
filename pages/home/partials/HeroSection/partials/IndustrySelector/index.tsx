@@ -1,4 +1,4 @@
-import { useIndustriesListing } from '../../../../../services/industries/queries';
+import { useIndustriesListing } from '../../../../../../services/industries/queries';
 import Error from './Error';
 import Loading from './Loading';
 

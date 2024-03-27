@@ -1,4 +1,4 @@
-import { useLocationsListing } from '../../../../../services/locations/queries';
+import { useLocationsListing } from '../../../../../../services/locations/queries';
 import Error from './Error';
 import Loading from './Loading';
 

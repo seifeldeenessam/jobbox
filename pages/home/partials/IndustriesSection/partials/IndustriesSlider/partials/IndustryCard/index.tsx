@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Industry } from '../../../../../../../services/industries/types';
+import { Industry } from '../../../../../../../../services/industries/types';
 
 type Props = {
 	data: Industry;
