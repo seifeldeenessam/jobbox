@@ -7,7 +7,7 @@ const NewsletterSection = (props: Props) => {
 				<div className="box-newsletter">
 					<div className="row">
 						<div className="col-xl-3 col-12 text-center d-none d-xl-block">
-							<img src="assets/imgs/template/newsletter-left.png" alt="joxBox" />
+							<img src="/assets/imgs/template/newsletter-left.png" alt="joxBox" />
 						</div>
 						<div className="col-lg-12 col-xl-6 col-12">
 							<h2 className="text-md-newsletter text-center">
@@ -22,7 +22,7 @@ const NewsletterSection = (props: Props) => {
 							</div>
 						</div>
 						<div className="col-xl-3 col-12 text-center d-none d-xl-block">
-							<img src="assets/imgs/template/newsletter-right.png" alt="joxBox" />
+							<img src="/assets/imgs/template/newsletter-right.png" alt="joxBox" />
 						</div>
 					</div>
 				</div>

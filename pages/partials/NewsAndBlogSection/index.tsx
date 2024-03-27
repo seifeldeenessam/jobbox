@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import BlogSlider from '../../../components/sliders/Blog';
+import { Routes } from '../../../enums/routes';
 
 type Props = {};
 
@@ -19,7 +20,7 @@ const NewAndBlogSection = (props: Props) => {
 					</div>
 
 					<div className="text-center">
-						<Link legacyBehavior href="/blog-grid">
+						<Link legacyBehavior href={Routes.BLOG}>
 							<a className="btn btn-brand-1 btn-icon-load mt--30 hover-up">Load More Posts</a>
 						</Link>
 					</div>

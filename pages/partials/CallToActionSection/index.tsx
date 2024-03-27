@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { Routes } from '../../../enums/routes';
 
 type Props = {};
 
@@ -9,10 +10,10 @@ const CallToActionSection = (props: Props) => {
 				<div className="row">
 					<div className="col-lg-6 col-sm-12">
 						<div className="box-image-job">
-							<img className="img-job-1" alt="jobBox" src="assets/imgs/page/homepage1/img-chart.png" />
-							<img className="img-job-2" alt="jobBox" src="assets/imgs/page/homepage1/control-card.png" />
+							<img className="img-job-1" alt="jobBox" src="/assets/imgs/page/homepage1/img-chart.png" />
+							<img className="img-job-2" alt="jobBox" src="/assets/imgs/page/homepage1/control-card.png" />
 							<figure className="wow animate__animated animate__fadeIn">
-								<img alt="jobBox" src="assets/imgs/page/homepage1/img1.png" />
+								<img alt="jobBox" src="/assets/imgs/page/homepage1/img1.png" />
 							</figure>
 						</div>
 					</div>
@@ -27,11 +28,10 @@ const CallToActionSection = (props: Props) => {
 							</div>
 							<div className="mt-40">
 								<div className="wow animate__animated animate__fadeInUp">
-									<Link legacyBehavior href="/jobs-grid">
+									<Link legacyBehavior href={Routes.JOBS}>
 										<a className="btn btn-default">Search Jobs</a>
 									</Link>
-
-									<Link legacyBehavior href="/page-about">
+									<Link legacyBehavior href={Routes.ABOUT}>
 										<a className="btn btn-link">Learn More</a>
 									</Link>
 								</div>

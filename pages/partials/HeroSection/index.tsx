@@ -38,16 +38,16 @@ const HeroSection = (props: Props) => {
 						<div className="col-xl-4 col-lg-12 d-none d-xl-block col-md-6">
 							<div className="banner-imgs">
 								<div className="block-1 shape-1">
-									<img className="img-responsive" alt="jobBox" src="assets/imgs/page/homepage1/banner1.png" />
+									<img className="img-responsive" alt="jobBox" src="/assets/imgs/page/homepage1/banner1.png" />
 								</div>
 								<div className="block-2 shape-2">
-									<img className="img-responsive" alt="jobBox" src="assets/imgs/page/homepage1/banner2.png" />
+									<img className="img-responsive" alt="jobBox" src="/assets/imgs/page/homepage1/banner2.png" />
 								</div>
 								<div className="block-3 shape-3">
-									<img className="img-responsive" alt="jobBox" src="assets/imgs/page/homepage1/icon-top-banner.png" />
+									<img className="img-responsive" alt="jobBox" src="/assets/imgs/page/homepage1/icon-top-banner.png" />
 								</div>
 								<div className="block-4 shape-3">
-									<img className="img-responsive" alt="jobBox" src="assets/imgs/page/homepage1/icon-bottom-banner.png" />
+									<img className="img-responsive" alt="jobBox" src="/assets/imgs/page/homepage1/icon-bottom-banner.png" />
 								</div>
 							</div>
 						</div>
