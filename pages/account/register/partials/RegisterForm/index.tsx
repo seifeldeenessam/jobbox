@@ -24,7 +24,7 @@ const RegisterForm = (props: Props) => {
 	return (
 		<form className="login-register needs-validation text-start mt-20" onSubmit={handleSubmit}>
 			{inputs.map((input) => (
-				<FormField control={form.control} formState={form.formState} {...input} key={input.identifier} />
+				<FormField control={form.control} watch={form.watch} setValue={form.setValue} formState={form.formState} {...input} key={input.identifier} />
 			))}
 			<RegisterFormActions />
 			<div className="form-group">

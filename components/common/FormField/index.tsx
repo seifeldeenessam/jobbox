@@ -1,6 +1,7 @@
 import { ReactNode } from 'react';
 import { FormInputTypes } from '../../../enums/forms';
 import { FormField, FormUtilities } from '../../../types/forms';
+import ButtonGroupField from './partials/ButtonGroupField';
 import PasswordField from './partials/PasswordField';
 import TextField from './partials/TextField';
 
@@ -12,6 +13,7 @@ const FormField = (props: Props) => {
 	const renderField = (): ReactNode => {
 		if (type === FormInputTypes.TEXT || type === FormInputTypes.TEXTAREA) return <TextField {...props} />;
 		if (type === FormInputTypes.PASSWORD) return <PasswordField {...props} />;
+		if (type === FormInputTypes.BUTTON_GROUP) return <ButtonGroupField {...props} />;
 
 		return null;
 	};
