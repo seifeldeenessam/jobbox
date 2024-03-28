@@ -20,6 +20,7 @@ export const handleRegister = () => {
 
 	const onSubmit: SubmitHandler<RegisterFrom> = async (data) => {
 		const payload: RegisterPayload = {
+			status: data.status,
 			username: data.username,
 			email: data.email,
 			password: data.password

@@ -5,6 +5,14 @@ import { RegisterFrom } from '../types';
 
 export const REGISTER_FORM_FIELDS: FormField[] = [
 	{
+		identifier: 'status',
+		type: FormInputTypes.BUTTON_GROUP,
+		options: [
+			{ id: 1, value: 'Recruiter' },
+			{ id: 2, value: 'Candidate' }
+		]
+	},
+	{
 		identifier: 'username',
 		type: FormInputTypes.TEXT,
 		label: 'Username',
