@@ -1950,8 +1950,6 @@ label {
   font-size: 12px;
   color: #a0abb8;
   display: inline-block;
-  padding: 0px 0px 0px 20px;
-  background: url(../imgs/template/icons/location.svg) no-repeat 0px 6px;
   line-height: 24px;
 }
 
@@ -2193,7 +2191,6 @@ label {
   color: #3c65f5;
 }
 .card-grid-2 .card-grid-2-image-left .right-info .location-small {
-  background: url(../imgs/template/icons/location.svg) no-repeat 0px 5px;
   display: inline-block;
   padding: 0px 0px 0px 20px;
   font-size: 12px;
@@ -3334,7 +3331,7 @@ ul li:last-child .card-list-4 {
   box-shadow: 0px 18px 40px rgba(25, 15, 9, 0.1);
 }
 .header.stick {
-  padding: 14px 0px;
+  padding: 15px 20px;
 }
 .header.header-2 {
   background-color: #f8faff;
@@ -3377,13 +3374,18 @@ ul li:last-child .card-list-4 {
 .header-brand-2 .main-menu > li > a:hover {
   color: #ffffff;
 }
-.header-brand-2 .main-menu > li > a:hover::before, .header-brand-2 .main-menu > li > a .active::before {
+.header-brand-2 .main-menu > li > a:hover::before,
+.header-brand-2 .main-menu > li > a .active::before {
   background-color: #ffffff;
 }
-.header-brand-2 .main-menu li a, .header-brand-2 .main-menu li a.active {
+.header-brand-2 .main-menu li a,
+.header-brand-2 .main-menu li a.active {
   color: #ffffff;
 }
-.header-brand-2 .main-menu li a:hover::before, .header-brand-2 .main-menu li a .active::before, .header-brand-2 .main-menu li a.active:hover::before, .header-brand-2 .main-menu li a.active .active::before {
+.header-brand-2 .main-menu li a:hover::before,
+.header-brand-2 .main-menu li a .active::before,
+.header-brand-2 .main-menu li a.active:hover::before,
+.header-brand-2 .main-menu li a.active .active::before {
   background-color: #ffffff;
 }
 .header-brand-2 .main-menu li a {

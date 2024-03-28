@@ -648,7 +648,6 @@ const BlogPage: NextPage<PublicPageProps> = ({ session }) => {
 													</figure>
 													<div className="content">
 														<h5>
-															{' '}
 															<a href="/blog-details">How to Land Your Dream Marketing Job</a>
 														</h5>
 														<div className="post-meta text-muted d-flex align-items-center mb-15">
