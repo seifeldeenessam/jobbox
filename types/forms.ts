@@ -16,6 +16,7 @@ export type FormField = {
 	placeholder?: string;
 	required?: boolean;
 	disabled?: boolean;
+	options?: Record<string, any>[];
 };
 
 export type FormValidation<F> = {

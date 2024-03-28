@@ -1,8 +1,9 @@
 export enum FormInputTypes {
 	TEXT = 'text',
+	PASSWORD = 'password',
+	BUTTON_GROUP = 'button-group',
 	EMAIL = 'email',
 	PHONE = 'phone',
-	PASSWORD = 'password',
 	NUMBER = 'number',
 	DATE = 'date',
 	TIME = 'time',
