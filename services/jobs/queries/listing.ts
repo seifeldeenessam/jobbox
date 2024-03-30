@@ -7,10 +7,13 @@ import createAxiosInstance from '../../../utilities/api';
 import { Job } from '../types';
 
 const listing = async (context: QueryFunctionContext) => {
-	const { req, res } = context.queryKey[1] as QueryOptions;
+	const { req, res, limit, offset } = context.queryKey[1] as QueryOptions;
 	const api = createAxiosInstance({ req, res });
 
 	let url: string = Endpoints.JOBS;
+
+	if (limit) url += `?limit=${limit}`;
+	if (offset) url += `&offset=${offset}`;
 
 	try {
 		const response = await api.get(url);

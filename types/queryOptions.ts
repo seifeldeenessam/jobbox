@@ -5,4 +5,7 @@ export type QueryParams = {
 	res?: GetServerSidePropsContext['res'];
 };
 
-export type QueryOptions = QueryParams & {};
+export type QueryOptions = QueryParams & {
+	limit?: number;
+	offset?: number;
+};
