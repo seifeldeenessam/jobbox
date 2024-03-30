@@ -1,12 +1,15 @@
 import { useJobsListing } from '../../../../../../services/jobs/queries';
+import { QueryOptions } from '../../../../../../types/queryOptions';
 import Error from './Error';
 import Loading from './Loading';
 import JobCard from './partials/JobCard';
 
-type Props = {};
+type Props = {
+	filters: QueryOptions;
+};
 
-const Listing = (props: Props) => {
-	const { isLoading, isError, data } = useJobsListing({ limit: 5 });
+const Listing = ({ filters }: Props) => {
+	const { isLoading, isError, data } = useJobsListing(filters);
 
 	if (isLoading) return <Loading />;
 	if (isError || !data || !data.results.length) return <Error />;
