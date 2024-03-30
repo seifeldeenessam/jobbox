@@ -10,9 +10,15 @@ export enum Endpoints {
 	// Industries
 	INDUSTRIES = '/industries/',
 
+	// Locations
+	LOCATIONS = '/locations/',
+
 	// Jobs
 	JOBS = '/jobs/',
 
-	// Locations
-	LOCATIONS = '/locations/'
+	// Recruiters
+	RECRUITERS = '/recruiters/',
+
+	// Candidates
+	CANDIDATES_PROFILES = '/candidates/candidate-profile/'
 }
