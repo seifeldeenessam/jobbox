@@ -5319,7 +5319,7 @@ select {
 }
 
 .text-sortby {
-  color: #A0ABB8;
+  color: #a0abb8;
   font-weight: 500;
   font-size: 12px;
   display: inline-block;
@@ -5361,17 +5361,17 @@ select {
   line-height: 16px !important;
 }
 
-.paginations {
+.pagination {
   margin: 15px 0px 10px 0px;
 }
-.paginations .pager {
+.pagination .pager {
   padding: 0px;
 }
-.paginations .pager li {
+.pagination .pager li {
   display: inline-block;
   vertical-align: middle;
 }
-.paginations .pager li a {
+.pagination .pager li a {
   display: block;
   padding: 10px 8px;
   font-weight: 600;
@@ -5382,13 +5382,13 @@ select {
   font-size: 18px;
   font-weight: bold;
 }
-.paginations .pager li a:hover {
+.pagination .pager li a:hover {
   color: #05264E;
 }
-.paginations .pager li a.active {
+.pagination .pager li a.active {
   color: #05264E;
 }
-.paginations .pager li a.pager-number.active::before {
+.pagination .pager li a.pager-number.active::before {
   content: "";
   height: 28px;
   width: 28px;
@@ -5400,7 +5400,7 @@ select {
   top: 8px;
   left: -1px;
 }
-.paginations .pager li a.pager-number:hover::before {
+.pagination .pager li a.pager-number:hover::before {
   content: "";
   height: 28px;
   width: 28px;
@@ -5412,22 +5412,22 @@ select {
   top: 8px;
   left: -1px;
 }
-.paginations .pager li .pager-prev {
+.pagination .pager li .pager-prev {
   background: url(../imgs/template/icons/page-prev.svg) no-repeat center;
   height: 48px;
   width: 48px;
   margin-right: 15px;
 }
-.paginations .pager li .pager-prev:hover {
+.pagination .pager li .pager-prev:hover {
   background: url(../imgs/template/icons/page-prev-hover.svg) no-repeat center;
 }
-.paginations .pager li .pager-next {
+.pagination .pager li .pager-next {
   background: url(../imgs/template/icons/page-next.svg) no-repeat center;
   height: 48px;
   width: 48px;
   margin-left: 15px;
 }
-.paginations .pager li .pager-next:hover {
+.pagination .pager li .pager-next:hover {
   background: url(../imgs/template/icons/page-next-hover.svg) no-repeat center;
 }
 
@@ -5761,13 +5761,13 @@ select {
   .text-sortby {
     display: none;
   }
-  .paginations .pager li .pager-prev {
+  .pagination .pager li .pager-prev {
     margin-right: 0px;
   }
-  .paginations .pager li .pager-next {
+  .pagination .pager li .pager-next {
     margin-left: 0px;
   }
-  .paginations .pager li a {
+  .pagination .pager li a {
     line-height: 24px;
     font-size: 16px;
   }
