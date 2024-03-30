@@ -1,8 +1,8 @@
-import { FilteringOptions } from '../../types';
+import { QueryOptions } from '../../../../../../types/queryOptions';
 import ShowSelect from './partials/ShowSelect';
 
 type Props = {
-	filters: FilteringOptions;
+	filters: QueryOptions;
 	handleFilters: (filter: string, value: string | number) => void;
 	handleReset: () => void;
 };
@@ -27,7 +27,7 @@ const Filters = ({ filters, handleFilters, handleReset }: Props) => {
 						Reset
 					</button>
 					<div className="select-box">
-						<ShowSelect handleFilters={handleFilters} value={filters.limit} />
+						<ShowSelect handleFilters={handleFilters} value={filters.limit || 8} />
 					</div>
 				</div>
 			</div>

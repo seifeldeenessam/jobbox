@@ -1,12 +1,15 @@
 import { useRecruitersListing } from '../../../../../../services/recruiters/queries';
+import { QueryOptions } from '../../../../../../types/queryOptions';
 import Error from './Error';
 import Loading from './Loading';
 import RecruiterCard from './partials/RecruiterCard';
 
-type Props = {};
+type Props = {
+	filters: QueryOptions;
+};
 
-const Listing = (props: Props) => {
-	const { isLoading, isError, data } = useRecruitersListing({ limit: 5 });
+const Listing = ({ filters }: Props) => {
+	const { isLoading, isError, data } = useRecruitersListing(filters);
 
 	if (isLoading) return <Loading />;
 	if (isError || !data || !data.results.length) return <Error />;
