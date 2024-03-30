@@ -1,7 +1,8 @@
 export type Job = {
 	id: number;
 	recruiter: JobRecruiter;
-	industry: JobIndustry;
+	industry: JobField;
+	field: JobField;
 	position: JobPosition;
 	work_mode: JobWorkMode;
 	name: string;
@@ -21,13 +22,30 @@ export type Job = {
 	date_update: string;
 };
 
-type JobRecruiter = {
+export type JobField = {
+	id: number;
+	name: string;
+	industrie?: JobField;
+	field_image?: string;
+	slug: string;
+	date: string;
+	date_update: string;
+	job_count: number;
+	industrie_image?: string;
+};
+
+export type JobPosition = {
+	id: number;
+	position_type: string;
+};
+
+export type JobRecruiter = {
 	id: number;
 	company_account: number;
 	name: string;
 	company_logo: string;
 	country: string;
-	industry: JobIndustry;
+	industry: JobField;
 	company_size: string;
 	address: string;
 	phone: string;
@@ -40,22 +58,7 @@ type JobRecruiter = {
 	open_jobs_count: number;
 };
 
-type JobIndustry = {
-	id: number;
-	name: string;
-	category_image: string;
-	slug: string;
-	date: string;
-	date_update: string;
-	job_count: number;
-};
-
-type JobPosition = {
-	id: number;
-	position_type: string;
-};
-
-type JobWorkMode = {
+export type JobWorkMode = {
 	id: number;
 	work_mode_type: string;
 };
