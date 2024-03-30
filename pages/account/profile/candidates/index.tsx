@@ -2,22 +2,22 @@ import { NextPage } from 'next';
 import { useState } from 'react';
 import ProfileLayout from '../../../../components/common/ProfileLayout';
 import BrandSlider from '../../../../components/sliders/BrandSlider';
+import { QueryOptions } from '../../../../types/queryOptions';
 import Filters from './partials/Filters';
 import Listing from './partials/Listing';
 import Pagination from './partials/Pagination';
-import { FilteringOptions } from './types';
 
 type Props = {};
 
 const CandidatesPage: NextPage<Props> = () => {
-	const [filters, setFilters] = useState<FilteringOptions>({ letter: '', limit: 8, offset: 0 });
+	const [filters, setFilters] = useState<QueryOptions>({ limit: 8 });
 
 	const handleFilters = (filter: string, value: string | number) => {
 		setFilters((prev) => ({ ...prev, [filter]: value }));
 	};
 
 	const handleReset = () => {
-		setFilters({ letter: '', limit: 8, offset: 0 });
+		setFilters({});
 	};
 
 	return (
@@ -29,7 +29,7 @@ const CandidatesPage: NextPage<Props> = () => {
 							<div className="panel-white mb-30">
 								<div className="box-padding">
 									<Filters filters={filters} handleFilters={handleFilters} handleReset={handleReset} />
-									<Listing />
+									<Listing filters={filters} />
 									<Pagination />
 								</div>
 							</div>
