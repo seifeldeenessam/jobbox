@@ -8,4 +8,5 @@ export type QueryParams = {
 export type QueryOptions = QueryParams & {
 	limit?: number;
 	offset?: number;
+	letter?: string;
 };
