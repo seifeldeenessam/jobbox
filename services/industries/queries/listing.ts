@@ -7,13 +7,18 @@ import createAxiosInstance from '../../../utilities/api';
 import { Industry } from '../types';
 
 const listing = async (context: QueryFunctionContext) => {
-	const { req, res, limit, offset } = context.queryKey[1] as QueryOptions;
+	const { req, res, ...options } = context.queryKey[1] as QueryOptions;
 	const api = createAxiosInstance({ req, res });
 
 	let url: string = Endpoints.INDUSTRIES;
 
-	if (limit) url += `?limit=${limit}`;
-	if (offset) url += `&offset=${offset}`;
+	if (Object.keys(options).length) {
+		const query = Object.entries(options)
+			.map((option) => `${encodeURIComponent(option[0])}=${encodeURIComponent(option[1])}`)
+			.join('&');
+
+		url = `${url}?${query}`;
+	}
 
 	try {
 		const response = await api.get(url);
