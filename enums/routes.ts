@@ -6,6 +6,9 @@ export enum Routes {
 	ACCOUNT_REGISTER = '/account/register',
 	ACCOUNT_RESET_PASSWORD = '/account/reset-password',
 	ACCOUNT_PROFILE = '/account/profile',
+	ACCOUNT_PROFILE_JOBS = '/account/profile/jobs',
+	ACCOUNT_PROFILE_RECRUITERS = '/account/profile/recruiters',
+	ACCOUNT_PROFILE_CANDIDATES = '/account/profile/candidates',
 
 	// Jobs
 	JOBS = '/jobs',

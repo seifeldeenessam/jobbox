@@ -3,6 +3,8 @@ import { useRouter } from 'next/router';
 import { useState } from 'react';
 import { buildStyles, CircularProgressbar } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
+import { handleLogout } from '../../../../../services/accounts/handlers';
+import { links } from './static';
 
 type Props = {};
 
@@ -19,65 +21,23 @@ const Sidebar = (props: Props) => {
 				<a className={`btn btn-expanded ${isToggled ? 'btn-collapsed' : ''}`} onClick={toggleTrueFalse} />
 				<nav className="nav-main-menu">
 					<ul className="main-menu">
+						{links.map((link) => {
+							const active: boolean = router.pathname === link.path;
+
+							return (
+								<li key={link.id}>
+									<Link className={active ? 'active' : undefined} href={link.path}>
+										<img src={`/dashboard-assets/imgs/page/dashboard/${link.icon}`} alt={link.label} />
+										<span className="name">{link.label}</span>
+									</Link>
+								</li>
+							);
+						})}
 						<li>
-							<Link className={router.pathname == '/' ? 'dashboard2 active' : 'dashboard2'} href="/">
-								<img src="/dashboard-assets/imgs/page/dashboard/dashboard.svg" alt="jobBox" />
-								<span className="name">Dashboard</span>
-							</Link>
-						</li>
-						<li>
-							<Link className={router.pathname == '/candidates' ? 'dashboard2 active' : 'dashboard2'} href="/candidates">
-								<img src="/dashboard-assets/imgs/page/dashboard/candidates.svg" alt="jobBox" />
-								<span className="name">Candidates</span>
-							</Link>
-						</li>
-						<li>
-							<Link className={router.pathname == '/recruiters' ? 'dashboard2 active' : 'dashboard2'} href="/recruiters">
-								<img src="/dashboard-assets/imgs/page/dashboard/recruiters.svg" alt="jobBox" />
-								<span className="name">Recruiters</span>
-							</Link>
-						</li>
-						<li>
-							<Link className={router.pathname == '/my-job-grid' ? 'dashboard2 active' : 'dashboard2'} href="/my-job-grid">
-								<img src="/dashboard-assets/imgs/page/dashboard/jobs.svg" alt="jobBox" />
-								<span className="name">My Jobs</span>
-							</Link>
-						</li>
-						<li>
-							<Link className={router.pathname == '/my-tasks-list' ? 'dashboard2 active' : 'dashboard2'} href="/my-tasks-list">
-								<img src="/dashboard-assets/imgs/page/dashboard/tasks.svg" alt="jobBox" />
-								<span className="name">Tasks List</span>
-							</Link>
-						</li>
-						<li>
-							<Link className={router.pathname == '/profile' ? 'dashboard2 active' : 'dashboard2'} href="/profile">
-								<img src="/dashboard-assets/imgs/page/dashboard/profiles.svg" alt="jobBox" />
-								<span className="name">My Profiles</span>
-							</Link>
-						</li>
-						<li>
-							<Link className={router.pathname == '/my-resume' ? 'dashboard2 active' : 'dashboard2'} href="/my-resume">
-								<img src="/dashboard-assets/imgs/page/dashboard/cv-manage.svg" alt="jobBox" />
-								<span className="name">CV Manage</span>
-							</Link>
-						</li>
-						<li>
-							<Link className={router.pathname == '/settings' ? 'dashboard2 active' : 'dashboard2'} href="/settings">
-								<img src="/dashboard-assets/imgs/page/dashboard/settings.svg" alt="jobBox" />
-								<span className="name">Setting</span>
-							</Link>
-						</li>
-						<li>
-							<Link className={router.pathname == '/authentication' ? 'dashboard2 active' : 'dashboard2'} href="/authentication">
-								<img src="/dashboard-assets/imgs/page/dashboard/authentication.svg" alt="jobBox" />
-								<span className="name">Authentication</span>
-							</Link>
-						</li>
-						<li>
-							<Link className={router.pathname == '/login' ? 'dashboard2 active' : 'dashboard2'} href="/login">
+							<button onClick={handleLogout}>
 								<img src="/dashboard-assets/imgs/page/dashboard/logout.svg" alt="jobBox" />
 								<span className="name">Logout</span>
-							</Link>
+							</button>
 						</li>
 					</ul>
 				</nav>
