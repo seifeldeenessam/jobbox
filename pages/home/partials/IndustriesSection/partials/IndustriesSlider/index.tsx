@@ -1,7 +1,8 @@
-import SwiperCore, { Navigation } from 'swiper';
+import { useIndustriesListing } from '@/services/industries/queries';
+import SwiperCore from 'swiper';
 import 'swiper/css/grid';
+import { Navigation } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { useIndustriesListing } from '../../../../../../services/industries/queries';
 import Error from './Error';
 import Loading from './Loading';
 import IndustryCard from './partials/IndustryCard';

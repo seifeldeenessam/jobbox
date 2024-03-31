@@ -1,6 +1,6 @@
+import { useJobsListing } from '@/services/jobs/queries';
 import dynamic from 'next/dynamic';
 import { useEffect, useMemo, useState } from 'react';
-import { useJobsListing } from '../../../../services/jobs/queries';
 import Error from './Error';
 import Loading from './Loading';
 import JobsGrid from './partials/JobsGrid';

@@ -1,4 +1,4 @@
-import { QueryOptions } from '../../../../../../types/queryOptions';
+import { QueryOptions } from '@/types/queries';
 import ShowSelect from './partials/ShowSelect';
 
 type Props = {

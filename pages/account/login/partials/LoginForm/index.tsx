@@ -1,9 +1,9 @@
+import FormField from '@/components/common/FormField';
+import { Routes } from '@/enums/routes';
+import { handleLogin } from '@/services/accounts/handlers';
+import { getFormStatus } from '@/utilities/forms';
 import Link from 'next/link';
 import { useEffect } from 'react';
-import FormField from '../../../../../components/common/FormField';
-import { Routes } from '../../../../../enums/routes';
-import { handleLogin } from '../../../../../services/accounts/handlers';
-import { getFormStatus } from '../../../../../utilities/forms';
 
 type Props = {};
 

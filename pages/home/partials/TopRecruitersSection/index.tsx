@@ -1,4 +1,4 @@
-import TopRecruitersSlider from '../../../../components/sliders/TopRecruitersSlider';
+import TopRecruitersSlider from '@/components/sliders/TopRecruitersSlider';
 
 type Props = {};
 

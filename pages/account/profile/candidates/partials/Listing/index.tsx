@@ -1,5 +1,5 @@
-import { useCandidatesListing } from '../../../../../../services/candidates/queries';
-import { QueryOptions } from '../../../../../../types/queryOptions';
+import { useCandidatesListing } from '@/services/candidates/queries';
+import { QueryOptions } from '@/types/queries';
 import Error from './Error';
 import Loading from './Loading';
 import CandidateCard from './partials/CandidateCard';

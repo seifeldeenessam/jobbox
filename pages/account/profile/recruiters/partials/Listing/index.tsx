@@ -1,5 +1,5 @@
-import { useRecruitersListing } from '../../../../../../services/recruiters/queries';
-import { QueryOptions } from '../../../../../../types/queryOptions';
+import { useRecruitersListing } from '@/services/recruiters/queries';
+import { QueryOptions } from '@/types/queries';
 import Error from './Error';
 import Loading from './Loading';
 import RecruiterCard from './partials/RecruiterCard';

@@ -1,5 +1,5 @@
-import { useCandidatesListing } from '../../../../../../../services/candidates/queries';
-import { Candidate } from '../../../../../../../services/candidates/types';
+import { useCandidatesListing } from '@/services/candidates/queries';
+import { Candidate } from '@/services/candidates/types';
 import Error from './Error';
 import Loading from './Loading';
 

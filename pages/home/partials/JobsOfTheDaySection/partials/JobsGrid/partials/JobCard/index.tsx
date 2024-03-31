@@ -1,6 +1,6 @@
+import { Job } from '@/services/jobs/types';
+import { getTimePassed } from '@/utilities/dates';
 import Link from 'next/link';
-import { Job } from '../../../../../../../../services/jobs/types';
-import { getTimePassed } from '../../../../../../../../utilities/dates';
 
 type Props = {
 	job: Job;

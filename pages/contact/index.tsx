@@ -1,15 +1,15 @@
+import Layout from '@/components/common/Layout';
+import BlogSlider from '@/components/sliders/Blog';
+import TestimonialSlider1 from '@/components/sliders/Testimonial1';
+import { Cookies } from '@/enums/cookies';
+import { useAuthStore } from '@/services/accounts/stores';
+import { PublicPageProps } from '@/types/app';
 import { CookieValueTypes } from 'cookies-next';
 import { Session } from 'inspector';
 import { GetServerSideProps, NextPage } from 'next';
 import Head from 'next/head';
 import Link from 'next/link';
 import { useEffect } from 'react';
-import Layout from '../../components/common/Layout';
-import BlogSlider from '../../components/sliders/Blog';
-import TestimonialSlider1 from '../../components/sliders/Testimonial1';
-import { Cookies } from '../../enums/cookies';
-import { useAuthStore } from '../../services/accounts/stores';
-import { PublicPageProps } from '../../types/app';
 
 export const getServerSideProps: GetServerSideProps = async ({ req, res, locale }) => {
 	const { getCookie } = await import('cookies-next');

@@ -1,9 +1,9 @@
+import FormField from '@/components/common/FormField';
+import { Routes } from '@/enums/routes';
+import { handleResetPassword } from '@/services/accounts/handlers';
+import { getFormStatus } from '@/utilities/forms';
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
-import FormField from '../../../../../components/common/FormField';
-import { Routes } from '../../../../../enums/routes';
-import { handleResetPassword } from '../../../../../services/accounts/handlers';
-import { getFormStatus } from '../../../../../utilities/forms';
 
 type Props = {
 	token: string;

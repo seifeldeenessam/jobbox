@@ -1,7 +1,7 @@
+import FormField from '@/components/common/FormField';
+import { handleResetPassword } from '@/services/accounts/handlers';
+import { getFormStatus } from '@/utilities/forms';
 import { Dispatch, SetStateAction, useEffect } from 'react';
-import FormField from '../../../../../components/common/FormField';
-import { handleResetPassword } from '../../../../../services/accounts/handlers';
-import { getFormStatus } from '../../../../../utilities/forms';
 
 type Props = {
 	onSuccess: Dispatch<SetStateAction<'send_otp' | 'validate_otp' | 'reset_password'>>;

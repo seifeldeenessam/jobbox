@@ -1,6 +1,6 @@
+import BlogSlider from '@/components/sliders/Blog';
+import { Routes } from '@/enums/routes';
 import Link from 'next/link';
-import BlogSlider from '../../../../components/sliders/Blog';
-import { Routes } from '../../../../enums/routes';
 
 type Props = {};
 

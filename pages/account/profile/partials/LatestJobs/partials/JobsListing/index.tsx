@@ -1,5 +1,5 @@
-import { useJobsListing } from '../../../../../../../services/jobs/queries';
-import { Job } from '../../../../../../../services/jobs/types';
+import { useJobsListing } from '@/services/jobs/queries';
+import { Job } from '@/services/jobs/types';
 import Error from './Error';
 import Loading from './Loading';
 

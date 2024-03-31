@@ -1,8 +1,8 @@
+import ProfileLayout from '@/components/common/ProfileLayout';
+import BrandSlider from '@/components/sliders/BrandSlider';
+import { QueryOptions } from '@/types/queries';
 import { NextPage } from 'next';
 import { useState } from 'react';
-import ProfileLayout from '../../../../components/common/ProfileLayout';
-import BrandSlider from '../../../../components/sliders/BrandSlider';
-import { QueryOptions } from '../../../../types/queryOptions';
 import Filters from './partials/Filters';
 import Listing from './partials/Listing';
 import Pagination from './partials/Pagination';

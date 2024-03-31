@@ -1,10 +1,10 @@
+import Layout from '@/components/common/Layout';
+import { Cookies } from '@/enums/cookies';
+import { Routes } from '@/enums/routes';
+import { Session } from '@/types/session';
 import { CookieValueTypes } from 'cookies-next';
 import { GetServerSideProps, NextPage } from 'next';
 import Head from 'next/head';
-import Layout from '../../../components/common/Layout';
-import { Cookies } from '../../../enums/cookies';
-import { Routes } from '../../../enums/routes';
-import { Session } from '../../../types/session';
 import LoginForm from './partials/LoginForm';
 import OAuthButtons from './partials/OAuthButtons';
 

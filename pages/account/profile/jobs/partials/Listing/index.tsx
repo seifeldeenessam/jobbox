@@ -1,5 +1,5 @@
-import { useJobsListing } from '../../../../../../services/jobs/queries';
-import { QueryOptions } from '../../../../../../types/queryOptions';
+import { useJobsListing } from '@/services/jobs/queries';
+import { QueryOptions } from '@/types/queries';
 import Error from './Error';
 import Loading from './Loading';
 import JobCard from './partials/JobCard';

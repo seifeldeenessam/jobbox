@@ -1,5 +1,5 @@
-import { useRecruitersListing } from '../../../../../../../services/recruiters/queries';
-import { Recruiter } from '../../../../../../../services/recruiters/types';
+import { useRecruitersListing } from '@/services/recruiters/queries';
+import { Recruiter } from '@/services/recruiters/types';
 import Error from './Error';
 import Loading from './Loading';
 

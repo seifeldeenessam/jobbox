@@ -1,12 +1,12 @@
+import Layout from '@/components/common/Layout';
+import { Cookies } from '@/enums/cookies';
+import { Routes } from '@/enums/routes';
+import { Session } from '@/types/session';
 import { CookieValueTypes } from 'cookies-next';
 import { GetServerSideProps, NextPage } from 'next';
 import dynamic from 'next/dynamic';
 import Head from 'next/head';
 import { useState } from 'react';
-import Layout from '../../../components/common/Layout';
-import { Cookies } from '../../../enums/cookies';
-import { Routes } from '../../../enums/routes';
-import { Session } from '../../../types/session';
 import ResetPasswordForm from './partials/ResetPasswordForm';
 import ValidateTokenForm from './partials/ValidateTokenForm';
 
