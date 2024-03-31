@@ -5,14 +5,6 @@ import { RegisterFrom } from '../types';
 
 export const REGISTER_FORM_FIELDS: FormField[] = [
 	{
-		identifier: 'status',
-		type: FormInputTypes.BUTTON_GROUP,
-		options: [
-			{ id: 1, value: 'Recruiter' },
-			{ id: 2, value: 'Candidate' }
-		]
-	},
-	{
 		identifier: 'username',
 		type: FormInputTypes.TEXT,
 		label: 'Username',
@@ -32,6 +24,16 @@ export const REGISTER_FORM_FIELDS: FormField[] = [
 		label: 'Password',
 		placeholder: '************',
 		required: true
+	},
+	{
+		identifier: 'status',
+		type: FormInputTypes.SELECT,
+		label: 'Account Type',
+		placeholder: 'Select account type',
+		options: [
+			{ id: 1, value: 'Recruiter' },
+			{ id: 2, value: 'Candidate' }
+		]
 	}
 ];
 
@@ -43,6 +45,7 @@ export const REGISTER_FORM_VALIDATION: FormValidation<RegisterFrom> = {
 		password: yup
 			.string()
 			.required('This field is required')
-			.matches(/^.*(?=.{8,})((?=.*[!@#$%^&*()\-_=+{};:,<.>]){1})(?=.*\d)((?=.*[a-z]){1})((?=.*[A-Z]){1}).*$/, 'Week password')
+			.matches(/^.*(?=.{8,})((?=.*[!@#$%^&*()\-_=+{};:,<.>]){1})(?=.*\d)((?=.*[a-z]){1})((?=.*[A-Z]){1}).*$/, 'Week password'),
+		status: yup.string().required('This field is required')
 	})
 };
