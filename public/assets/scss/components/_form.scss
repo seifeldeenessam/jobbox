@@ -87,6 +87,7 @@ input[type='tel'] {
 	padding-left: 20px;
 	font-size: $font-sm;
 	width: 100%;
+
 	&:focus {
 		border: 1px solid $color-border-3;
 	}
@@ -118,6 +119,7 @@ textarea {
 	font-size: $font-md;
 	width: 100%;
 	min-height: 250px;
+
 	&:focus {
 		background: transparent;
 		border: 1px solid $border-color-1-hover;
@@ -137,6 +139,7 @@ textarea {
 			background-color: $color-brand;
 			border-radius: 10px;
 			font-family: $font-heading;
+
 			&:hover {
 				background-color: $color-brand-2 !important;
 			}
@@ -147,7 +150,8 @@ textarea {
 .form-group {
 	margin-bottom: 1rem;
 	width: 100%;
-	input {
+	input,
+	select {
 		background: #fff;
 		border: 1px solid $border-color;
 		height: 53px;
@@ -156,6 +160,7 @@ textarea {
 		padding-left: 20px;
 		font-size: $font-md;
 		width: 100%;
+
 		&:focus {
 			border-color: $border-color-1-hover;
 		}

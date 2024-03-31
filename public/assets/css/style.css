@@ -1504,7 +1504,8 @@ textarea:focus {
   margin-bottom: 1rem;
   width: 100%;
 }
-.form-group input {
+.form-group input,
+.form-group select {
   background: #fff;
   border: 1px solid #e0e6f6;
   height: 53px;
@@ -1514,10 +1515,12 @@ textarea:focus {
   font-size: 16px;
   width: 100%;
 }
-.form-group input:focus {
+.form-group input:focus,
+.form-group select:focus {
   border-color: #b4c0e0;
 }
-.form-group input.form-icons {
+.form-group input.form-icons,
+.form-group select.form-icons {
   padding-left: 42px;
 }
 
