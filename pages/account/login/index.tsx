@@ -6,7 +6,6 @@ import { CookieValueTypes } from 'cookies-next';
 import { GetServerSideProps, NextPage } from 'next';
 import Head from 'next/head';
 import LoginForm from './partials/LoginForm';
-import OAuthButtons from './partials/OAuthButtons';
 
 export const getServerSideProps: GetServerSideProps = async ({ req, res, locale }) => {
 	const { getCookie } = await import('cookies-next');
@@ -34,7 +33,11 @@ const LoginPage: NextPage = () => {
 					<div className="container">
 						<div className="row login-register-cover">
 							<div className="col-lg-4 col-md-6 col-sm-12 mx-auto">
-								<OAuthButtons />
+								<div className="text-center">
+									<p className="font-sm text-brand-2">Welcome back!</p>
+									<h2 className="mt-10 mb-5 text-brand-1">Member Login</h2>
+									<p className="font-sm text-muted mb-30">Access to all features. No credit card required.</p>
+								</div>
 								<LoginForm />
 							</div>
 							<div className="img-1 d-none d-lg-block">

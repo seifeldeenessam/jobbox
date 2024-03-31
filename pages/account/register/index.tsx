@@ -5,7 +5,6 @@ import { Session } from '@/types/session';
 import { CookieValueTypes } from 'cookies-next';
 import { GetServerSideProps, NextPage } from 'next';
 import Head from 'next/head';
-import OAuthButtons from './partials/OAuthButtons';
 import RegisterForm from './partials/RegisterForm';
 
 export const getServerSideProps: GetServerSideProps = async ({ req, res, locale }) => {
@@ -34,7 +33,11 @@ const RegisterPage: NextPage = () => {
 					<div className="container">
 						<div className="row login-register-cover">
 							<div className="col-lg-4 col-md-6 col-sm-12 mx-auto">
-								<OAuthButtons />
+								<div className="text-center">
+									<p className="font-sm text-brand-2">Register </p>
+									<h2 className="mt-10 mb-5 text-brand-1">Start for free Today</h2>
+									<p className="font-sm text-muted mb-30">Access to all features. No credit card required.</p>
+								</div>
 								<RegisterForm />
 							</div>
 							<div className="img-1 d-none d-lg-block">
