@@ -159,6 +159,7 @@ textarea {
 		&:focus {
 			border-color: $border-color-1-hover;
 		}
+
 		&.form-icons {
 			padding-left: 42px;
 		}
@@ -172,10 +173,12 @@ label {
 .mt-6 {
 	margin-top: 6px !important;
 }
+
 .modal-lg,
 .modal-xl {
 	max-width: 600px;
 }
+
 .modal-content {
 	.btn-close {
 		position: absolute;
@@ -184,6 +187,7 @@ label {
 		z-index: 2;
 	}
 }
+
 .apply-job-form {
 	background-image: url(../imgs/template/bg-1.svg);
 	background-repeat: no-repeat;

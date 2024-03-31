@@ -37,6 +37,7 @@
 		}
 	}
 }
+
 .sidebar-border-bg {
 	border: 1px solid $color-border-2;
 	background: $background-7 url(../imgs/page/company/bg-hiring.svg) no-repeat bottom left;
@@ -51,6 +52,7 @@
 		text-transform: uppercase;
 		display: block;
 	}
+
 	.text-hiring {
 		color: $color-text-paragraph-2;
 		font-size: 36px;
@@ -62,9 +64,11 @@
 		margin-top: -15px;
 	}
 }
+
 .bg-right {
 	background: $background-7 url(../imgs/page/company/bg-hiring-right.svg) no-repeat bottom right;
 }
+
 .box-company-profile {
 	max-width: 90%;
 	display: table;
@@ -74,6 +78,7 @@
 	padding: 20px 0px 0px 0px;
 	position: relative;
 }
+
 .image-compay {
 	position: absolute;
 	top: -80px;
@@ -83,6 +88,7 @@
 		border-radius: 16px;
 	}
 }
+
 .about-us-icon {
 	background-image: url(../imgs/page/company/icon-about.svg);
 	background-position: 17px 14px;
@@ -98,6 +104,7 @@
 		border-color: $color-border-1;
 	}
 }
+
 .recruitment-icon {
 	background-image: url(../imgs/page/company/icon-recruitment.svg);
 	background-position: 17px 14px;
@@ -113,6 +120,7 @@
 		border-color: $color-border-1;
 	}
 }
+
 .people-icon {
 	background-image: url(../imgs/page/company/icon-people.svg);
 	background-position: 17px 14px;

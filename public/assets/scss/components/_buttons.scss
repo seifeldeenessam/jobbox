@@ -17,6 +17,7 @@
 		}
 	}
 }
+
 .btn-grey {
 	padding: 17px 20px;
 	gap: 10px;
@@ -26,6 +27,7 @@
 	font-size: $font-sm;
 	line-height: 14px;
 }
+
 .btn-grey-small {
 	background-color: $background-6;
 	font-size: $font-xs;
@@ -36,6 +38,7 @@
 		color: $color-brand-2 !important;
 	}
 }
+
 .btn-grey-big {
 	padding: 17px 21px;
 	gap: 10px;
@@ -49,6 +52,7 @@
 		color: $color-brand-2;
 	}
 }
+
 .btn-apply-now {
 	background-color: $color-border-2;
 	color: $color-brand-2;
@@ -58,6 +62,7 @@
 	font-size: $font-xs;
 	text-transform: capitalize;
 }
+
 .btn-apply {
 	background-color: $color-brand-2;
 	color: $color-white;
@@ -68,6 +73,7 @@
 		color: $color-white;
 	}
 }
+
 .btn-apply-icon {
 	background-image: url(../imgs/template/icons/apply.svg);
 	background-position: 15px 11px;
@@ -84,11 +90,13 @@
 		padding-left: 50px;
 		background-position: 21px 17px;
 	}
+
 	&:hover {
 		color: #fff;
 		background-color: $color-brand;
 	}
 }
+
 .btn-call-icon {
 	background-image: url(../imgs/template/icons/call.svg);
 	background-position: 24px 17px;
@@ -98,6 +106,7 @@
 	line-height: 24px;
 	font-weight: 700;
 }
+
 .btn-download-icon {
 	background-image: url(../imgs/template/icons/icon-download.svg);
 	background-position: 24px 17px;
@@ -107,6 +116,7 @@
 	line-height: 24px;
 	font-weight: 700;
 }
+
 .btn-preview-icon {
 	background-image: url(../imgs/page/candidates/preview.svg);
 	background-position: 35px 14px;
@@ -117,6 +127,7 @@
 	font-weight: 700;
 	min-width: 180px;
 }
+
 .btn-tag {
 	padding: 3px 10px;
 	background: $color-border-2;
@@ -126,6 +137,7 @@
 	font-size: $font-xs;
 	line-height: 18px;
 }
+
 .btn-tags-sm {
 	padding: 6px 18px;
 	color: $color-text-paragraph-2;
@@ -136,6 +148,7 @@
 	line-height: 18px;
 	background-color: $background-8;
 }
+
 .btn-border-3 {
 	padding: 12px 20px;
 	background: $color-border-3;
@@ -145,6 +158,7 @@
 	line-height: 22px;
 	margin-bottom: 10px;
 }
+
 .btn-border-brand-2 {
 	padding: 12px 20px;
 	border: 1px solid $color-brand-2;
@@ -154,6 +168,7 @@
 	font-size: $font-sm;
 	line-height: 22px;
 }
+
 .btn-brand-1 {
 	padding: 18px 25px;
 	background: $color-brand;
@@ -164,6 +179,7 @@
 		color: $color-white;
 	}
 }
+
 .btn-brand-success {
 	padding: 18px 25px;
 	background: $background-success;
@@ -174,6 +190,7 @@
 		color: $color-white;
 	}
 }
+
 .btn-brand-error {
 	padding: 18px 25px;
 	background: $color-red;
@@ -184,18 +201,21 @@
 		color: $color-white;
 	}
 }
+
 .btn-icon-load {
 	background-image: url(../imgs/template/icons/icon-load.svg);
 	background-position: 18px center;
 	background-repeat: no-repeat;
 	padding-left: 42px;
 }
+
 .btn-icon-more {
 	background-image: url(../imgs/template/icons/icon-more.svg);
 	background-position: right 16px center;
 	background-repeat: no-repeat;
 	padding-right: 50px;
 }
+
 .btn-paragraph-2 {
 	padding: 8px 16px;
 	background: $color-text-paragraph-2;
@@ -206,6 +226,7 @@
 	color: $color-white;
 	line-height: 14px;
 }
+
 .btn-send-message {
 	font-weight: 700;
 	font-size: 16px;
@@ -246,13 +267,16 @@
 		margin: 0px 10px 0px 0px;
 	}
 }
+
 .btn-brand-hover {
 	padding: 14px 25px 14px 25px;
 }
+
 .btn-brand-hover:hover {
 	background-color: $background-brand;
 	color: $color-white;
 }
+
 .box-button-shadow {
 	position: relative;
 	display: inline-block;
@@ -270,11 +294,13 @@
 		top: 10px;
 		margin: auto;
 	}
+
 	a {
 		position: relative;
 		z-index: 12;
 	}
 }
+
 .btn-link {
 	font-family: $font-heading;
 	font-style: normal;
@@ -287,6 +313,7 @@
 		color: $color-brand-2;
 	}
 }
+
 .btn-arrow-right {
 	background: url(../imgs/page/homepage2/arrow-right.svg) no-repeat right 15px top 3px;
 	color: $color-brand-2;
@@ -295,6 +322,7 @@
 	line-height: 12px;
 	font-weight: bold;
 }
+
 /*button switch*/
 .switch {
 	position: relative;
@@ -303,11 +331,13 @@
 	height: 30px;
 	vertical-align: middle;
 }
+
 .switch input {
 	opacity: 0;
 	width: 0;
 	height: 0;
 }
+
 .slider {
 	position: absolute;
 	cursor: pointer;
@@ -319,6 +349,7 @@
 	-webkit-transition: 0.4s;
 	transition: 0.4s;
 }
+
 .slider:before {
 	position: absolute;
 	content: '';
@@ -330,24 +361,30 @@
 	-webkit-transition: 0.4s;
 	transition: 0.4s;
 }
+
 input:checked + .slider {
 	background-color: $background-primary-trans;
 }
+
 input:focus + .slider {
 	box-shadow: 0 0 1px $color-brand;
 }
+
 input:checked + .slider:before {
 	-webkit-transform: translateX(34px);
 	-ms-transform: translateX(34px);
 	transform: translateX(34px);
 }
+
 /* Rounded sliders */
 .slider.round {
 	border-radius: 34px;
 }
+
 .slider.round:before {
 	border-radius: 50%;
 }
+
 /*End button Switch On Off*/
 span.btn {
 	cursor: unset;
@@ -367,6 +404,7 @@ span.btn {
 	img {
 		margin-right: 4px;
 	}
+
 	&:hover {
 		color: $color-brand-2;
 		box-shadow: $box-shadow-2;
