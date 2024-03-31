@@ -15,7 +15,9 @@ const IndustrySelector = (props: Props) => {
 	return (
 		<div className="box-industry">
 			<select className="form-input mr-10 select-active input-industry select">
-				<option value={0}>Industry</option>
+				<option value={0} hidden>
+					Industry
+				</option>
 				{industries.map((industry) => (
 					<option value={industry.slug} key={industry.id}>
 						{industry.name}
