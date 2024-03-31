@@ -26,6 +26,7 @@
 					margin: 0px 10px 0px 0px;
 					vertical-align: middle;
 				}
+
 				.info-member {
 					padding-left: 45px;
 					text-align: left;
@@ -36,11 +37,13 @@
 				}
 			}
 		}
+
 		.header-nav {
 			display: inline-block;
 			width: 60%;
 			text-align: center;
 		}
+
 		.header-left {
 			display: flex;
 			align-items: center;
@@ -50,6 +53,7 @@
 				min-width: 139px;
 			}
 		}
+
 		.header-search {
 			width: 60%;
 			display: inline-block;
@@ -65,12 +69,14 @@
 			}
 		}
 	}
+
 	.nav-main-menu {
 		display: inline-block;
 		width: auto;
 		padding: 0px;
 		text-align: left;
 	}
+
 	.text-link-bd-btom {
 		font-family: $font-heading;
 		font-style: normal;
@@ -84,6 +90,7 @@
 		&:hover {
 			color: $color-brand-2;
 		}
+
 		// &::before {
 		//     content: "";
 		//     background: $color-brand;
@@ -97,14 +104,17 @@
 		//     animation: shadow-pulse 1s infinite;
 		// }
 	}
+
 	.block-signin {
 		.btn-shadow {
 			box-shadow: $box-shadow-1;
 		}
 	}
+
 	&.header-2 {
 		background-color: $background-5;
 	}
+
 	.header-menu {
 		min-width: 20%;
 		margin-left: 30px;
@@ -138,6 +148,7 @@
 		&.sticky-white-bg {
 			background-color: #fff;
 		}
+
 		&.sticky-blue-bg {
 			background-color: #3286e0;
 		}
@@ -151,17 +162,20 @@
 			background: $color-brand-2;
 		}
 	}
+
 	.main-menu > li > a,
 	.main-menu > li > button {
 		color: $border-color;
 		&:hover {
 			color: $color-white;
 		}
+
 		&:hover::before,
 		.active::before {
 			background-color: $color-white;
 		}
 	}
+
 	.main-menu li a,
 	.main-menu li a.active,
 	.main-menu li button,
@@ -172,6 +186,7 @@
 			background-color: $color-white;
 		}
 	}
+
 	.main-menu {
 		li {
 			a,
@@ -185,6 +200,7 @@
 					}
 				}
 			}
+
 			ul {
 				li {
 					a,
@@ -197,9 +213,11 @@
 			}
 		}
 	}
+
 	.text-link-bd-btom {
 		color: $color-white;
 	}
+
 	.btn-default {
 		background-color: $background-white;
 		color: $color-brand-2;
@@ -215,6 +233,7 @@
 		border-radius: 50%;
 		margin-right: 10px;
 	}
+
 	.user-name {
 		margin-bottom: 0;
 		font-weight: 600;
@@ -262,6 +281,7 @@
 				margin: 5px 0;
 			}
 		}
+
 		a,
 		button {
 			font-family: $font-heading;
@@ -279,10 +299,12 @@
 				vertical-align: middle;
 				margin-right: 5px;
 			}
+
 			span {
 				display: inline-block;
 				vertical-align: middle;
 			}
+
 			&:hover,
 			&.active {
 				background-color: $color-brand-2 !important;
@@ -291,6 +313,7 @@
 				span {
 					color: $color-white;
 				}
+
 				img {
 					filter: invert(100%) sepia(50%) saturate(50%) hue-rotate(124deg) brightness(200%) contrast(100%);
 				}
@@ -301,53 +324,65 @@
 				opacity: 0.5;
 				margin-left: 3px;
 			}
+
 			&.dashboard {
 				background: url(../imgs/page/dashboard/dashboard.svg) no-repeat 10px center;
 				padding-left: 40px;
 			}
+
 			&.candidates {
 				background: url(../imgs/page/dashboard/candidates.svg) no-repeat 10px center;
 				padding-left: 40px;
 			}
+
 			&.recruiters {
 				background: url(../imgs/page/dashboard/recruiters.svg) no-repeat 10px center;
 				padding-left: 40px;
 			}
+
 			&.jobs {
 				background: url(../imgs/page/dashboard/jobs.svg) no-repeat 10px center;
 				padding-left: 40px;
 			}
+
 			&.tasks {
 				background: url(../imgs/page/dashboard/tasks.svg) no-repeat 10px center;
 				padding-left: 40px;
 			}
+
 			&.myprofiles {
 				background: url(../imgs/page/dashboard/profiles.svg) no-repeat 10px center;
 				padding-left: 40px;
 			}
+
 			&.cvmanage {
 				background: url(../imgs/page/dashboard/cv-manage.svg) no-repeat 10px center;
 				padding-left: 40px;
 			}
+
 			&.settings {
 				background: url(../imgs/page/dashboard/settings.svg) no-repeat 10px center;
 				padding-left: 40px;
 			}
+
 			&.authentication {
 				background: url(../imgs/page/dashboard/authentication.svg) no-repeat 10px center;
 				padding-left: 40px;
 			}
+
 			&.logout {
 				background: url(../imgs/page/dashboard/logout.svg) no-repeat 10px center;
 				padding-left: 40px;
 			}
 		}
+
 		button {
 			width: 100%;
 			background: none;
 			border: none;
 			text-align: start;
 		}
+
 		ul {
 			opacity: 0;
 			visibility: hidden;
@@ -386,6 +421,7 @@
 						opacity: 0.7;
 						transition-duration: 0.2s;
 					}
+
 					&:hover,
 					&.active {
 						padding-left: 38px;
@@ -394,17 +430,20 @@
 							opacity: 1;
 							transition-duration: 0.3s;
 						}
+
 						&::before {
 							display: none;
 						}
 					}
 				}
+
 				ul {
 					top: 0px;
 					left: 100%;
 				}
 			}
 		}
+
 		&:hover > ul {
 			opacity: 1;
 			visibility: visible;
@@ -415,6 +454,7 @@
 		}
 	}
 }
+
 .close-nav {
 	.main-menu {
 		li {
@@ -425,10 +465,12 @@
 				img {
 					margin-right: 0px;
 				}
+
 				span {
 					display: none;
 				}
 			}
+
 			button {
 				width: 100%;
 				background: none;
@@ -436,11 +478,13 @@
 			}
 		}
 	}
+
 	.box-profile-completed,
 	.sidebar-border-bg {
 		display: none;
 	}
 }
+
 .main {
 	.nav {
 		&.close-nav {
@@ -448,6 +492,7 @@
 		}
 	}
 }
+
 .icon-down {
 	display: inline-block;
 	padding-right: 15px;

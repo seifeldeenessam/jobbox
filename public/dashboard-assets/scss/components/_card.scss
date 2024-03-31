@@ -9,6 +9,7 @@
 	text-align: center;
 	padding: 30px;
 }
+
 .card-style-1 {
 	border-radius: 16px;
 	background-color: $background-white;
@@ -28,6 +29,7 @@
 			display: inline-block;
 		}
 	}
+
 	.card-info {
 		width: 100%;
 		.card-title {
@@ -40,6 +42,7 @@
 					padding: 0px 0px 0px 30px;
 					color: $background-green;
 				}
+
 				&.down {
 					display: inline-block;
 					padding: 0px;
@@ -72,6 +75,7 @@
 				border-radius: 8px;
 			}
 		}
+
 		.card-title {
 			width: 100%;
 			margin-bottom: 0px !important;
@@ -84,6 +88,7 @@
 				padding: 0px 0px 0px 15px;
 				margin-right: 12px;
 			}
+
 			.time-post {
 				font-size: $font-xs;
 				line-height: 18px;
@@ -93,6 +98,7 @@
 				padding: 0px 0px 0px 15px;
 				margin-right: 12px;
 			}
+
 			.location {
 				font-size: $font-xs;
 				line-height: 18px;
@@ -104,9 +110,11 @@
 			}
 		}
 	}
+
 	.card-tags {
 		width: 40%;
 	}
+
 	.card-price {
 		width: 15%;
 		min-width: 100px;
@@ -117,6 +125,7 @@
 			font-size: 16px;
 			line-height: 26px;
 		}
+
 		span {
 			color: $color-text-mutted;
 			font-size: $font-xs;
@@ -152,11 +161,13 @@
 				right: 12px;
 			}
 		}
+
 		img {
 			display: block;
 			border-radius: 50%;
 		}
 	}
+
 	.card-title {
 		width: 40%;
 		margin-bottom: 0px !important;
@@ -164,6 +175,7 @@
 			line-height: 20px;
 			margin-top: 4px;
 		}
+
 		.job-position {
 			font-size: $font-xs;
 			line-height: 18px;
@@ -171,6 +183,7 @@
 			display: inline-block;
 		}
 	}
+
 	.card-location {
 		width: 45%;
 		.location {
@@ -184,6 +197,7 @@
 			margin-right: 12px;
 		}
 	}
+
 	.card-rating {
 		width: 15%;
 		min-width: 100px;
@@ -210,10 +224,12 @@
 			border-radius: 8px;
 		}
 	}
+
 	.card-title {
 		width: 100%;
 		margin-bottom: 0px !important;
 	}
+
 	.card-location {
 		padding-top: 15px;
 		.location {
@@ -226,6 +242,7 @@
 			padding: 0px 0px 0px 15px;
 			margin-right: 12px;
 		}
+
 		.jobs-number {
 			width: 50%;
 			text-align: right;
@@ -248,10 +265,12 @@
 		border-bottom: 0px;
 		margin-bottom: 0px;
 	}
+
 	.card-title {
 		position: relative;
 		width: 55%;
 	}
+
 	.card-progress {
 		position: relative;
 		width: 45%;
@@ -262,6 +281,7 @@
 			padding: 0px 7px 0px 0px;
 			vertical-align: top;
 		}
+
 		.progress {
 			height: 8px;
 			border-radius: 5px;
@@ -289,9 +309,11 @@
 			margin-left: 0;
 		}
 	}
+
 	.btn-apply-now {
 		color: $color-brand-2;
 	}
+
 	&:hover {
 		border-color: $color-border-1;
 		background-color: $background-white;
@@ -300,6 +322,7 @@
 			background-color: $color-brand-2;
 		}
 	}
+
 	a {
 		text-decoration: none;
 		color: $color-brand;
@@ -307,6 +330,7 @@
 			color: $color-brand-2;
 		}
 	}
+
 	.card-grid-2-image-rd {
 		padding: 0px 15px 0px 0px;
 		display: inline-block;
@@ -322,6 +346,7 @@
 				width: 100px;
 			}
 		}
+
 		&.online {
 			figure {
 				&::before {
@@ -337,6 +362,7 @@
 			}
 		}
 	}
+
 	&.grid-bd-16 {
 		background-color: $background-white;
 		border-radius: 16px;
@@ -357,6 +383,7 @@
 			font-size: $font-xs;
 			line-height: 18px;
 		}
+
 		.card-block-info {
 			.card-text-price {
 				font-size: 16px;
@@ -364,6 +391,7 @@
 			}
 		}
 	}
+
 	.card-grid-2-image {
 		position: relative;
 		padding: 10px;
@@ -373,6 +401,7 @@
 			left: 15px;
 			z-index: 12;
 		}
+
 		figure {
 			display: block;
 			img {
@@ -381,6 +410,7 @@
 			}
 		}
 	}
+
 	.card-block-info {
 		display: inline-block;
 		width: 100%;
@@ -407,15 +437,18 @@
 				text-align: center;
 				line-height: 30px;
 			}
+
 			span {
 				display: inline-block;
 				color: $color-brand;
 				font-size: $font-sm;
 			}
+
 			img {
 				max-width: 100%;
 			}
 		}
+
 		.card-text-price {
 			color: $color-brand-2;
 			font-family: $font-heading;
@@ -427,14 +460,17 @@
 				font-weight: 400;
 			}
 		}
+
 		.card-2-bottom {
 			position: relative;
 			.btn-grey-small {
 				margin-right: 5px;
 			}
+
 			.btn-tags-sm {
 				margin-bottom: 5px;
 			}
+
 			&.card-2-bottom-candidate {
 				.btn-brand-hover {
 					padding: 15px 33px;
@@ -446,6 +482,7 @@
 				}
 			}
 		}
+
 		.card-grid-2-img-medium {
 			padding-left: 55px;
 			font-size: $font-sm;
@@ -460,6 +497,7 @@
 				border-radius: 8px;
 			}
 		}
+
 		.card-profile {
 			text-align: center;
 			strong {
@@ -474,9 +512,11 @@
 					color: $color-brand;
 				}
 			}
+
 			> span {
 				color: $color-text-paragraph;
 			}
+
 			.rate-reviews-small {
 				span {
 					display: inline-block;
@@ -489,10 +529,12 @@
 			}
 		}
 	}
+
 	.employers-info {
 		border-top: 1px solid $color-border-2;
 		padding-top: 20px;
 	}
+
 	// new
 	.flash {
 		position: absolute;
@@ -502,6 +544,7 @@
 		width: 25px;
 		background: url(../imgs/template/icons/flash.svg) no-repeat 0px 0px;
 	}
+
 	.card-grid-2-image-left {
 		padding: 30px 20px 15px 20px;
 		display: flex;
@@ -510,6 +553,7 @@
 			min-width: 52px;
 			padding-right: 15px;
 		}
+
 		.right-info {
 			.name-job {
 				font-size: $font-lg;
@@ -521,6 +565,7 @@
 					color: $color-brand-2;
 				}
 			}
+
 			.location-small {
 				// background: url(../imgs/template/icons/location.svg) no-repeat 0px 5px;
 				display: inline-block;
@@ -531,6 +576,7 @@
 		}
 	}
 }
+
 .display-list {
 	.card-style-2 {
 		flex-wrap: wrap;
@@ -539,24 +585,29 @@
 			box-shadow: $box-shadow-4;
 			border-color: $color-border-1;
 		}
+
 		.card-head {
 			width: 100%;
 			.card-image {
 				margin-bottom: 30px;
 			}
+
 			.card-title {
 				margin-bottom: 30px !important;
 			}
 		}
+
 		.card-tags {
 			width: 50%;
 		}
+
 		.card-price {
 			width: 50%;
 			strong {
 				font-size: 24px;
 				line-height: 40px;
 			}
+
 			span {
 				font-size: 18px;
 				line-height: 19px;

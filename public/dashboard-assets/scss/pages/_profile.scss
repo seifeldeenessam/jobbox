@@ -11,12 +11,14 @@
 		}
 	}
 }
+
 .icon-search-right {
 	background-image: url(../imgs/page/dashboard/search.svg);
 	background-position: right 12px center;
 	padding-right: 40px;
 	background-repeat: no-repeat;
 }
+
 .btn {
 	&.tags-link {
 		margin-bottom: 10px;
@@ -30,11 +32,13 @@
 		}
 	}
 }
+
 .info-icon {
 	background: url(../imgs/page/profile/info.svg) no-repeat left center;
 	display: inline-block;
 	padding: 0px 0px 0px 20px;
 }
+
 .box-padding {
 	padding: 30px;
 }
@@ -49,11 +53,13 @@
 		}
 	}
 }
+
 .text-showing {
 	display: inline-block;
 	min-height: 30px;
 	line-height: 37px;
 }
+
 .box-border {
 	border: 1px solid $color-border-2;
 	border-radius: 4px;
@@ -61,6 +67,7 @@
 	padding: 1px 0px 3px 15px;
 	vertical-align: sub;
 }
+
 .text-sortby {
 	color: #a0abb8;
 	font-weight: 500;
@@ -68,6 +75,7 @@
 	display: inline-block;
 	vertical-align: middle;
 }
+
 .box-view-type {
 	float: right;
 	margin-left: 10px;
@@ -76,6 +84,7 @@
 		vertical-align: middle;
 	}
 }
+
 .dropdown-sort {
 	line-height: 21px;
 	display: inline-block;
@@ -83,6 +92,7 @@
 	.dropdown-toggle::after {
 		border: 0px;
 	}
+
 	.dropdown-toggle {
 		padding: 0px;
 		outline: none;
@@ -92,6 +102,7 @@
 		&:focus {
 			box-shadow: none;
 		}
+
 		i {
 			color: $color-text-paragraph;
 			float: right;
@@ -101,6 +112,7 @@
 		}
 	}
 }
+
 .pagination {
 	margin: 15px 0px 10px 0px;
 	.pager {
@@ -121,9 +133,11 @@
 				&:hover {
 					color: $color-brand;
 				}
+
 				&.active {
 					color: $color-brand;
 				}
+
 				&.pager-number.active::before {
 					content: '';
 					height: 28px;
@@ -136,6 +150,7 @@
 					top: 8px;
 					left: -1px;
 				}
+
 				&.pager-number:hover::before {
 					content: '';
 					height: 28px;
@@ -149,6 +164,7 @@
 					left: -1px;
 				}
 			}
+
 			.pager-prev {
 				background: url(../imgs/template/icons/page-prev.svg) no-repeat center;
 				height: 48px;
@@ -158,6 +174,7 @@
 					background: url(../imgs/template/icons/page-prev-hover.svg) no-repeat center;
 				}
 			}
+
 			.pager-next {
 				background: url(../imgs/template/icons/page-next.svg) no-repeat center;
 				height: 48px;
