@@ -1,24 +1,24 @@
 export enum Endpoints {
 	// Account
-	ACCOUNT_REGISTER = '/accounts/register',
-	ACCOUNT_LOGIN = '/accounts/login',
-	ACCOUNT_CHANGE_PASSWORD = '/accounts/change-password',
-	ACCOUNT_SEND_TOKEN = '/accounts/password_reset',
-	ACCOUNT_VALIDATE_TOKEN = '/accounts/password_reset/validate_token',
-	ACCOUNT_RESET_PASSWORD = '/accounts/password_reset/confirm',
+	ACCOUNT_REGISTER = '/accounts/register/',
+	ACCOUNT_LOGIN = '/accounts/login/',
+	ACCOUNT_CHANGE_PASSWORD = '/accounts/change-password/',
+	ACCOUNT_SEND_TOKEN = '/accounts/password_reset/',
+	ACCOUNT_VALIDATE_TOKEN = '/accounts/password_reset/validate_token/',
+	ACCOUNT_RESET_PASSWORD = '/accounts/password_reset/confirm/',
 
 	// Industries
-	INDUSTRIES = '/industries',
+	INDUSTRIES = '/industries/',
 
 	// Locations
-	LOCATIONS = '/locations',
+	LOCATIONS = '/locations/',
 
 	// Jobs
-	JOBS = '/jobs',
+	JOBS = '/jobs/',
 
 	// Recruiters
-	RECRUITERS = '/recruiters',
+	RECRUITERS = '/recruiters/',
 
 	// Candidates
-	CANDIDATES_PROFILES = '/candidates/candidate-profile'
+	CANDIDATES_PROFILES = '/candidates/candidate-profile/'
 }
