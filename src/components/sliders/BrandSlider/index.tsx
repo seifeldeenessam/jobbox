@@ -10,8 +10,8 @@ const BrandSlider = (props: Props) => {
 	return (
 		<>
 			<Swiper {...swiperProps} className="swiper-wrapper">
-				{brands.map((brand) => (
-					<SwiperSlide>
+				{brands.map((brand, index) => (
+					<SwiperSlide key={index}>
 						<img src={`/dashboard-assets/imgs/page/dashboard/${brand}.svg`} alt={brand} />
 					</SwiperSlide>
 				))}
