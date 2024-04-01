@@ -1,56 +1,49 @@
 export type Job = {
 	id: number;
 	recruiter: JobRecruiter;
-	industry: JobField;
-	field: JobField;
-	position: JobPosition;
-	work_mode: JobWorkMode;
+	industry: JobIndustry;
+	field: JobField | null;
+	position: JobPosition | null;
+	work_mode: JobWorkMode | null;
 	name: string;
 	location: string;
-	job_level: string;
-	experience: string;
-	job_type: string;
+	job_level: string | null;
+	experience: string | null;
+	job_type: string | null;
 	deadline: string;
-	salary: string;
+	salary: string | null;
 	Job_description: string;
 	Job_requirements: string;
-	job_image: string;
+	job_image: string | null;
 	open_for_applications: boolean;
-	closing_date: string;
+	closing_date: Date | null;
 	slug: string;
-	date: string;
-	date_update: string;
+	date: Date;
+	date_update: Date;
 };
 
-type JobField = {
+export type JobIndustry = {
 	id: number;
 	name: string;
-	industrie?: JobField;
-	field_image?: string;
+	industrie_image: string;
 	slug: string;
 	date: string;
 	date_update: string;
 	job_count: number;
-	industrie_image?: string;
 };
 
-type JobPosition = {
-	id: number;
-	position_type: string;
-};
-
-type JobRecruiter = {
+export type JobRecruiter = {
 	id: number;
 	company_account: number;
 	name: string;
-	company_logo: string;
-	country: string;
-	industry: JobField;
-	company_size: string;
-	address: string;
-	phone: string;
-	company_email: string;
-	salary: string;
+	company_logo: null;
+	country: null;
+	industry: null;
+	company_size: null;
+	address: null;
+	phone: null;
+	company_email: null;
+	salary: null;
 	Company_bio: string;
 	slug: string;
 	date: string;
@@ -58,7 +51,24 @@ type JobRecruiter = {
 	open_jobs_count: number;
 };
 
-type JobWorkMode = {
+export type JobField = {
 	id: number;
-	work_mode_type: string;
+	name: string;
+	industrie?: JobField;
+	field_image?: null;
+	slug: string;
+	date: string;
+	date_update: string;
+	job_count: number;
+	industrie_image?: string;
+};
+
+export type JobPosition = {
+	id: number;
+	position_type: string; // Should be enum
+};
+
+export type JobWorkMode = {
+	id: number;
+	work_mode_type: 'On-site' | 'Remote' | 'Remote';
 };

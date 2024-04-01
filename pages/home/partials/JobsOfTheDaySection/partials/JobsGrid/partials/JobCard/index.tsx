@@ -13,7 +13,7 @@ const JobCard = ({ job }: Props) => {
 				<div className="card-grid-2-image-left">
 					<span className="flash" />
 					<div className="image-box">
-						<img src={job.recruiter.company_logo} alt={job.recruiter.name} width={48} height={48} />
+						<img src={job.recruiter.company_logo || ''} alt={job.recruiter.name} width={48} height={48} />
 					</div>
 					<div className="right-info">
 						<Link legacyBehavior href="company-details">
@@ -29,7 +29,7 @@ const JobCard = ({ job }: Props) => {
 						</Link>
 					</h6>
 					<div className="mt-5">
-						<span className="card-briefcase">{job.work_mode.work_mode_type}</span>
+						{job.work_mode && <span className="card-briefcase">{job.work_mode.work_mode_type}</span>}
 						<span className="card-time">{getTimePassed(job.date)}</span>
 					</div>
 					<p className="font-sm color-text-paragraph mt-15" dangerouslySetInnerHTML={{ __html: job.Job_description }} />

@@ -1,5 +1,5 @@
+import { Industry } from '@/services/industries/types';
 import Link from 'next/link';
-import { Industry } from '../../../../../../../../services/industries/types';
 
 type Props = {
 	data: Industry;
@@ -12,7 +12,7 @@ const IndustryCard = ({ data }: Props) => {
 				<a>
 					<div className="item-logo">
 						<div className="image-left">
-							<img src={data.category_image} alt={data.slug} width={48} height={48} />
+							<img src={data.industrie_image} alt={data.slug} width={48} height={48} />
 						</div>
 						<div className="text-info-right">
 							<h4>{data.name}</h4>
