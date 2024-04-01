@@ -1,4 +1,4 @@
-export const getTimePassed = (dateString: string): string => {
+export const getTimePassed = (dateString: Date): string => {
 	const pastDate: Date = new Date(dateString);
 	const currentDate: Date = new Date();
 
