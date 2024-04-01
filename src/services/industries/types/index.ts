@@ -1,7 +1,7 @@
 export type Industry = {
 	id: number;
 	name: string;
-	category_image: string;
+	industrie_image: string;
 	slug: string;
 	date: Date;
 	date_update: Date;
