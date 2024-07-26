@@ -20,5 +20,5 @@ export enum Endpoints {
 	RECRUITERS = '/recruiters/',
 
 	// Candidates
-	CANDIDATES_PROFILES = '/candidates/candidate-profile/'
+	CANDIDATES_PROFILES = '/candidates/candidate-profiles/'
 }

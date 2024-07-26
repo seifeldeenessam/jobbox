@@ -332,33 +332,26 @@
 	}
 
 	.card-grid-2-image-rd {
-		padding: 0px 15px 0px 0px;
-		display: inline-block;
-		width: 30%;
-		min-width: 115px;
-		max-width: 115px;
-		figure {
-			position: relative;
-			display: inline-block;
-			img {
-				border-radius: 50%;
-				height: 100px;
-				width: 100px;
-			}
+		position: relative;
+		width: 96px;
+		height: 96px;
+		border-radius: 1000px;
+
+		&img {
+			object-fit: cover;
 		}
 
 		&.online {
-			figure {
-				&::before {
-					height: 18px;
-					width: 18px;
-					border-radius: 50%;
-					content: '';
-					position: absolute;
-					bottom: 13px;
-					right: 9px;
-					background: $background-success;
-				}
+			&::before {
+				content: '';
+				position: absolute;
+				bottom: 8px;
+				right: 4px;
+				height: 16px;
+				width: 16px;
+				border-radius: 1000px;
+				z-index: 10;
+				background: $background-success;
 			}
 		}
 	}
@@ -548,7 +541,9 @@
 	.card-grid-2-image-left {
 		padding: 30px 20px 15px 20px;
 		display: flex;
+		gap: 16px;
 		position: relative;
+
 		.image-box {
 			min-width: 52px;
 			padding-right: 15px;

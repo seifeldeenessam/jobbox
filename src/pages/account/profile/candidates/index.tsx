@@ -17,7 +17,7 @@ const CandidatesPage: NextPage<Props> = () => {
 	};
 
 	const handleReset = () => {
-		setFilters({});
+		setFilters({ limit: 8 });
 	};
 
 	return (

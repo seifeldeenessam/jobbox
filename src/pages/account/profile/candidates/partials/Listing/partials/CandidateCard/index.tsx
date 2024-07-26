@@ -1,7 +1,8 @@
-import Link from 'next/link';
+import { Candidate } from '@/services/candidates/types';
+import Image from 'next/image';
 
 type Props = {
-	candidate: any;
+	candidate: Candidate;
 };
 
 const CandidateCard = ({ candidate }: Props) => {
@@ -9,17 +10,13 @@ const CandidateCard = ({ candidate }: Props) => {
 		<div className="card-grid-2 hover-up">
 			<div className="card-grid-2-image-left">
 				<div className="card-grid-2-image-rd online">
-					<figure>
-						<Link href="/">
-							<img src={`/dashboard-assets/imgs/page/candidates/${candidate.img}`} alt="jobBox" />
-						</Link>
-					</figure>
+					<Image src={candidate.profile_picture || 'https://placehold.co/96?text=Aatar'} alt={candidate.full_name} fill />
 				</div>
 				<div className="card-profile pt-10">
 					<a href="#">
-						<h5>{candidate.title}</h5>
+						<h5>{candidate.full_name}</h5>
 					</a>
-					<span className="font-xs color-text-mutted">{candidate.job}</span>
+					<span className="font-xs color-text-mutted">{candidate.industry.name}</span>
 					<div className="rate-reviews-small pt-5">
 						<span>
 							<img src="/dashboard-assets/imgs/template/icons/star.svg" alt="jobBox" />
@@ -36,33 +33,33 @@ const CandidateCard = ({ candidate }: Props) => {
 						<span>
 							<img src="/dashboard-assets/imgs/template/icons/star.svg" alt="jobBox" />
 						</span>
-						<span className="ml-10 color-text-mutted font-xs">({candidate.rating})</span>
+						<span className="ml-10 color-text-mutted font-xs">({candidate.industry.job_count})</span>
 					</div>
 				</div>
 			</div>
 			<div className="card-block-info">
-				<p className="font-xs color-text-paragraph-2">{candidate.des}</p>
+				<p className="font-xs color-text-paragraph-2">{candidate.bio}</p>
 				<div className="card-2-bottom card-2-bottom-candidate mt-30">
 					<div className="text-start">
-						{candidate.skills.map((skill: any) => (
-							<a className="btn btn-tags-sm mb-10 mr-5" key={skill} href="#">
-								{skill}
+						{candidate.educations.map((education) => (
+							<a className="btn btn-tags-sm mb-10 mr-5" key={education.id} href="#">
+								{education.id}
 							</a>
 						))}
 					</div>
 				</div>
-				<div className="employers-info align-items-center justify-content-center mt-15">
+				<div className="employers-info align-items-center justify-content-center">
 					<div className="row">
 						<div className="col-6">
 							<span className="d-flex align-items-center">
 								<i className="fi-rr-marker mr-5 ml-0" />
-								<span className="font-sm color-text-mutted">{candidate.location}</span>
+								<span className="font-sm color-text-mutted">{candidate.contact_information.complete_address}</span>
 							</span>
 						</div>
 						<div className="col-6">
 							<span className="d-flex justify-content-end align-items-center">
 								<i className="fi-rr-clock mr-5" />
-								<span className="font-sm color-brand-1">${candidate.salary} / hour</span>
+								<span className="font-sm color-brand-1">${candidate.current_salary} / hour</span>
 							</span>
 						</div>
 					</div>
