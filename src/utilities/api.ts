@@ -9,7 +9,7 @@ const createAxiosInstance = ({ req, res }: QueryParams) => {
 	const sessionCookie = JSON.stringify(getCookie(Cookies.SESSION, { req, res }));
 	const session: Session | null = sessionCookie ? JSON.parse(JSON.parse(sessionCookie)) : null;
 
-	const instance = axios.create({ baseURL: `http://35.180.189.180:8070/api` });
+	const instance = axios.create({ baseURL: `http://15.237.249.15:8080/api` });
 
 	instance.interceptors.request.use(
 		(value: InternalAxiosRequestConfig) => {
