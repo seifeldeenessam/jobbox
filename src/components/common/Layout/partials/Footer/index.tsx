@@ -11,7 +11,7 @@ const Footer = (props: Props) => {
 					<div className="footer-col-1 col-md-3 col-sm-12">
 						<Link legacyBehavior href="/">
 							<a>
-								<img alt="jobBox" src="/assets/imgs/template/jobhub-logo.svg" />
+								<img alt="jobBox" src="/app-assets/imgs/template/jobhub-logo.svg" />
 							</a>
 						</Link>
 						<div className="mt-20 mb-20 font-xs color-text-paragraph-2">
@@ -96,10 +96,10 @@ const Footer = (props: Props) => {
 						<p className="color-text-paragraph-2 font-xs">Download our Apps and get extra 15% Discount on your first Order…!</p>
 						<div className="mt-15">
 							<a className="mr-5" href="#">
-								<img src="/assets/imgs/template/icons/app-store.png" alt="joxBox" />
+								<img src="/app-assets/imgs/template/icons/app-store.png" alt="joxBox" />
 							</a>
 							<a href="#">
-								<img src="/assets/imgs/template/icons/android.png" alt="joxBox" />
+								<img src="/app-assets/imgs/template/icons/android.png" alt="joxBox" />
 							</a>
 						</div>
 					</div>

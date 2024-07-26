@@ -38,7 +38,7 @@ const Header = ({ handleOpen, handleRemove, openClass }: Props) => {
 						<div className="header-logo">
 							<Link legacyBehavior href={Routes.ROOT}>
 								<a className="d-flex">
-									<img alt="jobBox" src="/assets/imgs/template/jobhub-logo.svg" />
+									<img alt="jobBox" src="/app-assets/imgs/template/jobhub-logo.svg" />
 								</a>
 							</Link>
 						</div>

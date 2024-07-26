@@ -41,10 +41,10 @@ const RegisterPage: NextPage = () => {
 								<RegisterForm />
 							</div>
 							<div className="img-1 d-none d-lg-block">
-								<img className="shape-1" src="/assets/imgs/page/login-register/img-1.svg" alt="JobBox" />
+								<img className="shape-1" src="/app-assets/imgs/page/login-register/img-1.svg" alt="JobBox" />
 							</div>
 							<div className="img-2">
-								<img src="/assets/imgs/page/login-register/img-2.svg" alt="JobBox" />
+								<img src="/app-assets/imgs/page/login-register/img-2.svg" alt="JobBox" />
 							</div>
 						</div>
 					</div>

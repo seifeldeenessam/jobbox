@@ -37,7 +37,7 @@ const BlogDetailsPage: NextPage<PublicPageProps> = ({ session }) => {
 			<Layout>
 				<section className="section-box">
 					<div>
-						<img src="/assets/imgs/page/blog/img-single.png" />
+						<img src="/app-assets/imgs/page/blog/img-single.png" />
 					</div>
 				</section>
 				<section className="section-box">
@@ -51,15 +51,15 @@ const BlogDetailsPage: NextPage<PublicPageProps> = ({ session }) => {
 									<h2 className="mb-30 mt-20 text-center">11 Tips to Help You Get New Clients Through Cold Calling</h2>
 									<div className="post-meta text-muted d-flex align-items-center mx-auto justify-content-center">
 										<div className="author d-flex align-items-center mr-30">
-											<img alt="jobBox" src="/assets/imgs/page/homepage1/user3.png" />
+											<img alt="jobBox" src="/app-assets/imgs/page/homepage1/user3.png" />
 											<span>Sarah Harding</span>
 										</div>
 										<div className="date">
 											<span className="font-xs color-text-paragraph-2 mr-20 d-inline-block">
-												<img className="img-middle mr-5" src="/assets/imgs/page/blog/calendar.svg" /> 06 Sep 2022
+												<img className="img-middle mr-5" src="/app-assets/imgs/page/blog/calendar.svg" /> 06 Sep 2022
 											</span>
 											<span className="font-xs color-text-paragraph-2 d-inline-block">
-												<img className="img-middle mr-5" src="/assets/imgs/template/icons/time.svg" /> 8 mins to read
+												<img className="img-middle mr-5" src="/app-assets/imgs/template/icons/time.svg" /> 8 mins to read
 											</span>
 										</div>
 									</div>
@@ -84,7 +84,7 @@ const BlogDetailsPage: NextPage<PublicPageProps> = ({ session }) => {
 										</div>
 									</div>
 									<figure>
-										<img src="/assets/imgs/page/blog/img-content.png" />
+										<img src="/app-assets/imgs/page/blog/img-content.png" />
 									</figure>
 									<div className="max-width-single">
 										<div className="content-single">
@@ -134,19 +134,19 @@ const BlogDetailsPage: NextPage<PublicPageProps> = ({ session }) => {
 													<h6 className="color-text-paragraph-2 d-inline-block d-baseline mr-20 mt-10">Share</h6>
 													<Link legacyBehavior href="#">
 														<a className="mr-20 d-inline-block d-middle hover-up">
-															<img alt="jobBox" src="/assets/imgs/page/blog/fb.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/page/blog/fb.svg" />
 														</a>
 													</Link>
 
 													<Link legacyBehavior href="#">
 														<a className="mr-20 d-inline-block d-middle hover-up">
-															<img alt="jobBox" src="/assets/imgs/page/blog/tw.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/page/blog/tw.svg" />
 														</a>
 													</Link>
 
 													<Link legacyBehavior href="#">
 														<a className="mr-0 d-inline-block d-middle hover-up">
-															<img alt="jobBox" src="/assets/imgs/page/blog/pi.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/page/blog/pi.svg" />
 														</a>
 													</Link>
 												</div>
@@ -159,7 +159,7 @@ const BlogDetailsPage: NextPage<PublicPageProps> = ({ session }) => {
 													<div className="author-image mb-15">
 														<Link legacyBehavior href="/author">
 															<a>
-																<img className="avatar" src="/assets/imgs/page/candidates/user5.png" alt="jobBox" />
+																<img className="avatar" src="/app-assets/imgs/page/candidates/user5.png" alt="jobBox" />
 															</a>
 														</Link>
 
@@ -181,7 +181,7 @@ const BlogDetailsPage: NextPage<PublicPageProps> = ({ session }) => {
 													<div className="author-image mb-15">
 														<Link legacyBehavior href="/author">
 															<a>
-																<img className="avatar" src="/assets/imgs/page/candidates/user1.png" alt="jobBox" />
+																<img className="avatar" src="/app-assets/imgs/page/candidates/user1.png" alt="jobBox" />
 															</a>
 														</Link>
 
@@ -203,7 +203,7 @@ const BlogDetailsPage: NextPage<PublicPageProps> = ({ session }) => {
 															<div className="author-image mb-15">
 																<Link legacyBehavior href="/author">
 																	<a>
-																		<img className="avatar" src="/assets/imgs/page/candidates/user3.png" alt="jobBox" />
+																		<img className="avatar" src="/app-assets/imgs/page/candidates/user3.png" alt="jobBox" />
 																	</a>
 																</Link>
 																<div className="author-infor">
@@ -255,7 +255,7 @@ const BlogDetailsPage: NextPage<PublicPageProps> = ({ session }) => {
 						<div className="box-newsletter">
 							<div className="row">
 								<div className="col-xl-3 col-12 text-center d-none d-xl-block">
-									<img src="/assets/imgs/template/newsletter-left.png" alt="joxBox" />
+									<img src="/app-assets/imgs/template/newsletter-left.png" alt="joxBox" />
 								</div>
 								<div className="col-lg-12 col-xl-6 col-12">
 									<h2 className="text-md-newsletter text-center">
@@ -270,7 +270,7 @@ const BlogDetailsPage: NextPage<PublicPageProps> = ({ session }) => {
 									</div>
 								</div>
 								<div className="col-xl-3 col-12 text-center d-none d-xl-block">
-									<img src="/assets/imgs/template/newsletter-right.png" alt="joxBox" />
+									<img src="/app-assets/imgs/template/newsletter-right.png" alt="joxBox" />
 								</div>
 							</div>
 						</div>

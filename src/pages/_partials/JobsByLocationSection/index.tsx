@@ -17,7 +17,7 @@ const JobByLocationSection = (props: Props) => {
 						<div className="card-image-top hover-up">
 							<Link legacyBehavior href="/jobs-grid">
 								<a>
-									<div className="image" style={{ backgroundImage: 'url(assets/imgs/page/homepage1/location1.png)' }}>
+									<div className="image" style={{ backgroundImage: 'url(app-assets/imgs/page/homepage1/location1.png)' }}>
 										<span className="lbl-hot">Hot</span>
 									</div>
 								</a>
@@ -45,7 +45,7 @@ const JobByLocationSection = (props: Props) => {
 						<div className="card-image-top hover-up">
 							<Link legacyBehavior href="/jobs-grid">
 								<a>
-									<div className="image" style={{ backgroundImage: 'url(assets/imgs/page/homepage1/location2.png)' }}>
+									<div className="image" style={{ backgroundImage: 'url(app-assets/imgs/page/homepage1/location2.png)' }}>
 										<span className="lbl-hot">Trending</span>
 									</div>
 								</a>
@@ -73,7 +73,7 @@ const JobByLocationSection = (props: Props) => {
 						<div className="card-image-top hover-up">
 							<Link legacyBehavior href="/jobs-grid">
 								<a>
-									<div className="image" style={{ backgroundImage: 'url(assets/imgs/page/homepage1/location3.png)' }}>
+									<div className="image" style={{ backgroundImage: 'url(app-assets/imgs/page/homepage1/location3.png)' }}>
 										<span className="lbl-hot">Hot</span>
 									</div>
 								</a>
@@ -101,7 +101,7 @@ const JobByLocationSection = (props: Props) => {
 						<div className="card-image-top hover-up">
 							<Link legacyBehavior href="/jobs-grid">
 								<a>
-									<div className="image" style={{ backgroundImage: 'url(assets/imgs/page/homepage1/location4.png)' }} />
+									<div className="image" style={{ backgroundImage: 'url(app-assets/imgs/page/homepage1/location4.png)' }} />
 								</a>
 							</Link>
 
@@ -127,7 +127,7 @@ const JobByLocationSection = (props: Props) => {
 						<div className="card-image-top hover-up">
 							<Link legacyBehavior href="/jobs-grid">
 								<a>
-									<div className="image" style={{ backgroundImage: 'url(assets/imgs/page/homepage1/location5.png)' }} />
+									<div className="image" style={{ backgroundImage: 'url(app-assets/imgs/page/homepage1/location5.png)' }} />
 								</a>
 							</Link>
 
@@ -153,7 +153,7 @@ const JobByLocationSection = (props: Props) => {
 						<div className="card-image-top hover-up">
 							<Link legacyBehavior href="/jobs-grid">
 								<a>
-									<div className="image" style={{ backgroundImage: 'url(assets/imgs/page/homepage1/location6.png)' }} />
+									<div className="image" style={{ backgroundImage: 'url(app-assets/imgs/page/homepage1/location6.png)' }} />
 								</a>
 							</Link>
 

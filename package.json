@@ -7,7 +7,7 @@
 		"build": "next build",
 		"start": "next start",
 		"lint": "next lint",
-		"sass": "sass --watch public/assets/scss/style.scss:public/assets/css/style.css",
+		"sass": "sass --watch public/app-assets/scss/style.scss:public/app-assets/css/style.css",
 		"sass-dashboard": "sass --watch public/dashboard-assets/scss/style.scss:public/dashboard-assets/css/style.css"
 	},
 	"dependencies": {

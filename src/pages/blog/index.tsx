@@ -63,14 +63,14 @@ const BlogPage: NextPage<PublicPageProps> = ({ session }) => {
 							<div className="row">
 								<div className="col-lg-4 col-md-6 col-sm-12 col-12">
 									<div className="card-grid-5">
-										<div className="card-grid-5 hover-up" style={{ backgroundImage: 'url("assets/imgs/page/blog/img-big1.png")' }}>
+										<div className="card-grid-5 hover-up" style={{ backgroundImage: 'url("/app-assets/imgs/page/blog/img-big1.png")' }}>
 											<Link legacyBehavior href="blog-details">
 												<a>
 													<div className="box-cover-img">
 														<div className="content-bottom">
 															<h3 className="color-white mb-20">11 Tips to Help You Get New Clients</h3>
 															<div className="author d-flex align-items-center mr-20">
-																<img className="mr-10" alt="jobBox" src="/assets/imgs/page/candidates/user3.png" />
+																<img className="mr-10" alt="jobBox" src="/app-assets/imgs/page/candidates/user3.png" />
 																<span className="color-white font-sm mr-25">Azumi Rose</span>
 																<span className="color-white font-sm">25 April 2022</span>
 															</div>
@@ -82,14 +82,14 @@ const BlogPage: NextPage<PublicPageProps> = ({ session }) => {
 									</div>
 								</div>
 								<div className="col-lg-4 col-md-6 col-sm-12 col-12">
-									<div className="card-grid-5 hover-up" style={{ backgroundImage: 'url("assets/imgs/page/blog/img-big2.png")' }}>
+									<div className="card-grid-5 hover-up" style={{ backgroundImage: 'url("/app-assets/imgs/page/blog/img-big2.png")' }}>
 										<Link legacyBehavior href="blog-details">
 											<a>
 												<div className="box-cover-img">
 													<div className="content-bottom">
 														<h3 className="color-white mb-20">Recruiter and Land Your Dream Job</h3>
 														<div className="author d-flex align-items-center mr-20">
-															<img className="mr-10" alt="jobBox" src="/assets/imgs/page/candidates/user1.png" />
+															<img className="mr-10" alt="jobBox" src="/app-assets/imgs/page/candidates/user1.png" />
 															<span className="color-white font-sm mr-25">Thompson</span>
 															<span className="color-white font-sm">28 April 2022</span>
 														</div>
@@ -100,14 +100,14 @@ const BlogPage: NextPage<PublicPageProps> = ({ session }) => {
 									</div>
 								</div>
 								<div className="col-lg-4 col-md-6 col-sm-12 col-12">
-									<div className="card-grid-5 hover-up" style={{ backgroundImage: 'url("assets/imgs/page/blog/img-big3.png")' }}>
+									<div className="card-grid-5 hover-up" style={{ backgroundImage: 'url("/app-assets/imgs/page/blog/img-big3.png")' }}>
 										<Link legacyBehavior href="blog-details">
 											<a>
 												<div className="box-cover-img">
 													<div className="content-bottom">
 														<h3 className="color-white mb-20">Work-From-Home Jobs That Pay Well</h3>
 														<div className="author d-flex align-items-center mr-20">
-															<img className="mr-10" alt="jobBox" src="/assets/imgs/page/blog/ava_1.png" />
+															<img className="mr-10" alt="jobBox" src="/app-assets/imgs/page/blog/ava_1.png" />
 															<span className="color-white font-sm mr-25">Alice Json</span>
 															<span className="color-white font-sm">29 April 2022</span>
 														</div>
@@ -136,7 +136,7 @@ const BlogPage: NextPage<PublicPageProps> = ({ session }) => {
 														<Link legacyBehavior href="blog-details">
 															<a>
 																<figure>
-																	<img alt="jobBox" src="/assets/imgs/page/blog/img1.png" />
+																	<img alt="jobBox" src="/app-assets/imgs/page/blog/img1.png" />
 																</figure>
 															</a>
 														</Link>
@@ -160,7 +160,7 @@ const BlogPage: NextPage<PublicPageProps> = ({ session }) => {
 															<div className="row">
 																<div className="col-lg-6 col-6">
 																	<div className="d-flex">
-																		<img className="img-rounded" src="/assets/imgs/page/homepage1/user1.png" />
+																		<img className="img-rounded" src="/app-assets/imgs/page/homepage1/user1.png" />
 																		<div className="info-right-img">
 																			<span className="font-sm font-bold color-brand-1 op-70">Azumi Rose</span>
 																			<br />
@@ -182,7 +182,7 @@ const BlogPage: NextPage<PublicPageProps> = ({ session }) => {
 														<Link legacyBehavior href="blog-details">
 															<a>
 																<figure>
-																	<img alt="jobBox" src="/assets/imgs/page/blog/img2.png" />
+																	<img alt="jobBox" src="/app-assets/imgs/page/blog/img2.png" />
 																</figure>
 															</a>
 														</Link>
@@ -206,7 +206,7 @@ const BlogPage: NextPage<PublicPageProps> = ({ session }) => {
 															<div className="row">
 																<div className="col-lg-6 col-6">
 																	<div className="d-flex">
-																		<img className="img-rounded" src="/assets/imgs/page/homepage1/user2.png" />
+																		<img className="img-rounded" src="/app-assets/imgs/page/homepage1/user2.png" />
 																		<div className="info-right-img">
 																			<span className="font-sm font-bold color-brand-1 op-70">Azumi Rose</span>
 																			<br />
@@ -228,7 +228,7 @@ const BlogPage: NextPage<PublicPageProps> = ({ session }) => {
 														<Link legacyBehavior href="blog-details">
 															<a>
 																<figure>
-																	<img alt="jobBox" src="/assets/imgs/page/blog/img3.png" />
+																	<img alt="jobBox" src="/app-assets/imgs/page/blog/img3.png" />
 																</figure>
 															</a>
 														</Link>
@@ -252,7 +252,7 @@ const BlogPage: NextPage<PublicPageProps> = ({ session }) => {
 															<div className="row">
 																<div className="col-lg-6 col-6">
 																	<div className="d-flex">
-																		<img className="img-rounded" src="/assets/imgs/page/homepage1/user3.png" />
+																		<img className="img-rounded" src="/app-assets/imgs/page/homepage1/user3.png" />
 																		<div className="info-right-img">
 																			<span className="font-sm font-bold color-brand-1 op-70">Azumi Rose</span>
 																			<br />
@@ -274,7 +274,7 @@ const BlogPage: NextPage<PublicPageProps> = ({ session }) => {
 														<Link legacyBehavior href="blog-details">
 															<a>
 																<figure>
-																	<img alt="jobBox" src="/assets/imgs/page/homepage1/img-news1.png" />
+																	<img alt="jobBox" src="/app-assets/imgs/page/homepage1/img-news1.png" />
 																</figure>
 															</a>
 														</Link>
@@ -298,7 +298,7 @@ const BlogPage: NextPage<PublicPageProps> = ({ session }) => {
 															<div className="row">
 																<div className="col-lg-6 col-6">
 																	<div className="d-flex">
-																		<img className="img-rounded" src="/assets/imgs/page/about/user1.png" />
+																		<img className="img-rounded" src="/app-assets/imgs/page/about/user1.png" />
 																		<div className="info-right-img">
 																			<span className="font-sm font-bold color-brand-1 op-70">Azumi Rose</span>
 																			<br />
@@ -320,7 +320,7 @@ const BlogPage: NextPage<PublicPageProps> = ({ session }) => {
 														<Link legacyBehavior href="blog-details">
 															<a>
 																<figure>
-																	<img alt="jobBox" src="/assets/imgs/page/homepage1/img-news2.png" />
+																	<img alt="jobBox" src="/app-assets/imgs/page/homepage1/img-news2.png" />
 																</figure>
 															</a>
 														</Link>
@@ -344,7 +344,7 @@ const BlogPage: NextPage<PublicPageProps> = ({ session }) => {
 															<div className="row">
 																<div className="col-lg-6 col-6">
 																	<div className="d-flex">
-																		<img className="img-rounded" src="/assets/imgs/page/about/user2.png" />
+																		<img className="img-rounded" src="/app-assets/imgs/page/about/user2.png" />
 																		<div className="info-right-img">
 																			<span className="font-sm font-bold color-brand-1 op-70">Azumi Rose</span>
 																			<br />
@@ -366,7 +366,7 @@ const BlogPage: NextPage<PublicPageProps> = ({ session }) => {
 														<Link legacyBehavior href="blog-details">
 															<a>
 																<figure>
-																	<img alt="jobBox" src="/assets/imgs/page/homepage1/img-news3.png" />
+																	<img alt="jobBox" src="/app-assets/imgs/page/homepage1/img-news3.png" />
 																</figure>
 															</a>
 														</Link>
@@ -390,7 +390,7 @@ const BlogPage: NextPage<PublicPageProps> = ({ session }) => {
 															<div className="row">
 																<div className="col-lg-6 col-6">
 																	<div className="d-flex">
-																		<img className="img-rounded" src="/assets/imgs/page/about/user3.png" />
+																		<img className="img-rounded" src="/app-assets/imgs/page/about/user3.png" />
 																		<div className="info-right-img">
 																			<span className="font-sm font-bold color-brand-1 op-70">Azumi Rose</span>
 																			<br />
@@ -412,7 +412,7 @@ const BlogPage: NextPage<PublicPageProps> = ({ session }) => {
 														<Link legacyBehavior href="blog-details">
 															<a>
 																<figure>
-																	<img alt="jobBox" src="/assets/imgs/page/blog/img1.png" />
+																	<img alt="jobBox" src="/app-assets/imgs/page/blog/img1.png" />
 																</figure>
 															</a>
 														</Link>
@@ -436,7 +436,7 @@ const BlogPage: NextPage<PublicPageProps> = ({ session }) => {
 															<div className="row">
 																<div className="col-lg-6 col-6">
 																	<div className="d-flex">
-																		<img className="img-rounded" src="/assets/imgs/page/homepage1/user1.png" />
+																		<img className="img-rounded" src="/app-assets/imgs/page/homepage1/user1.png" />
 																		<div className="info-right-img">
 																			<span className="font-sm font-bold color-brand-1 op-70">Azumi Rose</span>
 																			<br />
@@ -458,7 +458,7 @@ const BlogPage: NextPage<PublicPageProps> = ({ session }) => {
 														<Link legacyBehavior href="blog-details">
 															<a>
 																<figure>
-																	<img alt="jobBox" src="/assets/imgs/page/blog/img2.png" />
+																	<img alt="jobBox" src="/app-assets/imgs/page/blog/img2.png" />
 																</figure>
 															</a>
 														</Link>
@@ -482,7 +482,7 @@ const BlogPage: NextPage<PublicPageProps> = ({ session }) => {
 															<div className="row">
 																<div className="col-lg-6 col-6">
 																	<div className="d-flex">
-																		<img className="img-rounded" src="/assets/imgs/page/homepage1/user1.png" />
+																		<img className="img-rounded" src="/app-assets/imgs/page/homepage1/user1.png" />
 																		<div className="info-right-img">
 																			<span className="font-sm font-bold color-brand-1 op-70">Azumi Rose</span>
 																			<br />
@@ -562,7 +562,7 @@ const BlogPage: NextPage<PublicPageProps> = ({ session }) => {
 												<div className="post-list-small-item d-flex align-items-center">
 													<figure className="thumb mr-15">
 														<a href="/blog-details">
-															<img src="/assets/imgs/page/blog/img-trending.png" alt="jobBox" />
+															<img src="/app-assets/imgs/page/blog/img-trending.png" alt="jobBox" />
 														</a>
 													</figure>
 													<div className="content">
@@ -571,7 +571,7 @@ const BlogPage: NextPage<PublicPageProps> = ({ session }) => {
 														</h5>
 														<div className="post-meta text-muted d-flex align-items-center mb-15">
 															<div className="author d-flex align-items-center mr-20">
-																<img alt="jobBox" src="/assets/imgs/page/homepage1/user1.png" />
+																<img alt="jobBox" src="/app-assets/imgs/page/homepage1/user1.png" />
 																<span>Sugar Rosie</span>
 															</div>
 														</div>
@@ -580,7 +580,7 @@ const BlogPage: NextPage<PublicPageProps> = ({ session }) => {
 												<div className="post-list-small-item d-flex align-items-center">
 													<figure className="thumb mr-15">
 														<a href="/blog-details">
-															<img src="/assets/imgs/page/blog/gallery1.png" alt="jobBox" />
+															<img src="/app-assets/imgs/page/blog/gallery1.png" alt="jobBox" />
 														</a>
 													</figure>
 													<div className="content">
@@ -589,7 +589,7 @@ const BlogPage: NextPage<PublicPageProps> = ({ session }) => {
 														</h5>
 														<div className="post-meta text-muted d-flex align-items-center mb-15">
 															<div className="author d-flex align-items-center mr-20">
-																<img alt="jobBox" src="/assets/imgs/page/homepage1/user3.png" />
+																<img alt="jobBox" src="/app-assets/imgs/page/homepage1/user3.png" />
 																<span>Harding</span>
 															</div>
 															<div className="date">
@@ -601,7 +601,7 @@ const BlogPage: NextPage<PublicPageProps> = ({ session }) => {
 												<div className="post-list-small-item d-flex align-items-center">
 													<figure className="thumb mr-15">
 														<a href="/blog-details">
-															<img src="/assets/imgs/page/blog/gallery2.png" alt="jobBox" />
+															<img src="/app-assets/imgs/page/blog/gallery2.png" alt="jobBox" />
 														</a>
 													</figure>
 													<div className="content">
@@ -610,7 +610,7 @@ const BlogPage: NextPage<PublicPageProps> = ({ session }) => {
 														</h5>
 														<div className="post-meta text-muted d-flex align-items-center mb-15">
 															<div className="author d-flex align-items-center mr-20">
-																<img alt="jobBox" src="/assets/imgs/page/homepage1/user2.png" />
+																<img alt="jobBox" src="/app-assets/imgs/page/homepage1/user2.png" />
 																<span>Steven</span>
 															</div>
 															<div className="date">
@@ -622,7 +622,7 @@ const BlogPage: NextPage<PublicPageProps> = ({ session }) => {
 												<div className="post-list-small-item d-flex align-items-center">
 													<figure className="thumb mr-15">
 														<a href="/blog-details">
-															<img src="/assets/imgs/page/blog/gallery4.png" alt="jobBox" />
+															<img src="/app-assets/imgs/page/blog/gallery4.png" alt="jobBox" />
 														</a>
 													</figure>
 													<div className="content">
@@ -631,7 +631,7 @@ const BlogPage: NextPage<PublicPageProps> = ({ session }) => {
 														</h5>
 														<div className="post-meta text-muted d-flex align-items-center mb-15">
 															<div className="author d-flex align-items-center mr-20">
-																<img alt="jobBox" src="/assets/imgs/page/homepage1/user3.png" />
+																<img alt="jobBox" src="/app-assets/imgs/page/homepage1/user3.png" />
 																<span>Merias</span>
 															</div>
 															<div className="date">
@@ -643,7 +643,7 @@ const BlogPage: NextPage<PublicPageProps> = ({ session }) => {
 												<div className="post-list-small-item d-flex align-items-center">
 													<figure className="thumb mr-15">
 														<a href="/blog-details">
-															<img src="/assets/imgs/page/blog/gallery5.png" alt="jobBox" />
+															<img src="/app-assets/imgs/page/blog/gallery5.png" alt="jobBox" />
 														</a>
 													</figure>
 													<div className="content">
@@ -652,7 +652,7 @@ const BlogPage: NextPage<PublicPageProps> = ({ session }) => {
 														</h5>
 														<div className="post-meta text-muted d-flex align-items-center mb-15">
 															<div className="author d-flex align-items-center mr-20">
-																<img alt="jobBox" src="/assets/imgs/page/homepage1/user1.png" />
+																<img alt="jobBox" src="/app-assets/imgs/page/homepage1/user1.png" />
 																<span>Rosie</span>
 															</div>
 															<div className="date">
@@ -680,63 +680,63 @@ const BlogPage: NextPage<PublicPageProps> = ({ session }) => {
 													<li>
 														<Link legacyBehavior href="#">
 															<a>
-																<img src="/assets/imgs/page/blog/gallery1.png" />
+																<img src="/app-assets/imgs/page/blog/gallery1.png" />
 															</a>
 														</Link>
 													</li>
 													<li>
 														<Link legacyBehavior href="#">
 															<a>
-																<img src="/assets/imgs/page/blog/gallery2.png" />
+																<img src="/app-assets/imgs/page/blog/gallery2.png" />
 															</a>
 														</Link>
 													</li>
 													<li>
 														<Link legacyBehavior href="#">
 															<a>
-																<img src="/assets/imgs/page/blog/gallery3.png" />
+																<img src="/app-assets/imgs/page/blog/gallery3.png" />
 															</a>
 														</Link>
 													</li>
 													<li>
 														<Link legacyBehavior href="#">
 															<a>
-																<img src="/assets/imgs/page/blog/gallery4.png" />
+																<img src="/app-assets/imgs/page/blog/gallery4.png" />
 															</a>
 														</Link>
 													</li>
 													<li>
 														<Link legacyBehavior href="#">
 															<a>
-																<img src="/assets/imgs/page/blog/gallery5.png" />
+																<img src="/app-assets/imgs/page/blog/gallery5.png" />
 															</a>
 														</Link>
 													</li>
 													<li>
 														<Link legacyBehavior href="#">
 															<a>
-																<img src="/assets/imgs/page/blog/gallery6.png" />
+																<img src="/app-assets/imgs/page/blog/gallery6.png" />
 															</a>
 														</Link>
 													</li>
 													<li>
 														<Link legacyBehavior href="#">
 															<a>
-																<img src="/assets/imgs/page/blog/gallery7.png" />
+																<img src="/app-assets/imgs/page/blog/gallery7.png" />
 															</a>
 														</Link>
 													</li>
 													<li>
 														<Link legacyBehavior href="#">
 															<a>
-																<img src="/assets/imgs/page/blog/gallery8.png" />
+																<img src="/app-assets/imgs/page/blog/gallery8.png" />
 															</a>
 														</Link>
 													</li>
 													<li>
 														<Link legacyBehavior href="#">
 															<a>
-																<img src="/assets/imgs/page/blog/gallery9.png" />
+																<img src="/app-assets/imgs/page/blog/gallery9.png" />
 															</a>
 														</Link>
 													</li>
@@ -753,7 +753,7 @@ const BlogPage: NextPage<PublicPageProps> = ({ session }) => {
 							<div className="box-newsletter">
 								<div className="row">
 									<div className="col-xl-3 col-12 text-center d-none d-xl-block">
-										<img src="/assets/imgs/template/newsletter-left.png" alt="joxBox" />
+										<img src="/app-assets/imgs/template/newsletter-left.png" alt="joxBox" />
 									</div>
 									<div className="col-lg-12 col-xl-6 col-12">
 										<h2 className="text-md-newsletter text-center">
@@ -768,7 +768,7 @@ const BlogPage: NextPage<PublicPageProps> = ({ session }) => {
 										</div>
 									</div>
 									<div className="col-xl-3 col-12 text-center d-none d-xl-block">
-										<img src="/assets/imgs/template/newsletter-right.png" alt="joxBox" />
+										<img src="/app-assets/imgs/template/newsletter-right.png" alt="joxBox" />
 									</div>
 								</div>
 							</div>

@@ -19,7 +19,7 @@ const JobCard = ({ job }: Props) => {
 				<div className="card-grid-2-image-left">
 					<span className="flash" />
 					<div className="image-box">
-						<img src={`/assets/imgs/brands/${job.img}`} alt="jobBox" />
+						<img src={`/app-assets/imgs/brands/${job.img}`} alt="jobBox" />
 					</div>
 					<div className="right-info">
 						<Link className="name-job" href="/company-details">

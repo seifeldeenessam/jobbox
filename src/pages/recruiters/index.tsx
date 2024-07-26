@@ -265,13 +265,13 @@ const RecruitersPage: NextPage<PublicPageProps> = ({ session }) => {
 														<div className="box-view-type">
 															<Link legacyBehavior href="/jobs-list">
 																<a className="view-type">
-																	<img src="/assets/imgs/template/icons/icon-list.svg" alt="jobBox" />
+																	<img src="/app-assets/imgs/template/icons/icon-list.svg" alt="jobBox" />
 																</a>
 															</Link>
 
 															<Link legacyBehavior href="/jobs-grid">
 																<a className="view-type">
-																	<img src="/assets/imgs/template/icons/icon-grid-hover.svg" alt="jobBox" />
+																	<img src="/app-assets/imgs/template/icons/icon-grid-hover.svg" alt="jobBox" />
 																</a>
 															</Link>
 														</div>
@@ -285,7 +285,7 @@ const RecruitersPage: NextPage<PublicPageProps> = ({ session }) => {
 													<div className="image-box">
 														<Link legacyBehavior href="/company-details">
 															<a>
-																<img src="/assets/imgs/brands/brand-1.png" alt="jobBox" />
+																<img src="/app-assets/imgs/brands/brand-1.png" alt="jobBox" />
 															</a>
 														</Link>
 													</div>
@@ -296,11 +296,11 @@ const RecruitersPage: NextPage<PublicPageProps> = ({ session }) => {
 															</Link>
 														</h5>
 														<div className="mt-5">
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
 															<span className="font-xs color-text-mutted ml-10">
 																<span>(</span>
 																<span>66</span>
@@ -324,7 +324,7 @@ const RecruitersPage: NextPage<PublicPageProps> = ({ session }) => {
 													<div className="image-box">
 														<Link legacyBehavior href="/company-details">
 															<a>
-																<img src="/assets/imgs/brands/brand-2.png" alt="jobBox" />
+																<img src="/app-assets/imgs/brands/brand-2.png" alt="jobBox" />
 															</a>
 														</Link>
 													</div>
@@ -335,11 +335,11 @@ const RecruitersPage: NextPage<PublicPageProps> = ({ session }) => {
 															</Link>
 														</h5>
 														<div className="mt-5">
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
 															<span className="font-xs color-text-mutted ml-10">
 																<span>(</span>
 																<span>18</span>
@@ -363,7 +363,7 @@ const RecruitersPage: NextPage<PublicPageProps> = ({ session }) => {
 													<div className="image-box">
 														<Link legacyBehavior href="/company-details">
 															<a>
-																<img src="/assets/imgs/brands/brand-3.png" alt="jobBox" />
+																<img src="/app-assets/imgs/brands/brand-3.png" alt="jobBox" />
 															</a>
 														</Link>
 													</div>
@@ -374,11 +374,11 @@ const RecruitersPage: NextPage<PublicPageProps> = ({ session }) => {
 															</Link>
 														</h5>
 														<div className="mt-5">
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
 															<span className="font-xs color-text-mutted ml-10">
 																<span>(</span>
 																<span>52</span>
@@ -402,7 +402,7 @@ const RecruitersPage: NextPage<PublicPageProps> = ({ session }) => {
 													<div className="image-box">
 														<Link legacyBehavior href="/company-details">
 															<a>
-																<img src="/assets/imgs/brands/brand-4.png" alt="jobBox" />
+																<img src="/app-assets/imgs/brands/brand-4.png" alt="jobBox" />
 															</a>
 														</Link>
 													</div>
@@ -413,11 +413,11 @@ const RecruitersPage: NextPage<PublicPageProps> = ({ session }) => {
 															</Link>
 														</h5>
 														<div className="mt-5">
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
 															<span className="font-xs color-text-mutted ml-10">
 																<span>(</span>
 																<span>85</span>
@@ -441,7 +441,7 @@ const RecruitersPage: NextPage<PublicPageProps> = ({ session }) => {
 													<div className="image-box">
 														<Link legacyBehavior href="/company-details">
 															<a>
-																<img src="/assets/imgs/brands/brand-5.png" alt="jobBox" />
+																<img src="/app-assets/imgs/brands/brand-5.png" alt="jobBox" />
 															</a>
 														</Link>
 													</div>
@@ -452,11 +452,11 @@ const RecruitersPage: NextPage<PublicPageProps> = ({ session }) => {
 															</Link>
 														</h5>
 														<div className="mt-5">
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
 															<span className="font-xs color-text-mutted ml-10">
 																<span>(</span>
 																<span>25</span>
@@ -480,7 +480,7 @@ const RecruitersPage: NextPage<PublicPageProps> = ({ session }) => {
 													<div className="image-box">
 														<Link legacyBehavior href="/company-details">
 															<a>
-																<img src="/assets/imgs/brands/brand-6.png" alt="jobBox" />
+																<img src="/app-assets/imgs/brands/brand-6.png" alt="jobBox" />
 															</a>
 														</Link>
 													</div>
@@ -491,11 +491,11 @@ const RecruitersPage: NextPage<PublicPageProps> = ({ session }) => {
 															</Link>
 														</h5>
 														<div className="mt-5">
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
 															<span className="font-xs color-text-mutted ml-10">
 																<span>(</span>
 																<span>34</span>
@@ -519,7 +519,7 @@ const RecruitersPage: NextPage<PublicPageProps> = ({ session }) => {
 													<div className="image-box">
 														<Link legacyBehavior href="/company-details">
 															<a>
-																<img src="/assets/imgs/brands/brand-7.png" alt="jobBox" />
+																<img src="/app-assets/imgs/brands/brand-7.png" alt="jobBox" />
 															</a>
 														</Link>
 													</div>
@@ -530,11 +530,11 @@ const RecruitersPage: NextPage<PublicPageProps> = ({ session }) => {
 															</Link>
 														</h5>
 														<div className="mt-5">
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
 															<span className="font-xs color-text-mutted ml-10">
 																<span>(</span>
 																<span>97</span>
@@ -558,7 +558,7 @@ const RecruitersPage: NextPage<PublicPageProps> = ({ session }) => {
 													<div className="image-box">
 														<Link legacyBehavior href="/company-details">
 															<a>
-																<img src="/assets/imgs/brands/brand-8.png" alt="jobBox" />
+																<img src="/app-assets/imgs/brands/brand-8.png" alt="jobBox" />
 															</a>
 														</Link>
 													</div>
@@ -569,11 +569,11 @@ const RecruitersPage: NextPage<PublicPageProps> = ({ session }) => {
 															</Link>
 														</h5>
 														<div className="mt-5">
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
 															<span className="font-xs color-text-mutted ml-10">
 																<span>(</span>
 																<span>67</span>
@@ -597,7 +597,7 @@ const RecruitersPage: NextPage<PublicPageProps> = ({ session }) => {
 													<div className="image-box">
 														<Link legacyBehavior href="/company-details">
 															<a>
-																<img src="/assets/imgs/brands/brand-9.png" alt="jobBox" />
+																<img src="/app-assets/imgs/brands/brand-9.png" alt="jobBox" />
 															</a>
 														</Link>
 													</div>
@@ -608,11 +608,11 @@ const RecruitersPage: NextPage<PublicPageProps> = ({ session }) => {
 															</Link>
 														</h5>
 														<div className="mt-5">
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
 															<span className="font-xs color-text-mutted ml-10">
 																<span>(</span>
 																<span>45</span>
@@ -636,7 +636,7 @@ const RecruitersPage: NextPage<PublicPageProps> = ({ session }) => {
 													<div className="image-box">
 														<Link legacyBehavior href="/company-details">
 															<a>
-																<img src="/assets/imgs/brands/brand-1.png" alt="jobBox" />
+																<img src="/app-assets/imgs/brands/brand-1.png" alt="jobBox" />
 															</a>
 														</Link>
 													</div>
@@ -647,11 +647,11 @@ const RecruitersPage: NextPage<PublicPageProps> = ({ session }) => {
 															</Link>
 														</h5>
 														<div className="mt-5">
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
 															<span className="font-xs color-text-mutted ml-10">
 																<span>(</span>
 																<span>08</span>
@@ -675,7 +675,7 @@ const RecruitersPage: NextPage<PublicPageProps> = ({ session }) => {
 													<div className="image-box">
 														<Link legacyBehavior href="/company-details">
 															<a>
-																<img src="/assets/imgs/brands/brand-2.png" alt="jobBox" />
+																<img src="/app-assets/imgs/brands/brand-2.png" alt="jobBox" />
 															</a>
 														</Link>
 													</div>
@@ -686,11 +686,11 @@ const RecruitersPage: NextPage<PublicPageProps> = ({ session }) => {
 															</Link>
 														</h5>
 														<div className="mt-5">
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
 															<span className="font-xs color-text-mutted ml-10">
 																<span>(</span>
 																<span>54</span>
@@ -714,7 +714,7 @@ const RecruitersPage: NextPage<PublicPageProps> = ({ session }) => {
 													<div className="image-box">
 														<Link legacyBehavior href="/company-details">
 															<a>
-																<img src="/assets/imgs/brands/brand-3.png" alt="jobBox" />
+																<img src="/app-assets/imgs/brands/brand-3.png" alt="jobBox" />
 															</a>
 														</Link>
 													</div>
@@ -725,11 +725,11 @@ const RecruitersPage: NextPage<PublicPageProps> = ({ session }) => {
 															</Link>
 														</h5>
 														<div className="mt-5">
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
 															<span className="font-xs color-text-mutted ml-10">
 																<span>(</span>
 																<span>123</span>
@@ -753,7 +753,7 @@ const RecruitersPage: NextPage<PublicPageProps> = ({ session }) => {
 													<div className="image-box">
 														<Link legacyBehavior href="/company-details">
 															<a>
-																<img src="/assets/imgs/brands/brand-4.png" alt="jobBox" />
+																<img src="/app-assets/imgs/brands/brand-4.png" alt="jobBox" />
 															</a>
 														</Link>
 													</div>
@@ -764,11 +764,11 @@ const RecruitersPage: NextPage<PublicPageProps> = ({ session }) => {
 															</Link>
 														</h5>
 														<div className="mt-5">
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
 															<span className="font-xs color-text-mutted ml-10">
 																<span>(</span>
 																<span>64</span>
@@ -792,7 +792,7 @@ const RecruitersPage: NextPage<PublicPageProps> = ({ session }) => {
 													<div className="image-box">
 														<Link legacyBehavior href="/company-details">
 															<a>
-																<img src="/assets/imgs/brands/brand-5.png" alt="jobBox" />
+																<img src="/app-assets/imgs/brands/brand-5.png" alt="jobBox" />
 															</a>
 														</Link>
 													</div>
@@ -803,11 +803,11 @@ const RecruitersPage: NextPage<PublicPageProps> = ({ session }) => {
 															</Link>
 														</h5>
 														<div className="mt-5">
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
 															<span className="font-xs color-text-mutted ml-10">
 																<span>(</span>
 																<span>34</span>
@@ -831,7 +831,7 @@ const RecruitersPage: NextPage<PublicPageProps> = ({ session }) => {
 													<div className="image-box">
 														<Link legacyBehavior href="/company-details">
 															<a>
-																<img src="/assets/imgs/brands/brand-6.png" alt="jobBox" />
+																<img src="/app-assets/imgs/brands/brand-6.png" alt="jobBox" />
 															</a>
 														</Link>
 													</div>
@@ -842,11 +842,11 @@ const RecruitersPage: NextPage<PublicPageProps> = ({ session }) => {
 															</Link>
 														</h5>
 														<div className="mt-5">
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
 															<span className="font-xs color-text-mutted ml-10">
 																<span>(</span>
 																<span>12</span>
@@ -870,7 +870,7 @@ const RecruitersPage: NextPage<PublicPageProps> = ({ session }) => {
 													<div className="image-box">
 														<Link legacyBehavior href="/company-details">
 															<a>
-																<img src="/assets/imgs/brands/brand-1.png" alt="jobBox" />
+																<img src="/app-assets/imgs/brands/brand-1.png" alt="jobBox" />
 															</a>
 														</Link>
 													</div>
@@ -881,11 +881,11 @@ const RecruitersPage: NextPage<PublicPageProps> = ({ session }) => {
 															</Link>
 														</h5>
 														<div className="mt-5">
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
 															<span className="font-xs color-text-mutted ml-10">
 																<span>(</span>
 																<span>66</span>
@@ -909,7 +909,7 @@ const RecruitersPage: NextPage<PublicPageProps> = ({ session }) => {
 													<div className="image-box">
 														<Link legacyBehavior href="/company-details">
 															<a>
-																<img src="/assets/imgs/brands/brand-2.png" alt="jobBox" />
+																<img src="/app-assets/imgs/brands/brand-2.png" alt="jobBox" />
 															</a>
 														</Link>
 													</div>
@@ -920,11 +920,11 @@ const RecruitersPage: NextPage<PublicPageProps> = ({ session }) => {
 															</Link>
 														</h5>
 														<div className="mt-5">
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
 															<span className="font-xs color-text-mutted ml-10">
 																<span>(</span>
 																<span>18</span>
@@ -948,7 +948,7 @@ const RecruitersPage: NextPage<PublicPageProps> = ({ session }) => {
 													<div className="image-box">
 														<Link legacyBehavior href="/company-details">
 															<a>
-																<img src="/assets/imgs/brands/brand-3.png" alt="jobBox" />
+																<img src="/app-assets/imgs/brands/brand-3.png" alt="jobBox" />
 															</a>
 														</Link>
 													</div>
@@ -959,11 +959,11 @@ const RecruitersPage: NextPage<PublicPageProps> = ({ session }) => {
 															</Link>
 														</h5>
 														<div className="mt-5">
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
 															<span className="font-xs color-text-mutted ml-10">
 																<span>(</span>
 																<span>52</span>
@@ -987,7 +987,7 @@ const RecruitersPage: NextPage<PublicPageProps> = ({ session }) => {
 													<div className="image-box">
 														<Link legacyBehavior href="/company-details">
 															<a>
-																<img src="/assets/imgs/brands/brand-4.png" alt="jobBox" />
+																<img src="/app-assets/imgs/brands/brand-4.png" alt="jobBox" />
 															</a>
 														</Link>
 													</div>
@@ -998,11 +998,11 @@ const RecruitersPage: NextPage<PublicPageProps> = ({ session }) => {
 															</Link>
 														</h5>
 														<div className="mt-5">
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
 															<span className="font-xs color-text-mutted ml-10">
 																<span>(</span>
 																<span>85</span>
@@ -1026,7 +1026,7 @@ const RecruitersPage: NextPage<PublicPageProps> = ({ session }) => {
 													<div className="image-box">
 														<Link legacyBehavior href="/company-details">
 															<a>
-																<img src="/assets/imgs/brands/brand-5.png" alt="jobBox" />
+																<img src="/app-assets/imgs/brands/brand-5.png" alt="jobBox" />
 															</a>
 														</Link>
 													</div>
@@ -1037,11 +1037,11 @@ const RecruitersPage: NextPage<PublicPageProps> = ({ session }) => {
 															</Link>
 														</h5>
 														<div className="mt-5">
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
 															<span className="font-xs color-text-mutted ml-10">
 																<span>(</span>
 																<span>25</span>
@@ -1065,7 +1065,7 @@ const RecruitersPage: NextPage<PublicPageProps> = ({ session }) => {
 													<div className="image-box">
 														<Link legacyBehavior href="/company-details">
 															<a>
-																<img src="/assets/imgs/brands/brand-6.png" alt="jobBox" />
+																<img src="/app-assets/imgs/brands/brand-6.png" alt="jobBox" />
 															</a>
 														</Link>
 													</div>
@@ -1076,11 +1076,11 @@ const RecruitersPage: NextPage<PublicPageProps> = ({ session }) => {
 															</Link>
 														</h5>
 														<div className="mt-5">
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
-															<img alt="jobBox" src="/assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
+															<img alt="jobBox" src="/app-assets/imgs/template/icons/star.svg" />
 															<span className="font-xs color-text-mutted ml-10">
 																<span>(</span>
 																<span>34</span>
@@ -1565,7 +1565,7 @@ const RecruitersPage: NextPage<PublicPageProps> = ({ session }) => {
 							<div className="box-newsletter">
 								<div className="row">
 									<div className="col-xl-3 col-12 text-center d-none d-xl-block">
-										<img src="/assets/imgs/template/newsletter-left.png" alt="joxBox" />
+										<img src="/app-assets/imgs/template/newsletter-left.png" alt="joxBox" />
 									</div>
 									<div className="col-lg-12 col-xl-6 col-12">
 										<h2 className="text-md-newsletter text-center">
@@ -1580,7 +1580,7 @@ const RecruitersPage: NextPage<PublicPageProps> = ({ session }) => {
 										</div>
 									</div>
 									<div className="col-xl-3 col-12 text-center d-none d-xl-block">
-										<img src="/assets/imgs/template/newsletter-right.png" alt="joxBox" />
+										<img src="/app-assets/imgs/template/newsletter-right.png" alt="joxBox" />
 									</div>
 								</div>
 							</div>

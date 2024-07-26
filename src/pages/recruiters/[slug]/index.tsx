@@ -44,11 +44,11 @@ const RecruiterDetailsPage: NextPage<PublicPageProps> = ({ session }) => {
 					<section className="section-box-2">
 						<div className="container">
 							<div className="banner-hero banner-image-single">
-								<img src="/assets/imgs/page/company/img.png" alt="jobBox" />
+								<img src="/app-assets/imgs/page/company/img.png" alt="jobBox" />
 							</div>
 							<div className="box-company-profile">
 								<div className="image-compay">
-									<img src="/assets/imgs/page/company/company.png" alt="jobBox" />
+									<img src="/app-assets/imgs/page/company/company.png" alt="jobBox" />
 								</div>
 								<div className="row mt-10">
 									<div className="col-lg-8 col-md-12">
@@ -149,7 +149,7 @@ const RecruiterDetailsPage: NextPage<PublicPageProps> = ({ session }) => {
 														<div className="col-lg-6 col-md-6 col-sm-12">
 															<div className="card-grid-2-image-left">
 																<div className="image-box">
-																	<img src="/assets/imgs/brands/brand-6.png" alt="jobBox" />
+																	<img src="/app-assets/imgs/brands/brand-6.png" alt="jobBox" />
 																</div>
 																<div className="right-info">
 																	<Link legacyBehavior href="#">
@@ -210,7 +210,7 @@ const RecruiterDetailsPage: NextPage<PublicPageProps> = ({ session }) => {
 														<div className="col-lg-6 col-md-6 col-sm-12">
 															<div className="card-grid-2-image-left">
 																<div className="image-box">
-																	<img src="/assets/imgs/brands/brand-7.png" alt="jobBox" />
+																	<img src="/app-assets/imgs/brands/brand-7.png" alt="jobBox" />
 																</div>
 																<div className="right-info">
 																	<Link legacyBehavior href="#">
@@ -271,7 +271,7 @@ const RecruiterDetailsPage: NextPage<PublicPageProps> = ({ session }) => {
 														<div className="col-lg-6 col-md-6 col-sm-12">
 															<div className="card-grid-2-image-left">
 																<div className="image-box">
-																	<img src="/assets/imgs/brands/brand-8.png" alt="jobBox" />
+																	<img src="/app-assets/imgs/brands/brand-8.png" alt="jobBox" />
 																</div>
 																<div className="right-info">
 																	<Link legacyBehavior href="#">
@@ -474,7 +474,7 @@ const RecruiterDetailsPage: NextPage<PublicPageProps> = ({ session }) => {
 							<div className="box-newsletter">
 								<div className="row">
 									<div className="col-xl-3 col-12 text-center d-none d-xl-block">
-										<img src="/assets/imgs/template/newsletter-left.png" alt="joxBox" />
+										<img src="/app-assets/imgs/template/newsletter-left.png" alt="joxBox" />
 									</div>
 									<div className="col-lg-12 col-xl-6 col-12">
 										<h2 className="text-md-newsletter text-center">
@@ -489,7 +489,7 @@ const RecruiterDetailsPage: NextPage<PublicPageProps> = ({ session }) => {
 										</div>
 									</div>
 									<div className="col-xl-3 col-12 text-center d-none d-xl-block">
-										<img src="/assets/imgs/template/newsletter-right.png" alt="joxBox" />
+										<img src="/app-assets/imgs/template/newsletter-right.png" alt="joxBox" />
 									</div>
 								</div>
 							</div>

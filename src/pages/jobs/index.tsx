@@ -399,13 +399,13 @@ const JobsPage: NextPage<PublicPageProps> = ({ session }) => {
 														<div className="box-view-type">
 															<Link legacyBehavior href="/jobs-list">
 																<a className="view-type">
-																	<img src="/assets/imgs/template/icons/icon-list.svg" alt="jobBox" />
+																	<img src="/app-assets/imgs/template/icons/icon-list.svg" alt="jobBox" />
 																</a>
 															</Link>
 
 															<Link legacyBehavior href="/jobs-grid">
 																<a className="view-type">
-																	<img src="/assets/imgs/template/icons/icon-grid-hover.svg" alt="jobBox" />
+																	<img src="/app-assets/imgs/template/icons/icon-grid-hover.svg" alt="jobBox" />
 																</a>
 															</Link>
 														</div>
@@ -419,7 +419,7 @@ const JobsPage: NextPage<PublicPageProps> = ({ session }) => {
 													<div className="card-grid-2-image-left">
 														<span className="flash" />
 														<div className="image-box">
-															<img src="/assets/imgs/brands/brand-1.png" alt="jobBox" />
+															<img src="/app-assets/imgs/brands/brand-1.png" alt="jobBox" />
 														</div>
 														<div className="right-info">
 															<Link legacyBehavior href="company-details">
@@ -477,7 +477,7 @@ const JobsPage: NextPage<PublicPageProps> = ({ session }) => {
 													<div className="card-grid-2-image-left">
 														<span className="flash" />
 														<div className="image-box">
-															<img src="/assets/imgs/brands/brand-2.png" alt="jobBox" />
+															<img src="/app-assets/imgs/brands/brand-2.png" alt="jobBox" />
 														</div>
 														<div className="right-info">
 															<Link legacyBehavior href="company-details">
@@ -531,7 +531,7 @@ const JobsPage: NextPage<PublicPageProps> = ({ session }) => {
 													<div className="card-grid-2-image-left">
 														<span className="flash" />
 														<div className="image-box">
-															<img src="/assets/imgs/brands/brand-3.png" alt="jobBox" />
+															<img src="/app-assets/imgs/brands/brand-3.png" alt="jobBox" />
 														</div>
 														<div className="right-info">
 															<Link legacyBehavior href="company-details">
@@ -589,7 +589,7 @@ const JobsPage: NextPage<PublicPageProps> = ({ session }) => {
 													<div className="card-grid-2-image-left">
 														<span className="flash" />
 														<div className="image-box">
-															<img src="/assets/imgs/brands/brand-4.png" alt="jobBox" />
+															<img src="/app-assets/imgs/brands/brand-4.png" alt="jobBox" />
 														</div>
 														<div className="right-info">
 															<Link legacyBehavior href="company-details">
@@ -643,7 +643,7 @@ const JobsPage: NextPage<PublicPageProps> = ({ session }) => {
 													<div className="card-grid-2-image-left">
 														<span className="flash" />
 														<div className="image-box">
-															<img src="/assets/imgs/brands/brand-5.png" alt="jobBox" />
+															<img src="/app-assets/imgs/brands/brand-5.png" alt="jobBox" />
 														</div>
 														<div className="right-info">
 															<Link legacyBehavior href="company-details">
@@ -693,7 +693,7 @@ const JobsPage: NextPage<PublicPageProps> = ({ session }) => {
 													<div className="card-grid-2-image-left">
 														<span className="flash" />
 														<div className="image-box">
-															<img src="/assets/imgs/brands/brand-6.png" alt="jobBox" />
+															<img src="/app-assets/imgs/brands/brand-6.png" alt="jobBox" />
 														</div>
 														<div className="right-info">
 															<Link legacyBehavior href="company-details">
@@ -747,7 +747,7 @@ const JobsPage: NextPage<PublicPageProps> = ({ session }) => {
 													<div className="card-grid-2-image-left">
 														<span className="flash" />
 														<div className="image-box">
-															<img src="/assets/imgs/brands/brand-7.png" alt="jobBox" />
+															<img src="/app-assets/imgs/brands/brand-7.png" alt="jobBox" />
 														</div>
 														<div className="right-info">
 															<Link legacyBehavior href="company-details">
@@ -801,7 +801,7 @@ const JobsPage: NextPage<PublicPageProps> = ({ session }) => {
 													<div className="card-grid-2-image-left">
 														<span className="flash" />
 														<div className="image-box">
-															<img src="/assets/imgs/brands/brand-8.png" alt="jobBox" />
+															<img src="/app-assets/imgs/brands/brand-8.png" alt="jobBox" />
 														</div>
 														<div className="right-info">
 															<Link legacyBehavior href="company-details">
@@ -859,7 +859,7 @@ const JobsPage: NextPage<PublicPageProps> = ({ session }) => {
 													<div className="card-grid-2-image-left">
 														<span className="flash" />
 														<div className="image-box">
-															<img src="/assets/imgs/brands/brand-1.png" alt="jobBox" />
+															<img src="/app-assets/imgs/brands/brand-1.png" alt="jobBox" />
 														</div>
 														<div className="right-info">
 															<Link legacyBehavior href="company-details">
@@ -917,7 +917,7 @@ const JobsPage: NextPage<PublicPageProps> = ({ session }) => {
 													<div className="card-grid-2-image-left">
 														<span className="flash" />
 														<div className="image-box">
-															<img src="/assets/imgs/brands/brand-2.png" alt="jobBox" />
+															<img src="/app-assets/imgs/brands/brand-2.png" alt="jobBox" />
 														</div>
 														<div className="right-info">
 															<Link legacyBehavior href="company-details">
@@ -971,7 +971,7 @@ const JobsPage: NextPage<PublicPageProps> = ({ session }) => {
 													<div className="card-grid-2-image-left">
 														<span className="flash" />
 														<div className="image-box">
-															<img src="/assets/imgs/brands/brand-3.png" alt="jobBox" />
+															<img src="/app-assets/imgs/brands/brand-3.png" alt="jobBox" />
 														</div>
 														<div className="right-info">
 															<Link legacyBehavior href="company-details">
@@ -1029,7 +1029,7 @@ const JobsPage: NextPage<PublicPageProps> = ({ session }) => {
 													<div className="card-grid-2-image-left">
 														<span className="flash" />
 														<div className="image-box">
-															<img src="/assets/imgs/brands/brand-4.png" alt="jobBox" />
+															<img src="/app-assets/imgs/brands/brand-4.png" alt="jobBox" />
 														</div>
 														<div className="right-info">
 															<Link legacyBehavior href="company-details">
@@ -1083,7 +1083,7 @@ const JobsPage: NextPage<PublicPageProps> = ({ session }) => {
 													<div className="card-grid-2-image-left">
 														<span className="flash" />
 														<div className="image-box">
-															<img src="/assets/imgs/brands/brand-5.png" alt="jobBox" />
+															<img src="/app-assets/imgs/brands/brand-5.png" alt="jobBox" />
 														</div>
 														<div className="right-info">
 															<Link legacyBehavior href="company-details">
@@ -1133,7 +1133,7 @@ const JobsPage: NextPage<PublicPageProps> = ({ session }) => {
 													<div className="card-grid-2-image-left">
 														<span className="flash" />
 														<div className="image-box">
-															<img src="/assets/imgs/brands/brand-6.png" alt="jobBox" />
+															<img src="/app-assets/imgs/brands/brand-6.png" alt="jobBox" />
 														</div>
 														<div className="right-info">
 															<Link legacyBehavior href="company-details">
@@ -1187,7 +1187,7 @@ const JobsPage: NextPage<PublicPageProps> = ({ session }) => {
 													<div className="card-grid-2-image-left">
 														<span className="flash" />
 														<div className="image-box">
-															<img src="/assets/imgs/brands/brand-7.png" alt="jobBox" />
+															<img src="/app-assets/imgs/brands/brand-7.png" alt="jobBox" />
 														</div>
 														<div className="right-info">
 															<Link legacyBehavior href="company-details">
@@ -1241,7 +1241,7 @@ const JobsPage: NextPage<PublicPageProps> = ({ session }) => {
 													<div className="card-grid-2-image-left">
 														<span className="flash" />
 														<div className="image-box">
-															<img src="/assets/imgs/brands/brand-8.png" alt="jobBox" />
+															<img src="/app-assets/imgs/brands/brand-8.png" alt="jobBox" />
 														</div>
 														<div className="right-info">
 															<Link legacyBehavior href="company-details">
@@ -1299,7 +1299,7 @@ const JobsPage: NextPage<PublicPageProps> = ({ session }) => {
 													<div className="card-grid-2-image-left">
 														<span className="flash" />
 														<div className="image-box">
-															<img src="/assets/imgs/brands/brand-1.png" alt="jobBox" />
+															<img src="/app-assets/imgs/brands/brand-1.png" alt="jobBox" />
 														</div>
 														<div className="right-info">
 															<Link legacyBehavior href="company-details">
@@ -1357,7 +1357,7 @@ const JobsPage: NextPage<PublicPageProps> = ({ session }) => {
 													<div className="card-grid-2-image-left">
 														<span className="flash" />
 														<div className="image-box">
-															<img src="/assets/imgs/brands/brand-2.png" alt="jobBox" />
+															<img src="/app-assets/imgs/brands/brand-2.png" alt="jobBox" />
 														</div>
 														<div className="right-info">
 															<Link legacyBehavior href="company-details">
@@ -1872,7 +1872,7 @@ const JobsPage: NextPage<PublicPageProps> = ({ session }) => {
 							<div className="box-newsletter">
 								<div className="row">
 									<div className="col-xl-3 col-12 text-center d-none d-xl-block">
-										<img src="/assets/imgs/template/newsletter-left.png" alt="joxBox" />
+										<img src="/app-assets/imgs/template/newsletter-left.png" alt="joxBox" />
 									</div>
 									<div className="col-lg-12 col-xl-6 col-12">
 										<h2 className="text-md-newsletter text-center">
@@ -1887,7 +1887,7 @@ const JobsPage: NextPage<PublicPageProps> = ({ session }) => {
 										</div>
 									</div>
 									<div className="col-xl-3 col-12 text-center d-none d-xl-block">
-										<img src="/assets/imgs/template/newsletter-right.png" alt="joxBox" />
+										<img src="/app-assets/imgs/template/newsletter-right.png" alt="joxBox" />
 									</div>
 								</div>
 							</div>

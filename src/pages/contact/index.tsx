@@ -66,7 +66,7 @@ const ContactPage: NextPage<PublicPageProps> = ({ session }) => {
 								<div className="row">
 									<div className="col-lg-3 col-md-6 col-sm-12 mb-30">
 										<a href="#">
-											<img src="/assets/imgs/page/contact/logo.svg" alt="joxBox" />
+											<img src="/app-assets/imgs/page/contact/logo.svg" alt="joxBox" />
 										</a>
 										<div className="font-sm color-text-paragraph">
 											205 North Michigan Avenue, Suite 810 Chicago, 60601, USA
@@ -165,7 +165,7 @@ const ContactPage: NextPage<PublicPageProps> = ({ session }) => {
 									<p className="form-messege" />
 								</div>
 								<div className="col-lg-4 text-center d-none d-lg-block">
-									<img src="/assets/imgs/page/contact/img.png" alt="joxBox" />
+									<img src="/app-assets/imgs/page/contact/img.png" alt="joxBox" />
 								</div>
 							</div>
 						</div>
@@ -186,7 +186,7 @@ const ContactPage: NextPage<PublicPageProps> = ({ session }) => {
 										<div className="card-grid-4 text-center hover-up">
 											<div className="image-top-feature">
 												<figure>
-													<img alt="jobBox" src="/assets/imgs/page/about/team1.png" />
+													<img alt="jobBox" src="/app-assets/imgs/page/about/team1.png" />
 												</figure>
 											</div>
 											<div className="card-grid-4-info">
@@ -194,19 +194,19 @@ const ContactPage: NextPage<PublicPageProps> = ({ session }) => {
 												<p className="font-xs color-text-paragraph-2 mt-5 mb-5">Frontend Developer</p>
 												<div className="rate-reviews-small pt-5">
 													<span>
-														<img src="/assets/imgs/template/icons/star.svg" alt="jobBox" />
+														<img src="/app-assets/imgs/template/icons/star.svg" alt="jobBox" />
 													</span>
 													<span>
-														<img src="/assets/imgs/template/icons/star.svg" alt="jobBox" />
+														<img src="/app-assets/imgs/template/icons/star.svg" alt="jobBox" />
 													</span>
 													<span>
-														<img src="/assets/imgs/template/icons/star.svg" alt="jobBox" />
+														<img src="/app-assets/imgs/template/icons/star.svg" alt="jobBox" />
 													</span>
 													<span>
-														<img src="/assets/imgs/template/icons/star.svg" alt="jobBox" />
+														<img src="/app-assets/imgs/template/icons/star.svg" alt="jobBox" />
 													</span>
 													<span>
-														<img src="/assets/imgs/template/icons/star.svg" alt="jobBox" />
+														<img src="/app-assets/imgs/template/icons/star.svg" alt="jobBox" />
 													</span>
 													<span className="ml-10 color-text-mutted font-xs">
 														<span>(</span>
@@ -228,7 +228,7 @@ const ContactPage: NextPage<PublicPageProps> = ({ session }) => {
 										<div className="card-grid-4 text-center hover-up">
 											<div className="image-top-feature">
 												<figure>
-													<img alt="jobBox" src="/assets/imgs/page/about/team2.png" />
+													<img alt="jobBox" src="/app-assets/imgs/page/about/team2.png" />
 												</figure>
 											</div>
 											<div className="card-grid-4-info">
@@ -236,19 +236,19 @@ const ContactPage: NextPage<PublicPageProps> = ({ session }) => {
 												<p className="font-xs color-text-paragraph-2 mt-5 mb-5">UI/UX Designer</p>
 												<div className="rate-reviews-small pt-5">
 													<span>
-														<img src="/assets/imgs/template/icons/star.svg" alt="jobBox" />
+														<img src="/app-assets/imgs/template/icons/star.svg" alt="jobBox" />
 													</span>
 													<span>
-														<img src="/assets/imgs/template/icons/star.svg" alt="jobBox" />
+														<img src="/app-assets/imgs/template/icons/star.svg" alt="jobBox" />
 													</span>
 													<span>
-														<img src="/assets/imgs/template/icons/star.svg" alt="jobBox" />
+														<img src="/app-assets/imgs/template/icons/star.svg" alt="jobBox" />
 													</span>
 													<span>
-														<img src="/assets/imgs/template/icons/star.svg" alt="jobBox" />
+														<img src="/app-assets/imgs/template/icons/star.svg" alt="jobBox" />
 													</span>
 													<span>
-														<img src="/assets/imgs/template/icons/star.svg" alt="jobBox" />
+														<img src="/app-assets/imgs/template/icons/star.svg" alt="jobBox" />
 													</span>
 													<span className="ml-10 color-text-mutted font-xs">
 														<span>(</span>
@@ -270,7 +270,7 @@ const ContactPage: NextPage<PublicPageProps> = ({ session }) => {
 										<div className="card-grid-4 text-center hover-up">
 											<div className="image-top-feature">
 												<figure>
-													<img alt="jobBox" src="/assets/imgs/page/about/team3.png" />
+													<img alt="jobBox" src="/app-assets/imgs/page/about/team3.png" />
 												</figure>
 											</div>
 											<div className="card-grid-4-info">
@@ -278,19 +278,19 @@ const ContactPage: NextPage<PublicPageProps> = ({ session }) => {
 												<p className="font-xs color-text-paragraph-2 mt-5 mb-5">Frontend Developer</p>
 												<div className="rate-reviews-small pt-5">
 													<span>
-														<img src="/assets/imgs/template/icons/star.svg" alt="jobBox" />
+														<img src="/app-assets/imgs/template/icons/star.svg" alt="jobBox" />
 													</span>
 													<span>
-														<img src="/assets/imgs/template/icons/star.svg" alt="jobBox" />
+														<img src="/app-assets/imgs/template/icons/star.svg" alt="jobBox" />
 													</span>
 													<span>
-														<img src="/assets/imgs/template/icons/star.svg" alt="jobBox" />
+														<img src="/app-assets/imgs/template/icons/star.svg" alt="jobBox" />
 													</span>
 													<span>
-														<img src="/assets/imgs/template/icons/star.svg" alt="jobBox" />
+														<img src="/app-assets/imgs/template/icons/star.svg" alt="jobBox" />
 													</span>
 													<span>
-														<img src="/assets/imgs/template/icons/star.svg" alt="jobBox" />
+														<img src="/app-assets/imgs/template/icons/star.svg" alt="jobBox" />
 													</span>
 													<span className="ml-10 color-text-mutted font-xs">
 														<span>(</span>
@@ -312,7 +312,7 @@ const ContactPage: NextPage<PublicPageProps> = ({ session }) => {
 										<div className="card-grid-4 text-center hover-up">
 											<div className="image-top-feature">
 												<figure>
-													<img alt="jobBox" src="/assets/imgs/page/about/team4.png" />
+													<img alt="jobBox" src="/app-assets/imgs/page/about/team4.png" />
 												</figure>
 											</div>
 											<div className="card-grid-4-info">
@@ -320,19 +320,19 @@ const ContactPage: NextPage<PublicPageProps> = ({ session }) => {
 												<p className="font-xs color-text-paragraph-2 mt-5 mb-5">Frontend Developer</p>
 												<div className="rate-reviews-small pt-5">
 													<span>
-														<img src="/assets/imgs/template/icons/star.svg" alt="jobBox" />
+														<img src="/app-assets/imgs/template/icons/star.svg" alt="jobBox" />
 													</span>
 													<span>
-														<img src="/assets/imgs/template/icons/star.svg" alt="jobBox" />
+														<img src="/app-assets/imgs/template/icons/star.svg" alt="jobBox" />
 													</span>
 													<span>
-														<img src="/assets/imgs/template/icons/star.svg" alt="jobBox" />
+														<img src="/app-assets/imgs/template/icons/star.svg" alt="jobBox" />
 													</span>
 													<span>
-														<img src="/assets/imgs/template/icons/star.svg" alt="jobBox" />
+														<img src="/app-assets/imgs/template/icons/star.svg" alt="jobBox" />
 													</span>
 													<span>
-														<img src="/assets/imgs/template/icons/star.svg" alt="jobBox" />
+														<img src="/app-assets/imgs/template/icons/star.svg" alt="jobBox" />
 													</span>
 													<span className="ml-10 color-text-mutted font-xs">
 														<span>(</span>
@@ -354,7 +354,7 @@ const ContactPage: NextPage<PublicPageProps> = ({ session }) => {
 										<div className="card-grid-4 text-center hover-up">
 											<div className="image-top-feature">
 												<figure>
-													<img alt="jobBox" src="/assets/imgs/page/about/team5.png" />
+													<img alt="jobBox" src="/app-assets/imgs/page/about/team5.png" />
 												</figure>
 											</div>
 											<div className="card-grid-4-info">
@@ -362,19 +362,19 @@ const ContactPage: NextPage<PublicPageProps> = ({ session }) => {
 												<p className="font-xs color-text-paragraph-2 mt-5 mb-5">Frontend Developer</p>
 												<div className="rate-reviews-small pt-5">
 													<span>
-														<img src="/assets/imgs/template/icons/star.svg" alt="jobBox" />
+														<img src="/app-assets/imgs/template/icons/star.svg" alt="jobBox" />
 													</span>
 													<span>
-														<img src="/assets/imgs/template/icons/star.svg" alt="jobBox" />
+														<img src="/app-assets/imgs/template/icons/star.svg" alt="jobBox" />
 													</span>
 													<span>
-														<img src="/assets/imgs/template/icons/star.svg" alt="jobBox" />
+														<img src="/app-assets/imgs/template/icons/star.svg" alt="jobBox" />
 													</span>
 													<span>
-														<img src="/assets/imgs/template/icons/star.svg" alt="jobBox" />
+														<img src="/app-assets/imgs/template/icons/star.svg" alt="jobBox" />
 													</span>
 													<span>
-														<img src="/assets/imgs/template/icons/star.svg" alt="jobBox" />
+														<img src="/app-assets/imgs/template/icons/star.svg" alt="jobBox" />
 													</span>
 													<span className="ml-10 color-text-mutted font-xs">
 														<span>(</span>
@@ -396,7 +396,7 @@ const ContactPage: NextPage<PublicPageProps> = ({ session }) => {
 										<div className="card-grid-4 text-center hover-up">
 											<div className="image-top-feature">
 												<figure>
-													<img alt="jobBox" src="/assets/imgs/page/about/team6.png" />
+													<img alt="jobBox" src="/app-assets/imgs/page/about/team6.png" />
 												</figure>
 											</div>
 											<div className="card-grid-4-info">
@@ -404,19 +404,19 @@ const ContactPage: NextPage<PublicPageProps> = ({ session }) => {
 												<p className="font-xs color-text-paragraph-2 mt-5 mb-5">Frontend Developer</p>
 												<div className="rate-reviews-small pt-5">
 													<span>
-														<img src="/assets/imgs/template/icons/star.svg" alt="jobBox" />
+														<img src="/app-assets/imgs/template/icons/star.svg" alt="jobBox" />
 													</span>
 													<span>
-														<img src="/assets/imgs/template/icons/star.svg" alt="jobBox" />
+														<img src="/app-assets/imgs/template/icons/star.svg" alt="jobBox" />
 													</span>
 													<span>
-														<img src="/assets/imgs/template/icons/star.svg" alt="jobBox" />
+														<img src="/app-assets/imgs/template/icons/star.svg" alt="jobBox" />
 													</span>
 													<span>
-														<img src="/assets/imgs/template/icons/star.svg" alt="jobBox" />
+														<img src="/app-assets/imgs/template/icons/star.svg" alt="jobBox" />
 													</span>
 													<span>
-														<img src="/assets/imgs/template/icons/star.svg" alt="jobBox" />
+														<img src="/app-assets/imgs/template/icons/star.svg" alt="jobBox" />
 													</span>
 													<span className="ml-10 color-text-mutted font-xs">
 														<span>(</span>
@@ -438,7 +438,7 @@ const ContactPage: NextPage<PublicPageProps> = ({ session }) => {
 										<div className="card-grid-4 text-center hover-up">
 											<div className="image-top-feature">
 												<figure>
-													<img alt="jobBox" src="/assets/imgs/page/about/team7.png" />
+													<img alt="jobBox" src="/app-assets/imgs/page/about/team7.png" />
 												</figure>
 											</div>
 											<div className="card-grid-4-info">
@@ -446,19 +446,19 @@ const ContactPage: NextPage<PublicPageProps> = ({ session }) => {
 												<p className="font-xs color-text-paragraph-2 mt-5 mb-5">Frontend Developer</p>
 												<div className="rate-reviews-small pt-5">
 													<span>
-														<img src="/assets/imgs/template/icons/star.svg" alt="jobBox" />
+														<img src="/app-assets/imgs/template/icons/star.svg" alt="jobBox" />
 													</span>
 													<span>
-														<img src="/assets/imgs/template/icons/star.svg" alt="jobBox" />
+														<img src="/app-assets/imgs/template/icons/star.svg" alt="jobBox" />
 													</span>
 													<span>
-														<img src="/assets/imgs/template/icons/star.svg" alt="jobBox" />
+														<img src="/app-assets/imgs/template/icons/star.svg" alt="jobBox" />
 													</span>
 													<span>
-														<img src="/assets/imgs/template/icons/star.svg" alt="jobBox" />
+														<img src="/app-assets/imgs/template/icons/star.svg" alt="jobBox" />
 													</span>
 													<span>
-														<img src="/assets/imgs/template/icons/star.svg" alt="jobBox" />
+														<img src="/app-assets/imgs/template/icons/star.svg" alt="jobBox" />
 													</span>
 													<span className="ml-10 color-text-mutted font-xs">
 														<span>(</span>
@@ -480,7 +480,7 @@ const ContactPage: NextPage<PublicPageProps> = ({ session }) => {
 										<div className="card-grid-4 text-center hover-up">
 											<div className="image-top-feature">
 												<figure>
-													<img alt="jobBox" src="/assets/imgs/page/about/team8.png" />
+													<img alt="jobBox" src="/app-assets/imgs/page/about/team8.png" />
 												</figure>
 											</div>
 											<div className="card-grid-4-info">
@@ -488,19 +488,19 @@ const ContactPage: NextPage<PublicPageProps> = ({ session }) => {
 												<p className="font-xs color-text-paragraph-2 mt-5 mb-5">Frontend Developer</p>
 												<div className="rate-reviews-small pt-5">
 													<span>
-														<img src="/assets/imgs/template/icons/star.svg" alt="jobBox" />
+														<img src="/app-assets/imgs/template/icons/star.svg" alt="jobBox" />
 													</span>
 													<span>
-														<img src="/assets/imgs/template/icons/star.svg" alt="jobBox" />
+														<img src="/app-assets/imgs/template/icons/star.svg" alt="jobBox" />
 													</span>
 													<span>
-														<img src="/assets/imgs/template/icons/star.svg" alt="jobBox" />
+														<img src="/app-assets/imgs/template/icons/star.svg" alt="jobBox" />
 													</span>
 													<span>
-														<img src="/assets/imgs/template/icons/star.svg" alt="jobBox" />
+														<img src="/app-assets/imgs/template/icons/star.svg" alt="jobBox" />
 													</span>
 													<span>
-														<img src="/assets/imgs/template/icons/star.svg" alt="jobBox" />
+														<img src="/app-assets/imgs/template/icons/star.svg" alt="jobBox" />
 													</span>
 													<span className="ml-10 color-text-mutted font-xs">
 														<span>(</span>
@@ -561,7 +561,7 @@ const ContactPage: NextPage<PublicPageProps> = ({ session }) => {
 							<div className="box-newsletter">
 								<div className="row">
 									<div className="col-xl-3 col-12 text-center d-none d-xl-block">
-										<img src="/assets/imgs/template/newsletter-left.png" alt="joxBox" />
+										<img src="/app-assets/imgs/template/newsletter-left.png" alt="joxBox" />
 									</div>
 									<div className="col-lg-12 col-xl-6 col-12">
 										<h2 className="text-md-newsletter text-center">
@@ -576,7 +576,7 @@ const ContactPage: NextPage<PublicPageProps> = ({ session }) => {
 										</div>
 									</div>
 									<div className="col-xl-3 col-12 text-center d-none d-xl-block">
-										<img src="/assets/imgs/template/newsletter-right.png" alt="joxBox" />
+										<img src="/app-assets/imgs/template/newsletter-right.png" alt="joxBox" />
 									</div>
 								</div>
 							</div>
