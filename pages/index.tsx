@@ -7,16 +7,16 @@ import { CookieValueTypes } from 'cookies-next';
 import { GetServerSideProps, NextPage } from 'next';
 import Head from 'next/head';
 import { useEffect } from 'react';
-import AnnouncementSection from './partials/AnnouncementSection';
-import CallToActionSection from './partials/CallToActionSection';
-import HeroSection from './partials/HeroSection';
-import IndustriesSection from './partials/IndustriesSection';
-import JobByLocationSection from './partials/JobsByLocationSection';
-import JobsOfTheDaySection from './partials/JobsOfTheDaySection';
-import NewAndBlogSection from './partials/NewsAndBlogSection';
-import NewsletterSection from './partials/NewsLetterSection';
-import StatsSection from './partials/StatsSection';
-import TopRecruitersSection from './partials/TopRecruitersSection';
+import AnnouncementSection from './_partials/AnnouncementSection';
+import CallToActionSection from './_partials/CallToActionSection';
+import HeroSection from './_partials/HeroSection';
+import IndustriesSection from './_partials/IndustriesSection';
+import JobByLocationSection from './_partials/JobsByLocationSection';
+import JobsOfTheDaySection from './_partials/JobsOfTheDaySection';
+import NewAndBlogSection from './_partials/NewsAndBlogSection';
+import NewsletterSection from './_partials/NewsLetterSection';
+import StatsSection from './_partials/StatsSection';
+import TopRecruitersSection from './_partials/TopRecruitersSection';
 
 export const getServerSideProps: GetServerSideProps = async ({ req, res, locale }) => {
 	const { getCookie } = await import('cookies-next');
