@@ -32,11 +32,11 @@ export const getServerSideProps: GetServerSideProps = async ({ req, res, locale 
 };
 
 const HomePage: NextPage<PublicPageProps> = ({ session }) => {
-	const { setSession } = useAuthStore.getState();
+	const { setSession } = useAuthStore();
 
 	useEffect(() => {
 		setSession(session);
-	}, [session]); // eslint-disable-line react-hooks/exhaustive-deps
+	}, [session]);
 
 	return (
 		<>
