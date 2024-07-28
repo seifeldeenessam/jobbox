@@ -1413,23 +1413,29 @@ h6,
   color: #3c65f5;
 }
 .card-grid-2 .card-grid-2-image-rd {
+  padding: 0px 15px 0px 0px;
+  display: inline-block;
+  width: 30%;
+  min-width: 115px;
+  max-width: 115px;
+}
+.card-grid-2 .card-grid-2-image-rd figure {
   position: relative;
-  width: 96px;
-  height: 96px;
-  border-radius: 1000px;
+  display: inline-block;
 }
-.card-grid-2 .card-grid-2-image-rdimg {
-  object-fit: cover;
+.card-grid-2 .card-grid-2-image-rd figure img {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
 }
-.card-grid-2 .card-grid-2-image-rd.online::before {
+.card-grid-2 .card-grid-2-image-rd.online figure::before {
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
   content: "";
   position: absolute;
-  bottom: 8px;
-  right: 4px;
-  height: 16px;
-  width: 16px;
-  border-radius: 1000px;
-  z-index: 10;
+  bottom: 13px;
+  right: 9px;
   background: #00c070;
 }
 .card-grid-2.grid-bd-16 {
@@ -1477,7 +1483,7 @@ h6,
 .card-grid-2 .card-block-info {
   display: inline-block;
   width: 100%;
-  padding: 5px 10px 20px 10px;
+  padding: 16px;
 }
 .card-grid-2 .card-block-info .card-2-img-text {
   display: inline-block;
@@ -1562,7 +1568,6 @@ h6,
   font-weight: bold;
   font-family: "Plus Jakarta Sans", sans-serif;
   display: block;
-  padding-bottom: 5px;
 }
 .card-grid-2 .card-block-info .card-profile strong:hover {
   color: #05264e;
@@ -1575,7 +1580,7 @@ h6,
   vertical-align: middle;
 }
 .card-grid-2 .card-block-info .card-profile .rate-reviews-small span img {
-  height: 13px;
+  height: 12px;
   display: flex;
 }
 .card-grid-2 .employers-info {
@@ -1591,7 +1596,7 @@ h6,
   background: url(../imgs/template/icons/flash.svg) no-repeat 0px 0px;
 }
 .card-grid-2 .card-grid-2-image-left {
-  padding: 30px 20px 15px 20px;
+  padding: 16px;
   display: flex;
   gap: 16px;
   position: relative;

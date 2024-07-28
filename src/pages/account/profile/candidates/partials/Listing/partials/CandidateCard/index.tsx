@@ -1,5 +1,5 @@
 import { Candidate } from '@/services/candidates/types';
-import Image from 'next/image';
+import Link from 'next/link';
 
 type Props = {
 	candidate: Candidate;
@@ -7,17 +7,21 @@ type Props = {
 
 const CandidateCard = ({ candidate }: Props) => {
 	return (
-		<div className="card-grid-2 hover-up">
+		<div className="card-grid-2 hover-up h-100 d-flex flex-column justify-content-between">
 			<div className="card-grid-2-image-left">
 				<div className="card-grid-2-image-rd online">
-					<Image src={candidate.profile_picture || 'https://placehold.co/96?text=Aatar'} alt={candidate.full_name} fill />
+					<figure>
+						<Link href="/">
+							<img src={candidate.profile_picture || 'https://placehold.co/96?text=Aatar'} alt="jobBox" />
+						</Link>
+					</figure>
 				</div>
 				<div className="card-profile pt-10">
 					<a href="#">
 						<h5>{candidate.full_name}</h5>
 					</a>
 					<span className="font-xs color-text-mutted">{candidate.industry.name}</span>
-					<div className="rate-reviews-small pt-5">
+					<div className="rate-reviews-small">
 						<span>
 							<img src="/dashboard-assets/imgs/template/icons/star.svg" alt="jobBox" />
 						</span>
@@ -37,8 +41,9 @@ const CandidateCard = ({ candidate }: Props) => {
 					</div>
 				</div>
 			</div>
-			<div className="card-block-info">
-				<p className="font-xs color-text-paragraph-2">{candidate.bio}</p>
+
+			<div className="card-block-info d-flex flex-column flex-grow-1">
+				<p className="color-text-paragraph-2 font-xs flex-grow-1 text-justify">{candidate.bio}</p>
 				<div className="card-2-bottom card-2-bottom-candidate mt-30">
 					<div className="text-start">
 						{candidate.educations.map((education) => (

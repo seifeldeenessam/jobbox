@@ -4,7 +4,15 @@ export type Recruiter = {
 	name: string;
 	company_logo: string;
 	country: string;
-	industry: RecruiterIndustry;
+	industry: {
+		id: number;
+		name: string;
+		industrie_image: null;
+		slug: string;
+		date: Date;
+		date_update: Date;
+		job_count: number;
+	};
 	company_size: string;
 	address: string;
 	phone: string;
@@ -12,17 +20,7 @@ export type Recruiter = {
 	salary: string;
 	Company_bio: string;
 	slug: string;
-	date: string;
-	date_update: string;
+	date: Date;
+	date_update: Date;
 	open_jobs_count: number;
-};
-
-export type RecruiterIndustry = {
-	id: number;
-	name: string;
-	industrie_image: string;
-	slug: string;
-	date: string;
-	date_update: string;
-	job_count: number;
 };

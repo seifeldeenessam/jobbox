@@ -1,4 +1,4 @@
-import { ReactNode, useState } from 'react';
+import { ReactNode, useEffect, useState } from 'react';
 import Breadcrumb from './partials/Breadcrumb';
 import BurgerIcon from './partials/BurgerIcon';
 import Footer from './partials/Footer';
@@ -6,6 +6,12 @@ import Header from './partials/Header';
 import MobileMenu from './partials/MobileMenu';
 import PageHead from './partials/PageHead';
 import Sidebar from './partials/Sidebar';
+
+declare global {
+	interface Window {
+		wow: any;
+	}
+}
 
 type Props = {
 	headTitle?: string;
@@ -22,13 +28,12 @@ const ProfileLayout = ({ headTitle, breadcrumbTitle, breadcrumbActive, children 
 		!isToggled ? document.body.classList.add('mobile-menu-active') : document.body.classList.remove('mobile-menu-active');
 	};
 
-	// useEffect(() => {
-	// 	const WOW = require('wowjs');
-	// 	window.wow = new WOW.WOW({
-	// 		live: false
-	// 	});
-	// 	window.wow.init();
-	// },[]);
+	useEffect(() => {
+		const WOW = require('wowjs');
+
+		window.wow = new WOW.WOW({ live: false });
+		window.wow.init();
+	}, []);
 
 	return (
 		<>

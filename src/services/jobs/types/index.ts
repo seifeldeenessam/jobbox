@@ -1,74 +1,64 @@
-export type Job = {
+type Field = {
 	id: number;
-	recruiter: JobRecruiter;
-	industry: JobIndustry;
-	field: JobField | null;
-	position: JobPosition | null;
-	work_mode: JobWorkMode | null;
 	name: string;
-	location: string;
-	job_level: string | null;
-	experience: string | null;
-	job_type: string | null;
-	deadline: string;
-	salary: string | null;
-	Job_description: string;
-	Job_requirements: string;
-	job_image: string | null;
-	open_for_applications: boolean;
-	closing_date: Date | null;
+	industrie?: Field;
+	field_image?: null;
 	slug: string;
 	date: Date;
 	date_update: Date;
-};
-
-export type JobIndustry = {
-	id: number;
-	name: string;
-	industrie_image: string;
-	slug: string;
-	date: string;
-	date_update: string;
 	job_count: number;
+	industrie_image?: null;
 };
 
-export type JobRecruiter = {
+type Position = {
+	id: number;
+	position_type: string;
+};
+
+type Recruiter = {
 	id: number;
 	company_account: number;
 	name: string;
-	company_logo: null;
-	country: null;
-	industry: null;
-	company_size: null;
-	address: null;
-	phone: null;
-	company_email: null;
-	salary: null;
+	company_logo: string;
+	country: string;
+	industry: Field;
+	company_size: string;
+	address: string;
+	phone: string;
+	company_email: string;
+	salary: string;
 	Company_bio: string;
 	slug: string;
-	date: string;
-	date_update: string;
+	date: Date;
+	date_update: Date;
 	open_jobs_count: number;
 };
 
-export type JobField = {
+type WorkMode = {
 	id: number;
+	work_mode_type: string;
+};
+
+export type Job = {
+	id: number;
+	recruiter: Recruiter;
+	industry: Field;
+	field: Field;
+	position: Position;
+	work_mode: WorkMode;
 	name: string;
-	industrie?: JobField;
-	field_image?: null;
+	location: string;
+	job_level: string;
+	experience: string;
+	job_type: string;
+	deadline: Date;
+	salary: string;
+	Job_description: string;
+	Job_requirements: string;
+	job_image: string;
+	open_for_applications: boolean;
+	closing_date: Date;
 	slug: string;
-	date: string;
-	date_update: string;
-	job_count: number;
-	industrie_image?: string;
-};
-
-export type JobPosition = {
-	id: number;
-	position_type: string; // Should be enum
-};
-
-export type JobWorkMode = {
-	id: number;
-	work_mode_type: 'On-site' | 'Remote' | 'Remote';
+	date: Date;
+	date_update: Date;
 };

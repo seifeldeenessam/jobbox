@@ -1,9 +1,11 @@
+import { Job } from '@/services/jobs/types';
+import { getTimePassed } from '@/utilities/dates';
 import Link from 'next/link';
 import { useState } from 'react';
 import Modal from './partials/Modal';
 
 type Props = {
-	job: any;
+	job: Job;
 };
 
 const JobCard = ({ job }: Props) => {
@@ -19,29 +21,26 @@ const JobCard = ({ job }: Props) => {
 				<div className="card-grid-2-image-left">
 					<span className="flash" />
 					<div className="image-box">
-						<img src={`/app-assets/imgs/brands/${job.img}`} alt="jobBox" />
+						<img src={job.job_image} alt="jobBox" />
 					</div>
 					<div className="right-info">
 						<Link className="name-job" href="/company-details">
-							{job.company}
+							{job.recruiter.name}
 						</Link>
-						<span className="location-small">New York, US</span>
+						<span className="location-small">{job.location}</span>
 					</div>
 				</div>
 				<div className="card-block-info">
 					<h6>
-						<Link href="/job-details">{job.title}</Link>
+						<Link href="/job-details">{job.name}</Link>
 					</h6>
 					<div className="mt-5">
-						<span className="card-briefcase">{job.type} </span>
-						<span className="card-time">
-							{job.date}
-							<span> minutes ago</span>
-						</span>
+						<span className="card-briefcase d-block">{job.job_type}</span>
+						<span className="card-time">{getTimePassed(job.date)}</span>
 					</div>
-					<p className="font-sm color-text-paragraph mt-15">{job.desc}</p>
+					<p className="font-sm color-text-paragraph mt-15" dangerouslySetInnerHTML={{ __html: job.Job_description }} />
 					<div className="mt-30">
-						{job.tags.map((tag: any, i: number) => (
+						{['these', 'are', 'static', 'tags'].map((tag: any, i: number) => (
 							<Link className="btn btn-grey-small mr-5" href="#" key={i}>
 								{tag}
 							</Link>

@@ -332,26 +332,32 @@
 	}
 
 	.card-grid-2-image-rd {
-		position: relative;
-		width: 96px;
-		height: 96px;
-		border-radius: 1000px;
-
-		&img {
-			object-fit: cover;
+		padding: 0px 15px 0px 0px;
+		display: inline-block;
+		width: 30%;
+		min-width: 115px;
+		max-width: 115px;
+		figure {
+			position: relative;
+			display: inline-block;
+			img {
+				border-radius: 50%;
+				height: 100px;
+				width: 100px;
+			}
 		}
-
 		&.online {
-			&::before {
-				content: '';
-				position: absolute;
-				bottom: 8px;
-				right: 4px;
-				height: 16px;
-				width: 16px;
-				border-radius: 1000px;
-				z-index: 10;
-				background: $background-success;
+			figure {
+				&::before {
+					height: 18px;
+					width: 18px;
+					border-radius: 50%;
+					content: '';
+					position: absolute;
+					bottom: 13px;
+					right: 9px;
+					background: $background-success;
+				}
 			}
 		}
 	}
@@ -407,7 +413,7 @@
 	.card-block-info {
 		display: inline-block;
 		width: 100%;
-		padding: 5px 10px 20px 10px;
+		padding: 16px;
 		.card-2-img-text {
 			display: inline-block;
 			vertical-align: middle;
@@ -500,7 +506,6 @@
 				font-weight: bold;
 				font-family: $font-heading;
 				display: block;
-				padding-bottom: 5px;
 				&:hover {
 					color: $color-brand;
 				}
@@ -515,7 +520,7 @@
 					display: inline-block;
 					vertical-align: middle;
 					img {
-						height: 13px;
+						height: 12px;
 						display: flex;
 					}
 				}
@@ -539,7 +544,7 @@
 	}
 
 	.card-grid-2-image-left {
-		padding: 30px 20px 15px 20px;
+		padding: 16px;
 		display: flex;
 		gap: 16px;
 		position: relative;
