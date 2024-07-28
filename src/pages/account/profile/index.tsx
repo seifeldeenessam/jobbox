@@ -49,7 +49,9 @@ const ProfilePage: NextPage<PrivatePageProps> = ({ session }) => {
 												</span>
 											</h3>
 										</div>
-										<p className="color-text-paragraph-2">Interview Schedules</p>
+										<p className="color-text-paragraph-2 text-nowrap overflow-hidden" style={{ maxWidth: '10ch', textOverflow: 'ellipsis' }}>
+											Interview Schedules
+										</p>
 									</div>
 								</div>
 							</div>
@@ -67,7 +69,9 @@ const ProfilePage: NextPage<PrivatePageProps> = ({ session }) => {
 												</span>
 											</h3>
 										</div>
-										<p className="color-text-paragraph-2">Applied Jobs</p>
+										<p className="color-text-paragraph-2 text-nowrap overflow-hidden" style={{ maxWidth: '10ch', textOverflow: 'ellipsis' }}>
+											Applied Jobs
+										</p>
 									</div>
 								</div>
 							</div>
@@ -85,7 +89,9 @@ const ProfilePage: NextPage<PrivatePageProps> = ({ session }) => {
 												</span>
 											</h3>
 										</div>
-										<p className="color-text-paragraph-2">Task Bids Won</p>
+										<p className="color-text-paragraph-2 text-nowrap overflow-hidden" style={{ maxWidth: '10ch', textOverflow: 'ellipsis' }}>
+											Task Bids Won
+										</p>
 									</div>
 								</div>
 							</div>
@@ -103,7 +109,9 @@ const ProfilePage: NextPage<PrivatePageProps> = ({ session }) => {
 												</span>
 											</h3>
 										</div>
-										<p className="color-text-paragraph-2">Application Sent</p>
+										<p className="color-text-paragraph-2 text-nowrap overflow-hidden" style={{ maxWidth: '10ch', textOverflow: 'ellipsis' }}>
+											Application Sent
+										</p>
 									</div>
 								</div>
 							</div>
@@ -121,7 +129,9 @@ const ProfilePage: NextPage<PrivatePageProps> = ({ session }) => {
 												</span>
 											</h3>
 										</div>
-										<p className="color-text-paragraph-2">Profile Viewed</p>
+										<p className="color-text-paragraph-2 text-nowrap overflow-hidden" style={{ maxWidth: '10ch', textOverflow: 'ellipsis' }}>
+											Profile Viewed
+										</p>
 									</div>
 								</div>
 							</div>
@@ -136,7 +146,9 @@ const ProfilePage: NextPage<PrivatePageProps> = ({ session }) => {
 												2356<span className="font-sm status down">- 2%</span>
 											</h3>
 										</div>
-										<p className="color-text-paragraph-2">New Messages</p>
+										<p className="color-text-paragraph-2 text-nowrap overflow-hidden" style={{ maxWidth: '10ch', textOverflow: 'ellipsis' }}>
+											New Messages
+										</p>
 									</div>
 								</div>
 							</div>
@@ -154,7 +166,9 @@ const ProfilePage: NextPage<PrivatePageProps> = ({ session }) => {
 												</span>
 											</h3>
 										</div>
-										<p className="color-text-paragraph-2">Articles Added</p>
+										<p className="color-text-paragraph-2 text-nowrap overflow-hidden" style={{ maxWidth: '10ch', textOverflow: 'ellipsis' }}>
+											Articles Added
+										</p>
 									</div>
 								</div>
 							</div>
@@ -172,7 +186,9 @@ const ProfilePage: NextPage<PrivatePageProps> = ({ session }) => {
 												</span>
 											</h3>
 										</div>
-										<p className="color-text-paragraph-2">CV Added</p>
+										<p className="color-text-paragraph-2 text-nowrap overflow-hidden" style={{ maxWidth: '10ch', textOverflow: 'ellipsis' }}>
+											CV Added
+										</p>
 									</div>
 								</div>
 							</div>
