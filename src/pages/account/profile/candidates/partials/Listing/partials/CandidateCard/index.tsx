@@ -1,4 +1,5 @@
 import { Candidate } from '@/services/candidates/types';
+import { clipText } from '@/utilities/text';
 import Link from 'next/link';
 
 type Props = {
@@ -18,7 +19,7 @@ const CandidateCard = ({ candidate }: Props) => {
 				</div>
 				<div className="card-profile pt-10">
 					<a href="#">
-						<h5>{candidate.full_name}</h5>
+						<h5>{clipText(candidate.full_name, 7)}</h5>
 					</a>
 					<span className="font-xs color-text-mutted">{candidate.industry.name}</span>
 					<div className="rate-reviews-small">

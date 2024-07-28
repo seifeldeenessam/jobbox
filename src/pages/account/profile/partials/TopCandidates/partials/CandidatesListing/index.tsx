@@ -1,5 +1,6 @@
 import { useCandidatesListing } from '@/services/candidates/queries';
 import { Candidate } from '@/services/candidates/types';
+import { clipText } from '@/utilities/text';
 import Error from './Error';
 import Loading from './Loading';
 
@@ -13,14 +14,14 @@ const CandidateCard = ({ candidate }: CandidateCardProps) => {
 	return (
 		<div className="card-style-3 hover-up">
 			<div className="card-image online">
-				<img src="/dashboard-assets/imgs/page/dashboard/avata1.png" alt="jobBox" />
+				<img src={candidate.profile_picture} alt="jobBox" />
 			</div>
 			<div className="card-title">
-				<h6>Robert Fox</h6>
-				<span className="job-position">UI/UX Designer</span>
+				<h6>{clipText(candidate.full_name, 6)}</h6>
+				<span className="job-position">{candidate.industry.name}</span>
 			</div>
 			<div className="card-location">
-				<span className="location">Chicago, US</span>
+				<span className="location">{candidate.contact_information.complete_address}</span>
 			</div>
 			<div className="card-rating">
 				<img src="/dashboard-assets/imgs/page/dashboard/star.svg" alt="jobBox" /> <img src="/dashboard-assets/imgs/page/dashboard/star.svg" alt="jobBox" />

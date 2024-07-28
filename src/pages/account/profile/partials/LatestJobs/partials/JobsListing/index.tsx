@@ -1,5 +1,7 @@
 import { useJobsListing } from '@/services/jobs/queries';
 import { Job } from '@/services/jobs/types';
+import { getTimePassed } from '@/utilities/dates';
+import { clipText } from '@/utilities/text';
 import Error from './Error';
 import Loading from './Loading';
 
@@ -14,13 +16,13 @@ const JobCard = ({ job }: JobCardProps) => {
 		<div className="card-style-2 hover-up">
 			<div className="card-head">
 				<div className="card-image">
-					<img src="/dashboard-assets/imgs/page/dashboard/img1.png" alt="jobBox" />
+					<img src={job.job_image} alt="jobBox" />
 				</div>
 				<div className="card-title">
-					<h6>Senior Full Stack Engineer, Creator Success</h6>
-					<span className="job-type">Full time</span>
-					<span className="time-post">3mins ago</span>
-					<span className="location">New York, US</span>
+					<h6>{clipText(job.name, 20)}</h6>
+					<span className="job-type">{job.job_type}</span>
+					<span className="time-post">{getTimePassed(job.date)}</span>
+					<span className="location">{job.location}</span>
 				</div>
 			</div>
 			<div className="card-tags">
@@ -28,7 +30,7 @@ const JobCard = ({ job }: JobCardProps) => {
 				<a className="btn btn-tag">Adobe XD</a>
 			</div>
 			<div className="card-price">
-				<strong>$300</strong>
+				<strong>${job.salary}</strong>
 				<span className="hour">/Hour</span>
 			</div>
 		</div>

@@ -15,7 +15,9 @@ const RecruiterCard = ({ recruiter }: Props) => {
 			</div>
 			<div className="info-text mt-10">
 				<h5 className="font-bold">
-					<Link href="#">{recruiter.name}</Link>
+					<Link href="#" className="text-center">
+						{recruiter.name}
+					</Link>
 				</h5>
 				<div className="mt-5">
 					<img alt="jobBox" src="/dashboard-assets/imgs/template/icons/star.svg" />
